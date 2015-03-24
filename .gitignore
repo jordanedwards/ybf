@@ -1,0 +1,22 @@
+#################
+## Project
+#################
+
+/original/
+/db_backups/
+
+############
+## OS Files
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+dwsync.xml
+
+# Mac crap
+.DS_Store
+
+.project
+.settings

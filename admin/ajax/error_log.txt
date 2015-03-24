@@ -1,0 +1,266 @@
+[02-Mar-2015 22:05:31 America/Vancouver] PHP Notice:  Undefined index: is_active in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 11
+[02-Mar-2015 22:05:31 America/Vancouver] PHP Stack trace:
+[02-Mar-2015 22:05:31 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[02-Mar-2015 22:05:31 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 192
+[02-Mar-2015 22:05:31 America/Vancouver] PHP Stack trace:
+[02-Mar-2015 22:05:31 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[02-Mar-2015 22:05:31 America/Vancouver] PHP   2. User->get_by_id() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:23
+[02-Mar-2015 22:05:31 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\You've Been Framed\admin\classes\class_user.php:192
+[02-Mar-2015 22:05:31 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 26
+[02-Mar-2015 22:05:31 America/Vancouver] PHP Stack trace:
+[02-Mar-2015 22:05:31 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[02-Mar-2015 22:14:23 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 26
+[02-Mar-2015 22:14:23 America/Vancouver] PHP Stack trace:
+[02-Mar-2015 22:14:23 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[02-Mar-2015 22:14:31 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 26
+[02-Mar-2015 22:14:31 America/Vancouver] PHP Stack trace:
+[02-Mar-2015 22:14:31 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[02-Mar-2015 22:17:12 America/Vancouver] PHP Fatal error:  Call to undefined method OrdersSpecialItem::set_is_active() in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 21
+[02-Mar-2015 22:17:12 America/Vancouver] PHP Stack trace:
+[02-Mar-2015 22:17:12 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[08-Mar-2015 12:23:31 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 558
+[08-Mar-2015 12:23:31 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:23:31 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:23:31 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 12:23:33 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 558
+[08-Mar-2015 12:23:33 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:23:33 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:23:33 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 12:38:52 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 678
+[08-Mar-2015 12:38:52 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:38:52 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:38:52 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 12:38:53 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 678
+[08-Mar-2015 12:38:53 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:38:53 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:38:53 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 12:38:54 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 678
+[08-Mar-2015 12:38:54 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:38:54 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:38:54 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 12:38:55 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 678
+[08-Mar-2015 12:38:55 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:38:55 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:38:55 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 12:38:56 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 678
+[08-Mar-2015 12:38:56 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:38:56 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:38:56 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 12:38:57 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 678
+[08-Mar-2015 12:38:57 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:38:57 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:38:57 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 12:53:59 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 678
+[08-Mar-2015 12:53:59 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 12:53:59 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 12:53:59 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 13:47:02 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 688
+[08-Mar-2015 13:47:02 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 13:47:02 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 13:47:02 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 14:05:10 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 700
+[08-Mar-2015 14:05:10 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:05:10 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 14:05:10 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 14:05:11 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 700
+[08-Mar-2015 14:05:11 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:05:11 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:0
+[08-Mar-2015 14:05:11 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_component.php:16
+[08-Mar-2015 15:39:49 America/Vancouver] PHP Fatal error:  Class 'ordersactivity' not found in E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php on line 10
+[08-Mar-2015 15:39:49 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:39:49 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:40:24 America/Vancouver] PHP Fatal error:  Class 'ordersactivity' not found in E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php on line 10
+[08-Mar-2015 15:40:24 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:40:24 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:14 America/Vancouver] PHP Fatal error:  Call to undefined method Orderactivity::set_content_id() in E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php on line 11
+[08-Mar-2015 15:41:14 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:41:14 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:35 America/Vancouver] PHP Notice:  Undefined variable: type in E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php on line 11
+[08-Mar-2015 15:41:35 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:41:35 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:35 America/Vancouver] PHP Warning:  include_once(E:/sites/You've Been Framed//classes/class_error_handler.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 126
+[08-Mar-2015 15:41:35 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:41:35 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:35 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:41:35 America/Vancouver] PHP Warning:  include_once(): Failed opening 'E:/sites/You've Been Framed//classes/class_error_handler.php' for inclusion (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 126
+[08-Mar-2015 15:41:35 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:41:35 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:35 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:41:35 America/Vancouver] PHP Fatal error:  Class 'ErrorHandler' not found in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 127
+[08-Mar-2015 15:41:35 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:41:35 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:35 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:41:58 America/Vancouver] PHP Warning:  include_once(E:/sites/You've Been Framed//classes/class_error_handler.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 126
+[08-Mar-2015 15:41:58 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:41:58 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:58 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:41:59 America/Vancouver] PHP Warning:  include_once(): Failed opening 'E:/sites/You've Been Framed//classes/class_error_handler.php' for inclusion (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 126
+[08-Mar-2015 15:41:59 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:41:59 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:59 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:41:59 America/Vancouver] PHP Fatal error:  Class 'ErrorHandler' not found in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 127
+[08-Mar-2015 15:41:59 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:41:59 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:41:59 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:42:11 America/Vancouver] PHP Warning:  include_once(E:/sites/You've Been Framed//classes/class_error_handler.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 126
+[08-Mar-2015 15:42:11 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:42:11 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:42:11 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:42:11 America/Vancouver] PHP Warning:  include_once(): Failed opening 'E:/sites/You've Been Framed//classes/class_error_handler.php' for inclusion (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 126
+[08-Mar-2015 15:42:11 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:42:11 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:42:11 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:42:11 America/Vancouver] PHP Fatal error:  Class 'ErrorHandler' not found in E:\sites\You've Been Framed\admin\classes\class_orderactivity.php on line 127
+[08-Mar-2015 15:42:11 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:42:11 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:42:11 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:43:03 America/Vancouver] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 52
+[08-Mar-2015 15:43:03 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:43:03 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:43:03 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:43:03 America/Vancouver] PHP   3. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_orderactivity.php:128
+[08-Mar-2015 15:43:03 America/Vancouver] PHP   4. mail() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:52
+[08-Mar-2015 15:43:05 America/Vancouver] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 52
+[08-Mar-2015 15:43:05 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:43:05 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:43:05 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:43:05 America/Vancouver] PHP   3. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_orderactivity.php:128
+[08-Mar-2015 15:43:05 America/Vancouver] PHP   4. mail() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:52
+[08-Mar-2015 15:43:11 America/Vancouver] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 52
+[08-Mar-2015 15:43:11 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:43:11 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:0
+[08-Mar-2015 15:43:11 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\You've Been Framed\admin\ajax\ajax_order_activity.php:35
+[08-Mar-2015 15:43:11 America/Vancouver] PHP   3. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_orderactivity.php:128
+[08-Mar-2015 15:43:11 America/Vancouver] PHP   4. mail() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:52
+[10-Mar-2015 10:58:37 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 10:58:37 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 10:58:37 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 10:58:37 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 10:58:37 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 10:58:37 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 10:58:37 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 10:58:37 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 10:58:37 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 10:58:37 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 192
+[10-Mar-2015 10:58:37 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 10:58:37 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 10:58:37 America/Vancouver] PHP   2. User->get_by_id() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:26
+[10-Mar-2015 10:58:37 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\You've Been Framed\admin\classes\class_user.php:192
+[10-Mar-2015 11:01:04 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:01:04 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:01:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:01:04 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:01:04 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:01:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:01:04 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:01:04 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:01:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:01:04 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 192
+[10-Mar-2015 11:01:04 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:01:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:01:04 America/Vancouver] PHP   2. User->get_by_id() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:26
+[10-Mar-2015 11:01:04 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\You've Been Framed\admin\classes\class_user.php:192
+[10-Mar-2015 11:01:50 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:01:50 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:01:50 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:01:50 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:01:50 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:01:50 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:01:50 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:01:50 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:01:50 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:05 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:02:05 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:02:05 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:05 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:02:05 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:02:05 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:05 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:02:05 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:02:05 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:05 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 192
+[10-Mar-2015 11:02:05 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:02:05 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:05 America/Vancouver] PHP   2. User->get_by_id() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:26
+[10-Mar-2015 11:02:05 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\You've Been Framed\admin\classes\class_user.php:192
+[10-Mar-2015 11:02:43 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:02:43 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:02:43 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:43 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:02:43 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:02:43 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:43 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:02:43 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:02:43 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:43 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 192
+[10-Mar-2015 11:02:43 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:02:43 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:02:43 America/Vancouver] PHP   2. User->get_by_id() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:26
+[10-Mar-2015 11:02:43 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\You've Been Framed\admin\classes\class_user.php:192
+[10-Mar-2015 11:05:25 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 192
+[10-Mar-2015 11:05:25 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:05:25 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:05:25 America/Vancouver] PHP   2. User->get_by_id() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:26
+[10-Mar-2015 11:05:25 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\You've Been Framed\admin\classes\class_user.php:192
+[10-Mar-2015 11:06:35 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 192
+[10-Mar-2015 11:06:35 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:06:35 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:06:35 America/Vancouver] PHP   2. User->get_by_id() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:26
+[10-Mar-2015 11:06:35 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\You've Been Framed\admin\classes\class_user.php:192
+[10-Mar-2015 11:09:10 America/Vancouver] PHP Notice:  Undefined variable: line in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 41
+[10-Mar-2015 11:09:10 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:09:11 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:11:48 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:11:48 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:11:48 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:11:48 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:11:48 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:11:48 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:11:48 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:11:48 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:11:48 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:12:02 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:12:02 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:12:02 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:12:02 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:12:02 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:12:02 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:12:02 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:12:02 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:12:02 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:08 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:19:08 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:08 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:08 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:19:08 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:08 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:08 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:19:08 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:08 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:15 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:19:15 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:15 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:15 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:19:15 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:15 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:15 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:19:15 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:15 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:20 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:19:20 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:20 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:20 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:19:20 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:20 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:19:20 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:19:20 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:19:20 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:21:43 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemType in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 7
+[10-Mar-2015 11:21:43 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:21:43 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:21:43 America/Vancouver] PHP Notice:  Undefined index: text in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 8
+[10-Mar-2015 11:21:43 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:21:43 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[10-Mar-2015 11:21:43 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
+[10-Mar-2015 11:21:43 America/Vancouver] PHP Stack trace:
+[10-Mar-2015 11:21:43 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
