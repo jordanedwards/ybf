@@ -3524,3 +3524,261 @@
 [10-Mar-2015 15:05:32 America/Vancouver] PHP Notice:  Undefined index: mat_colour in E:\sites\You've Been Framed\admin\orders_edit.php on line 489
 [10-Mar-2015 15:05:32 America/Vancouver] PHP Stack trace:
 [10-Mar-2015 15:05:32 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_frame in E:\sites\ybf\admin\classes\class_orders.php on line 557
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_frame_done in E:\sites\ybf\admin\classes\class_orders.php on line 558
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat in E:\sites\ybf\admin\classes\class_orders.php on line 559
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_done in E:\sites\ybf\admin\classes\class_orders.php on line 560
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_inner_mat in E:\sites\ybf\admin\classes\class_orders.php on line 561
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_inner_mat_done in E:\sites\ybf\admin\classes\class_orders.php on line 562
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_fillet in E:\sites\ybf\admin\classes\class_orders.php on line 563
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_fillet_done in E:\sites\ybf\admin\classes\class_orders.php on line 564
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_liner in E:\sites\ybf\admin\classes\class_orders.php on line 565
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_glass in E:\sites\ybf\admin\classes\class_orders.php on line 566
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_glass_done in E:\sites\ybf\admin\classes\class_orders.php on line 567
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_backing in E:\sites\ybf\admin\classes\class_orders.php on line 568
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_mount_material in E:\sites\ybf\admin\classes\class_orders.php on line 569
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_mount_done in E:\sites\ybf\admin\classes\class_orders.php on line 570
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_frame_w in E:\sites\ybf\admin\classes\class_orders.php on line 576
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_frame_h in E:\sites\ybf\admin\classes\class_orders.php on line 577
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_t in E:\sites\ybf\admin\classes\class_orders.php on line 578
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_b in E:\sites\ybf\admin\classes\class_orders.php on line 579
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_l in E:\sites\ybf\admin\classes\class_orders.php on line 580
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_r in E:\sites\ybf\admin\classes\class_orders.php on line 581
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_inner_mat_w in E:\sites\ybf\admin\classes\class_orders.php on line 582
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_fillet_w in E:\sites\ybf\admin\classes\class_orders.php on line 583
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_fillet_h in E:\sites\ybf\admin\classes\class_orders.php on line 584
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Notice:  Undefined index: orders_rabbet_size in E:\sites\ybf\admin\classes\class_orders.php on line 585
+[07-Apr-2015 15:17:55 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:17:55 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_frame in E:\sites\ybf\admin\classes\class_orders.php on line 557
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_frame_done in E:\sites\ybf\admin\classes\class_orders.php on line 558
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat in E:\sites\ybf\admin\classes\class_orders.php on line 559
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_done in E:\sites\ybf\admin\classes\class_orders.php on line 560
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_inner_mat in E:\sites\ybf\admin\classes\class_orders.php on line 561
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_inner_mat_done in E:\sites\ybf\admin\classes\class_orders.php on line 562
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_fillet in E:\sites\ybf\admin\classes\class_orders.php on line 563
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_fillet_done in E:\sites\ybf\admin\classes\class_orders.php on line 564
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_liner in E:\sites\ybf\admin\classes\class_orders.php on line 565
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_glass in E:\sites\ybf\admin\classes\class_orders.php on line 566
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_glass_done in E:\sites\ybf\admin\classes\class_orders.php on line 567
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_backing in E:\sites\ybf\admin\classes\class_orders.php on line 568
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_mount_material in E:\sites\ybf\admin\classes\class_orders.php on line 569
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Notice:  Undefined index: orders_mount_done in E:\sites\ybf\admin\classes\class_orders.php on line 570
+[07-Apr-2015 15:18:00 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:00 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_frame_w in E:\sites\ybf\admin\classes\class_orders.php on line 576
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_frame_h in E:\sites\ybf\admin\classes\class_orders.php on line 577
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_t in E:\sites\ybf\admin\classes\class_orders.php on line 578
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_b in E:\sites\ybf\admin\classes\class_orders.php on line 579
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_l in E:\sites\ybf\admin\classes\class_orders.php on line 580
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_outer_mat_r in E:\sites\ybf\admin\classes\class_orders.php on line 581
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_inner_mat_w in E:\sites\ybf\admin\classes\class_orders.php on line 582
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_fillet_w in E:\sites\ybf\admin\classes\class_orders.php on line 583
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_fillet_h in E:\sites\ybf\admin\classes\class_orders.php on line 584
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Notice:  Undefined index: orders_rabbet_size in E:\sites\ybf\admin\classes\class_orders.php on line 585
+[07-Apr-2015 15:18:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   2. Orders->get_by_id() E:\sites\ybf\admin\orders_edit.php:22
+[07-Apr-2015 15:18:01 America/Vancouver] PHP   3. Orders->load() E:\sites\ybf\admin\classes\class_orders.php:508
+[07-Apr-2015 15:23:01 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_backing() in E:\sites\ybf\admin\orders_edit.php on line 197
+[07-Apr-2015 15:23:01 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:23:01 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:24:46 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_frame() in E:\sites\ybf\admin\orders_edit.php on line 301
+[07-Apr-2015 15:24:46 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:24:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:28:12 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_frame() in E:\sites\ybf\admin\orders_edit.php on line 303
+[07-Apr-2015 15:28:12 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:28:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:28:14 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_frame() in E:\sites\ybf\admin\orders_edit.php on line 303
+[07-Apr-2015 15:28:14 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:28:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:43:03 America/Vancouver] PHP Notice:  Undefined index: orderComponentTypeField in E:\sites\ybf\admin\orders_edit.php on line 312
+[07-Apr-2015 15:43:03 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:43:03 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[07-Apr-2015 15:43:03 America/Vancouver] PHP Notice:  Undefined index: orderComponentTypeField in E:\sites\ybf\admin\orders_edit.php on line 312
+[07-Apr-2015 15:43:03 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:43:03 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0

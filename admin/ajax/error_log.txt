@@ -264,3 +264,6 @@
 [10-Mar-2015 11:21:43 America/Vancouver] PHP Notice:  Undefined index: addInvoiceItemQuantity in E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php on line 9
 [10-Mar-2015 11:21:43 America/Vancouver] PHP Stack trace:
 [10-Mar-2015 11:21:43 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\ajax\ajax_invoice_item.php:0
+[07-Apr-2015 15:45:43 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[07-Apr-2015 15:45:43 America/Vancouver] PHP Stack trace:
+[07-Apr-2015 15:45:43 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0

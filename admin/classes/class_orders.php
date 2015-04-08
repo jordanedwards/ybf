@@ -8,41 +8,16 @@
  		private $special_instructions;
  		private $received_date;
  		private $promised_date;
- 		private $frame;
- 		private $frame_w;
- 		private $frame_h;			
- 		private $outer_mat;
- 		private $inner_mat;
- 		private $fillet;
- 		private $liner;
- 		private $glass;
- 		private $glass_w;
- 		private $glass_h;		
- 		private $backing;
- 		private $mount;
  		private $fitting_labour;
  		private $mat_labour;
  		private $mount_labour;
- 		private $special_labour;
- 		private $outer_mat_t;
- 		private $outer_mat_b;
- 		private $outer_mat_l;
- 		private $outer_mat_r;		
- 		private $inner_mat_w;
- 		private $inner_mat_h;
- 		private $fillet_w;
- 		private $fillet_h;
- 		private $rabbet_size;
- 		private $frame_done;
- 		private $outer_mat_done;
- 		private $inner_mat_done;
- 		private $fillet_done;
- 		private $mount_done;
- 		private $glass_done;	
+ 		private $special_labour;	
 		private $art_location;											
  		private $date_created;
  		private $last_updated;
  		private $last_updated_user;
+ 		private $backing;
+		
  		
 	function __construct() {
 	
@@ -68,219 +43,6 @@
 		 		public function get_promised_date() { return $this->promised_date;}
 		 		public function set_promised_date($value) {$this->promised_date=$value;}
  
-		 		public function get_frame($var = "",$floor=false) { 
-					switch ($var):
-						case "":
-							return $this->frame;
-						break;
-						case "id":
-							return $this->frame;
-						break;						
-						case "done":
-							return $this->frame_done;
-						break;
-						case "height":
-							return ($floor ? floor($this->frame_h) : $this->frame_h);
-						break;
-						case "width":
-							return ($floor ? floor($this->frame_w) : $this->frame_w);
-						break;
-						case "height-fraction":
-							$n = floor($this->frame_h);
-							$remainder = $this->frame_h - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;		
-						case "width-fraction":
-							$n = floor($this->frame_w);
-							$remainder = $this->frame_w - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;														
-					endswitch;
-				}
-		 		public function set_frame($value) {$this->frame=$value;}
-				
-		 		public function get_outer_mat($var = "",$floor=false) { 
-					switch ($var):
-						case "":
-							return $this->outer_mat;
-						break;
-						case "id":
-							return $this->outer_mat;
-						break;						
-						case "done":
-							return $this->outer_mat_done;
-						break;
-						case "top":
-							return ($floor ? floor($this->outer_mat_t) : $this->outer_mat_t);
-						break;
-						case "bottom":
-							return ($floor ? floor($this->outer_mat_b) : $this->outer_mat_b);
-						break;
-						case "left":
-							return ($floor ? floor($this->outer_mat_l) : $this->outer_mat_l);
-						break;
-						case "right":
-							return ($floor ? floor($this->outer_mat_r) : $this->outer_mat_r);
-						break;						
-						case "top-fraction":
-							$n = floor($this->outer_mat_t);
-							$remainder = $this->outer_mat_t - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;		
-						case "bottom-fraction":
-							$n = floor($this->outer_mat_b);
-							$remainder = $this->outer_mat_b - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;
-						case "left-fraction":
-							$n = floor($this->outer_mat_l);
-							$remainder = $this->outer_mat_l - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;		
-						case "right-fraction":
-							$n = floor($this->outer_mat_r);
-							$remainder = $this->outer_mat_r - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;																					
-					endswitch;
-				}				
-		 		public function set_outer_mat($value) {$this->outer_mat=$value;}
- 
-		 		public function get_inner_mat($var = "",$floor=false) { 
-					switch ($var):
-						case "":
-							return $this->inner_mat;
-						break;
-						case "id":
-							return $this->inner_mat;
-						break;						
-						case "done":
-							return $this->inner_mat_done;
-						break;
-						case "width":
-							return ($floor ? floor($this->inner_mat_w) : $this->inner_mat_w);
-						break;	
-						case "width-fraction":
-							$n = floor($this->inner_mat_w);
-							$remainder = $this->inner_mat_w - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;														
-					endswitch;
-				}	
-		 		public function set_inner_mat($value) {$this->inner_mat=$value;}
- 
-		 		public function get_fillet($var = "",$floor=false) { 
-					switch ($var):
-						case "":
-							return $this->fillet;
-						break;
-						case "id":
-							return $this->fillet;
-						break;						
-						case "done":
-							return $this->fillet_done;
-						break;
-						case "height":
-							return ($floor ? floor($this->fillet_h) : $this->fillet_h);
-						break;
-						case "width":
-							return ($floor ? floor($this->fillet_w) : $this->fillet_w);
-						break;
-						case "height-fraction":
-							$n = floor($this->fillet_h);
-							$remainder = $this->fillet_h - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;		
-						case "width-fraction":
-							$n = floor($this->fillet_w);
-							$remainder = $this->fillet_w - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;														
-					endswitch;
-				}	
-		 		public function set_fillet($value) {$this->fillet=$value;}
- 
-		 		public function get_liner() { return $this->liner;}
-		 		public function set_liner($value) {$this->liner=$value;}
- 
-		 		public function get_glass($var = "",$floor=false) { 
-					switch ($var):
-						case "":
-							return $this->glass;
-						break;
-						case "id":
-							return $this->glass;
-						break;						
-						case "done":
-							return $this->glass_done;
-						break;
-						case "height":
-							return ($floor ? floor($this->glass_h) : $this->glass_h);
-						break;
-						case "width":
-							return ($floor ? floor($this->glass_w) : $this->glass_w);
-						break;
-						case "height-fraction":
-							$n = floor($this->glass_h);
-							$remainder = $this->glass_h - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;		
-						case "width-fraction":
-							$n = floor($this->glass_w);
-							$remainder = $this->glass_w - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;														
-					endswitch;
-				}
-		 		public function set_glass($value) {$this->glass=$value;}
- 
-		 		public function get_backing() { return $this->backing;}
-		 		public function set_backing($value) {$this->backing=$value;}
- 
-		 		public function get_mount($var = "",$floor=false) { 
-					switch ($var):
-						case "":
-							return $this->mount;
-						break;
-						case "id":
-							return $this->mount;
-						break;						
-						case "done":
-							return $this->mount_done;
-						break;
-						case "height":
-							return ($floor ? floor($this->mount_h) : $this->mount_h);
-						break;
-						case "width":
-							return ($floor ? floor($this->mount_w) : $this->mount_w);
-						break;
-						case "height-fraction":
-							$n = floor($this->mount_h);
-							$remainder = $this->mount_h - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;		
-						case "width-fraction":
-							$n = floor($this->mount_w);
-							$remainder = $this->mount_w - $n;
-							$converted_remainder = $this->convertImperial($remainder);
-							return $converted_remainder;
-						break;														
-					endswitch;
-				}
-		 		public function set_mount($value) {$this->mount=$value;}
- 
 		 		public function get_art_location() { return $this->art_location;}
 		 		public function set_art_location($value) {$this->art_location=$value;}
  
@@ -295,20 +57,7 @@
  
 		 		public function get_special_labour() { return $this->special_labour;}
 		 		public function set_special_labour($value) {$this->special_labour=$value;}
- 
- 				public function set_frame_w($value) {$this->frame_w=$value;}
-				public function set_frame_h($value) {$this->frame_h=$value;}
-				public function set_outer_mat_t($value) {$this->outer_mat_t=$value;}
-				public function set_outer_mat_b($value) {$this->outer_mat_b=$value;}
-				public function set_outer_mat_l($value) {$this->outer_mat_l=$value;}
-				public function set_outer_mat_r($value) {$this->outer_mat_r=$value;}				
-				public function set_inner_mat_w($value) {$this->inner_mat_w=$value;}
-				public function set_fillet_w($value) {$this->fillet_w=$value;}
-				public function set_fillet_h($value) {$this->fillet_h=$value;}
- 
-		 		public function get_rabbet_size() { return $this->rabbet_size;}
-		 		public function set_rabbet_size($value) {$this->rabbet_size=$value;}
- 
+
 		 		public function get_date_created() { return $this->date_created;}
 		 		public function set_date_created($value) {$this->date_created=$value;}
  
@@ -317,6 +66,10 @@
  
 		 		public function get_last_updated_user() { return $this->last_updated_user;}
 		 		public function set_last_updated_user($value) {$this->last_updated_user=$value;}
+
+		 		public function get_backing() { return $this->backing;}
+		 		public function set_backing($value) {$this->backing=$value;}
+ 				
  
 		 
 public function __toString(){
@@ -520,30 +273,6 @@ public function get_by_id($id) {
 	}
 }
  
-public function set_component_done($component,$value) {
-	switch ($component):
-		case "frame":
-			$this->frame_done=$value;
-		break;
-		case "outer_mat":
-			$this->outer_mat_done=$value;
-		break;
-		case "inner_mat":
-			$this->inner_mat_done=$value;
-		break;
-		case "fillet":
-			$this->fillet_done=$value;
-		break;
-		case "glass":
-			$this->glass_done=$value;
-		break;	
-		case "mount":
-			$this->mount_done=$value;
-		break;
-		default:
-		break;
-	endswitch;					
-}
 
 // loads the object data from a mysql assoc array
 private function load($row){
@@ -554,35 +283,12 @@ private function load($row){
 	$this->set_special_instructions($row["orders_special_instructions"]);
 	$this->set_received_date($row["orders_received_date"]);
 	$this->set_promised_date($row["orders_promised_date"]);
-	$this->set_frame($row["orders_frame"]);
-	$this->set_component_done("frame",$row["orders_frame_done"]);	
-	$this->set_outer_mat($row["orders_outer_mat"]);
-	$this->set_component_done("outer_mat",$row["orders_outer_mat_done"]);	
-	$this->set_inner_mat($row["orders_inner_mat"]);
-	$this->set_component_done("inner_mat",$row["orders_inner_mat_done"]);		
-	$this->set_fillet($row["orders_fillet"]);
-	$this->set_component_done("fillet",$row["orders_fillet_done"]);		
-	$this->set_liner($row["orders_liner"]);
-	$this->set_glass($row["orders_glass"]);
-	$this->set_component_done("glass",$row["orders_glass_done"]);	
-	$this->set_backing($row["orders_backing"]);
-	$this->set_mount($row["orders_mount_material"]);
-	$this->set_component_done("mount",$row["orders_mount_done"]);			
+	$this->set_backing($row["orders_backing"]);		
 	$this->set_art_location($row["orders_art_location"]);
 	$this->set_fitting_labour($row["orders_fitting_labour"]);
 	$this->set_mat_labour($row["orders_mat_labour"]);
 	$this->set_mount_labour($row["orders_mount_labour"]);
 	$this->set_special_labour($row["orders_special_labour"]);
-	$this->set_frame_w($row["orders_frame_w"]);
-	$this->set_frame_h($row["orders_frame_h"]);
-	$this->set_outer_mat_t($row["orders_outer_mat_t"]);
-	$this->set_outer_mat_b($row["orders_outer_mat_b"]);
-	$this->set_outer_mat_l($row["orders_outer_mat_l"]);
-	$this->set_outer_mat_r($row["orders_outer_mat_r"]);	
-	$this->set_inner_mat_w($row["orders_inner_mat_w"]);
-	$this->set_fillet_w($row["orders_fillet_w"]);
-	$this->set_fillet_h($row["orders_fillet_h"]);
-	$this->set_rabbet_size($row["orders_rabbet_size"]);
 	$this->set_date_created($row["orders_date_created"]);
 	$this->set_last_updated($row["orders_last_updated"]);
 	$this->set_last_updated_user($row["orders_last_updated_user"]);
