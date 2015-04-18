@@ -12,7 +12,7 @@
 		$dbConfig['dbhost'] = "localhost";		
 		$dbConfig['dbuser'] = "root";
 		$dbConfig['dbpass'] = "";		
-		$dbConfig['dbname'] = "ybf";
+		$dbConfig['dbname'] = "orchardc_ybf";
 	}else{
 		// Production		
 		$dbConfig['dbhost'] = "localhost";		

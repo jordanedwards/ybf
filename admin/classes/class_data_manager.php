@@ -39,7 +39,7 @@ class DataManager {
 			}
 		}
 		catch(Exception $e) {
-			$_SESSION['alert_msg'] = "An unexpected system error has occurred. The Site administrators have been notified. We applogize for any inconvenience. (DataManager)";	
+			$_SESSION['alert_msg'] = "An unexpected system error has occurred. The Site administrators have been notified. We apologize for any inconvenience. (DataManager) - environment: ". $appConfig["environment"] . " vars: " . $this->dbhost. " / " . $this->dbuser. " / " . $this->dbpass . " / " . $this->dbname;	
 			$_SESSION['alert_color'] = "red";
 			echo $_SESSION['alert_msg'];
 			exit();
