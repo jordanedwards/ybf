@@ -187,20 +187,20 @@ width: 90%;
            			<td style="width:1px;  ">Special instructions: </td>
             		<td><textarea id="orders_special_instructions" name="orders_special_instructions" rows="4" style="width:90%" /><?php  echo $orders->get_special_instructions();  ?></textarea></td>
 				</tr>
-				<tr>
+			<!--	<tr>
            			<td style="width:1px;  ">Backing: </td>			
 					<td><?php  
-					$dd->clear();
+			/*		$dd->clear();
 					$dd->set_table("backing");
 					$dd->set_name_field("backing_type");
 					$dd->set_name("orders_backing");
 					$dd->set_selected_value($orders->get_backing());
 					$dd->set_active_only(true);
 					$dd->set_order("ASC");	
-					$dd->display();
+					$dd->display();*/
 				?>
 					</td>
-				</tr>
+				</tr>-->
 				<tr>
            			<td style="width:1px;">Storage location: </td>
             		<td><?php  
@@ -320,7 +320,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id;
 	<table class="admin_table ">
 		<tr>
 		<th> Add component:
-		<a><i class="fa fa-plus-circle fa-lg" style="color:#fff; padding:5px; float:right"></i></a></th>
+		<a href="#"><i class="fa fa-plus-circle fa-lg component-add" style="color:#fff; padding:5px; float:right"></i></a></th>
 		</tr>	
 	</table>
 </div>
@@ -578,5 +578,7 @@ endif;
 			}*/
 		});		
 		</script>
+			<?php require("includes/component_add_dialog.php"); ?>
+
 	</body>
 </html>

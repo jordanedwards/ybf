@@ -55,3 +55,4 @@
 
 -->
     <link href="./css/ui-lightness/jquery-ui-1.10.0.custom.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo BASE_URL ?>/css/jquery-ui.min.css" type="text/css">

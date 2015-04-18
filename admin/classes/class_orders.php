@@ -283,7 +283,7 @@ private function load($row){
 	$this->set_special_instructions($row["orders_special_instructions"]);
 	$this->set_received_date($row["orders_received_date"]);
 	$this->set_promised_date($row["orders_promised_date"]);
-	$this->set_backing($row["orders_backing"]);		
+	//$this->set_backing($row["orders_backing"]);		
 	//$this->set_art_location($row["orders_art_location"]);
 	$this->set_fitting_labour($row["orders_fitting_labour"]);
 	$this->set_mat_labour($row["orders_mat_labour"]);
