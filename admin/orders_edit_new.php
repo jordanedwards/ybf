@@ -301,21 +301,22 @@ width: 90%;
 
 	<table class="admin_table ">
 		<tr>
-		<th> Add component:
-		<a href="#"><i class="fa fa-plus-circle fa-lg component-add" style="color:#fff; padding:5px; float:right"></i></a></th>
+		<th style="background: #428bca !important; cursor:pointer; border-color: #428bca;" class="component-add"> Add component:
+		<i class="fa fa-plus-circle fa-lg " style="color:#fff; padding:5px; float:right"></i></th>
 		</tr>	
 	</table>
 	<br>
+	<div id="components_list">
 	<?php	
 	$dd = New DropDown();
 	$functions = New Functions();
 	
 	$dm = new DataManager();
 	$strSQL = "SELECT * FROM ordercomponent 
-	LEFT JOIN ordercomponent_record ON ordercomponent.orderComponent_id = ordercomponent_record.orderComponent_id
+	LEFT JOIN ordercomponent_record ON ordercomponent.orderComponent_id = ordercomponent_record.orderComponentId
 	LEFT JOIN componenttypefields ON ordercomponent_record.componentTypeField = componenttypefields.id
     LEFT JOIN componenttype ON orderComponent_componentType = componenttype.componentType_id
-WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY ordercomponent.orderComponent_id";
+WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY ordercomponent.orderComponent_id ASC, componenttypefields.order ASC";
 	$result = $dm->queryRecords($strSQL);
 	$currentComponent = "";
 	if ($result):
@@ -327,10 +328,10 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 			}
 			//new component
 			echo '<table class="admin_table ">
-			<tr><th colspan="1">' . $line['componentType_name'] . '</th><th><input type="button" value="Done" class="component-done" data-component="outer_mat" id="outerMatDone"></th>
+			<tr><th colspan="1">' . $line['componentType_name'] . '</th><th><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Delete" class="component-delete btn btn-default" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Save" class="component-save btn btn-success" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 50%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Completed" class="component-done btn btn-primary" data-component="outer_mat" id="outerMatDone"></div></th>
 			<tr>';
 			echo '<tr>
-			<td>' .$line['fieldname']. '</td>';
+			<td>' .ucfirst($line['fieldname']). '</td>';
 						
 			// Display proper input type:
 			switch ($line['fieldtype']):
@@ -340,6 +341,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					$dd->set_selected_value($line['value']);					
 					echo "<td>";
 					$dd->display();
+					echo "<img src='../images/barcode.gif' style='display: inline-block;   padding: 0px 5px;' class='barcodeScan' data-component-id='" .$line['orderComponent_id']."'>";
 					echo "</td>";		
 				break;
 				case "imp":
@@ -472,6 +474,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 		</tr>
 	</table>';*/
 	?>
+	</div>
 </div>
 <div class="col-md-4">
 	<table class="admin_table" id="specialItemsTable">
@@ -711,6 +714,21 @@ endif;
 			}
 		});
 		
+		$("#components_list").on("click", '.component-delete', function (e) {
+			e.preventDefault();
+			var result = confirm('You are about to delete an item from the system. Do you want to continue?');
+			if (result == true){
+				var itemId = $(this).data("component-id");
+				var element = $(this);
+				$.ajax({
+					url: "ajax/ajax_component_delete.php?id="+itemId,	
+					success: function (html) {	
+				  		element.parents("table").remove();
+					}	
+				});
+			}
+		});
+
 
 		$(".barcode").on("blur", function (e) {
 			/*e.preventDefault();

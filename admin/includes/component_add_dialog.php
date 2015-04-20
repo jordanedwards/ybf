@@ -46,7 +46,7 @@ $(function() {
 
 	function update_type(type){
 		$.ajax({
-			url: "ajax/ajax_component_form.php?type="+type,	
+			url: "ajax/ajax_component_form.php?type="+type+"&orderId=<?php echo $orders_id ?>",	
 			success: function (html) {	
 				$('#componentForm').html(html);
 			}	
@@ -71,6 +71,9 @@ $(function() {
 	$dd->display();
 	?>	  	  
   </p>
+ <p>
+<input type="text" placeholder="Scan barcode here to find item" style="  width: 80%;"/>  	  
+  </p>  
 <div id="componentForm">
 
 </div>

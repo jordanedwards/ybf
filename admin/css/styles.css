@@ -242,3 +242,7 @@ padding: 0 30px;
 	margin-right:auto;
 	
 }
+.short {
+width: 80% !important;
+display: inline-block;
+}

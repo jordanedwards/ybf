@@ -717,3 +717,240 @@
 [20-Apr-2015 10:57:58 America/Vancouver] PHP Notice:  Undefined variable: resultsArray in E:\sites\ybf\admin\actions\action_component.php on line 91
 [20-Apr-2015 10:57:58 America/Vancouver] PHP Stack trace:
 [20-Apr-2015 10:57:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:23:30 America/Vancouver] PHP Fatal error:  Class 'Ordercomponent' not found in E:\sites\ybf\admin\actions\action_component.php on line 38
+[20-Apr-2015 11:23:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:23:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:25:36 America/Vancouver] PHP Fatal error:  Cannot redeclare Ordercomponent_record::$id in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 5
+[20-Apr-2015 11:25:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:25:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:26:49 America/Vancouver] PHP Fatal error:  Cannot redeclare Ordercomponent_record::$id in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 5
+[20-Apr-2015 11:26:49 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:26:49 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:29:43 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 48
+[20-Apr-2015 11:29:43 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:29:43 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:39:28 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:39:28 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:64
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:39:28 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:39:28 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:64
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Warning:  Invalid argument supplied for foreach() in E:\sites\ybf\admin\actions\action_component.php on line 48
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Notice:  Undefined variable: val in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:64
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:64
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:45:18 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:45:18 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:45:18 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:45:18 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:65
+[20-Apr-2015 11:45:18 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:45:19 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:45:19 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:45:19 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:45:19 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:65
+[20-Apr-2015 11:45:19 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:45:19 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 50
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 50
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 50
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 50
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:47:12 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:47:12 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:47:12 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:47:12 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:48:04 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:48:04 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:48:04 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:48:04 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:48:25 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:48:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:25 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:25 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:48:25 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:48:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:26 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:26 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:48:26 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:48:39 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:48:39 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:48:39 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:48:39 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:48:54 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:48:54 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:54 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:54 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:48:54 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:58:26 America/Vancouver] PHP Notice:  Undefined variable: converted_value in E:\sites\ybf\admin\actions\action_component.php on line 66
+[20-Apr-2015 11:58:26 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:58:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:16:35 America/Vancouver] PHP Notice:  Undefined variable: base_href in E:\sites\ybf\admin\actions\action_component.php on line 92
+[20-Apr-2015 12:16:35 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:16:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Notice:  Undefined variable: vals in E:\sites\ybf\admin\actions\action_component.php on line 82
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:25:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Notice:  Undefined variable: vals in E:\sites\ybf\admin\actions\action_component.php on line 82
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:25:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Notice:  Undefined variable: vals in E:\sites\ybf\admin\actions\action_component.php on line 82
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:25:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:29:51 America/Vancouver] PHP Notice:  Undefined variable: fieldset in E:\sites\ybf\admin\actions\action_component.php on line 61
+[20-Apr-2015 12:29:51 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:29:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:30:18 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 61
+[20-Apr-2015 12:30:18 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:30:18 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:30:19 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 61
+[20-Apr-2015 12:30:19 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:30:19 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:30:19 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 61
+[20-Apr-2015 12:30:19 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:30:19 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:32:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:32:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:32:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:33:42 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:33:42 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:33:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:33:42 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:33:42 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:33:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:33:43 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:33:43 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:33:43 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:34:23 America/Vancouver] PHP Notice:  Undefined variable: converted_value in E:\sites\ybf\admin\actions\action_component.php on line 66
+[20-Apr-2015 12:34:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:34:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 75
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 78
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 75
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 78
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 75
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 78
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
