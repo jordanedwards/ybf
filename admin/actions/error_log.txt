@@ -711,3 +711,6 @@
 [08-Mar-2015 15:06:55 America/Vancouver] PHP Stack trace:
 [08-Mar-2015 15:06:55 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
 [08-Mar-2015 15:06:55 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:76
+[19-Apr-2015 15:48:08 America/Vancouver] PHP Notice:  Undefined variable: base_href in E:\sites\ybf\admin\actions\action_component.php on line 83
+[19-Apr-2015 15:48:08 America/Vancouver] PHP Stack trace:
+[19-Apr-2015 15:48:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0

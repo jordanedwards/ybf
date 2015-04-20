@@ -267,3 +267,21 @@
 [07-Apr-2015 15:45:43 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
 [07-Apr-2015 15:45:43 America/Vancouver] PHP Stack trace:
 [07-Apr-2015 15:45:43 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[18-Apr-2015 17:53:26 America/Vancouver] PHP Notice:  Undefined variable: dd in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 17
+[18-Apr-2015 17:53:26 America/Vancouver] PHP Stack trace:
+[18-Apr-2015 17:53:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0
+[18-Apr-2015 17:53:26 America/Vancouver] PHP Fatal error:  Call to a member function set_preset() on a non-object in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 17
+[18-Apr-2015 17:53:26 America/Vancouver] PHP Stack trace:
+[18-Apr-2015 17:53:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0
+[18-Apr-2015 17:54:24 America/Vancouver] PHP Fatal error:  Class 'DropDown' not found in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 17
+[18-Apr-2015 17:54:24 America/Vancouver] PHP Stack trace:
+[18-Apr-2015 17:54:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0
+[18-Apr-2015 18:33:20 America/Vancouver] PHP Catchable fatal error:  Object of class DropDown could not be converted to string in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 24
+[18-Apr-2015 18:33:20 America/Vancouver] PHP Stack trace:
+[18-Apr-2015 18:33:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0
+[18-Apr-2015 18:45:37 America/Vancouver] PHP Notice:  Undefined variable: dd_measurement in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 29
+[18-Apr-2015 18:45:37 America/Vancouver] PHP Stack trace:
+[18-Apr-2015 18:45:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0
+[18-Apr-2015 18:45:37 America/Vancouver] PHP Fatal error:  Call to a member function set_name() on a non-object in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 29
+[18-Apr-2015 18:45:37 America/Vancouver] PHP Stack trace:
+[18-Apr-2015 18:45:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0

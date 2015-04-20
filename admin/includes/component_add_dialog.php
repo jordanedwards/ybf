@@ -18,6 +18,7 @@ $(function() {
 		buttons: {	
 			'Add': {
 				click: function() {
+					$('#newComponentForm').submit();	
                		$(this).dialog('close');
 			   	},
 			text: "Add",
@@ -38,8 +39,19 @@ $(function() {
 		e.preventDefault();
 		$('#component_add_dialog').dialog('open');
 	});
+	
+	
+
 });		
 
+	function update_type(type){
+		$.ajax({
+			url: "ajax/ajax_component_form.php?type="+type,	
+			success: function (html) {	
+				$('#componentForm').html(html);
+			}	
+		});
+	};
 </script>
 
 
@@ -52,11 +64,14 @@ $(function() {
 	$dd->set_name_field("componentType_name");
 	$dd->set_name("orders_customer_id");
 	$dd->set_active_only(true);
+	$dd->set_class_name("form-control inline");
 	$dd->set_required(true);	
 	$dd->set_order("ASC");
 	$dd->set_onchange("update_type(this.value);");	
 	$dd->display();
 	?>	  	  
   </p>
+<div id="componentForm">
 
+</div>
 </div>	

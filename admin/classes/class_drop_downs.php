@@ -76,6 +76,7 @@ class DropDown {
 	private $custom_sql;
 	private $index_name;
 	private $option_list;
+	private $preset;
 					
 	function __construct() {
 	}
@@ -127,6 +128,38 @@ class DropDown {
 		
 		public function get_option_list() { return $this->option_list;}
 		public function set_option_list($value) {$this->option_list=$value;}	
+
+public function __toString(){
+		// Debugging tool
+		// Dumps out the attributes and method names of this object
+		// To implement:
+		// $a = new SomeClass();
+		// echo $a;
+		
+		// Get Class name:
+		$class = get_class($this);
+		
+		// Get attributes:
+		$attributes = get_object_vars($this);
+		
+		// Get methods:
+		$methods = get_class_methods($this);
+		
+		$str = "<h2>Information about the $class object</h2>";
+		$str .= '<h3>Attributes</h3><ul>';
+		foreach ($attributes as $key => $value){
+			$str .= "<li>$key: $value</li>";
+		}
+		$str .= "</ul>";
+		
+		$str .= "<h3>Methods</h3><ul>";
+		foreach ($methods as $value){
+			$str .= "<li>$value</li>";
+		}
+		$str .= "</ul>";
+		
+		return $str;
+	}
 					
 	public function find_index(){
 		//Find index field:
@@ -230,9 +263,42 @@ class DropDown {
 			echo "drop down object creation failed";
 		}
 	else:
-		echo "drop down class failed: table and name field not set";
+		echo "drop down class failed: table and name field not set ";
 	endif;	
 	endif; 	
+	}
+	
+	public function set_preset($preset)
+	{
+		$this->preset = $preset;
+		switch ($preset):
+			case "frame":
+				$this->set_table("frame");
+				$this->set_name_field("frame_style");
+				$this->set_name_field_2("frame_colour");			
+				$this->set_name("frame");
+				$this->set_class_name("form-control");
+				$this->set_active_only(true);
+				$this->set_order("ASC");	
+			break;
+			case "mat":
+				$this->set_table("mat");
+				$this->set_name_field("mat_item_number");
+				$this->set_name("mat");
+				$this->set_class_name("form-control");
+				$this->set_active_only(true);
+				$this->set_order("ASC");	
+			break;
+			case "imp":
+				$this->set_static(true);								
+				$this->set_option_list("0,1/32,1/16,3/32,1/8,5/32,3/16,7/32,1/4,9/32,5/16,11/32,3/8,13/32,7/16,15/32,1/2,17/32,9/16,19/32,5/8,21/32,11/16,23/32,6/8,25/32,13/16,27/32,7/8,29/32,15/16,31/32");
+				$this->set_class_name("measurement");		
+			break;	
+			default:
+				echo "preset not found";
+				die();
+			break;	
+		endswitch;
 	}
 }
 ?>

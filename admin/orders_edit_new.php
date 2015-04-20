@@ -137,12 +137,13 @@ width: 90%;
 								$dd->set_name_field_2("customer_last_name");								
 								$dd->set_name("orders_customer_id");
 								$dd->set_selected_value($orders->get_customer_id());
-								$dd->set_class_name("form-control");
+								$dd->set_class_name("form-control inline");
 								$dd->set_active_only(false);
 								$dd->set_required(true);	
 								$dd->set_order("ASC");	
 								$dd->display();
 							?>
+							<a href="#"><i class="fa fa-plus-circle fa-lg" style="color:#006600; padding:5px"></i></a>
 					</td>
 				</tr>
 				<tr>
@@ -186,20 +187,20 @@ width: 90%;
            			<td style="width:1px;  ">Special instructions: </td>
             		<td><textarea id="orders_special_instructions" name="orders_special_instructions" rows="4" style="width:90%" /><?php  echo $orders->get_special_instructions();  ?></textarea></td>
 				</tr>
-				<tr>
+			<!--	<tr>
            			<td style="width:1px;  ">Backing: </td>			
 					<td><?php  
-					$dd->clear();
+			/*		$dd->clear();
 					$dd->set_table("backing");
 					$dd->set_name_field("backing_type");
 					$dd->set_name("orders_backing");
 					$dd->set_selected_value($orders->get_backing());
 					$dd->set_active_only(true);
 					$dd->set_order("ASC");	
-					$dd->display();
+					$dd->display();*/
 				?>
 					</td>
-				</tr>
+				</tr>-->
 				<tr>
            			<td style="width:1px;">Storage location: </td>
             		<td><?php  
@@ -297,349 +298,31 @@ width: 90%;
 	</table>
 </div>
 <div class="col-md-5">
-	<table class="admin_table <?php if ($orders->get_frame("done")==1){ echo " success ";}?>">
-		<tr><th colspan="3">Frame:</th>
-		<?php if ($orders->get_frame("done")!=1){?>
-		<th><input type="button" value="Done" class="component-done" data-component="frame" id="frameDone"></th><?php } else { ?>
-		<th style="text-align:center; background: #666;">DONE</th>
-		<?php }?>
+
+<?php	
+	$dm = new DataManager();
+	$strSQL = "SELECT * FROM ordercomponent 
+	LEFT JOIN ordercomponent_record ON ordercomponent.orderComponent_id = ordercomponent_record.orderComponent_id
+	LEFT JOIN componenttypefields ON ordercomponent_record.componentTypeField = componenttypefields.name
+WHERE ordercomponent.orderComponent_orders_id= " . $orders_id;
+	$result = $dm->queryRecords($strSQL);
+	if ($result):
+		while ($line = mysqli_fetch_assoc($result)):
+			echo '<table class="admin_table ">
+		<tr>
+		<th>' .$line['componentTypeField']. '</th>
+		<th><input type="button" value="Done" class="component-done" data-component="mount" id="mountDone"></th>
 		</tr>	
-
-			<td style="width:1px;">Frame: </td>
-			<td><?php  
-					$dd_component = New DropDown();
-					$dd_component->set_table("frame");
-					$dd_component->set_name_field("frame_style");
-					$dd_component->set_name_field_2("frame_colour");								
-					$dd_component->set_name("orders_frame");
-					$dd_component->set_selected_value($orders->get_frame("id"));
-					$dd_component->set_active_only(true);
-					$dd_component->set_required(true);	
-					$dd_component->set_order("ASC");	
-					$dd_component->display();
-				?>
-			</td>
-			<td colspan="2">
-				<input id="orders_frame_code" name="orders_frame_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" />
-			</td>
-		</tr>
+	</table><br>';
+		endwhile;
+	endif;
+		?>
+	<table class="admin_table ">
 		<tr>
-			<td style="width:1px;">Width: </td>
-			<td>							
-				<input id="orders_frame_w" name="orders_frame_w" type="number" step="1" value="<?php  echo $orders->get_frame("width",true);  ?>" class="measurement"/>
-				<?php  
-					$dd_measurement = New DropDown();	
-					$dd_measurement->set_static(true);								
-					$dd_measurement->set_name("orders_frame_w_fraction");
-					$dd_measurement->set_selected_value($orders->get_frame("width-fraction"));
-					$dd_measurement->set_option_list("0,1/32,1/16,3/32,1/8,5/32,3/16,7/32,1/4,9/32,5/16,11/32,3/8,13/32,7/16,15/32,1/2,17/32,9/16,19/32,5/8,21/32,11/16,23/32,6/8,25/32,13/16,27/32,7/8,29/32,15/16,31/32");
-					$dd_measurement->set_class_name("measurement");			
-					$dd_measurement->display();
-				?> in.
-			</td>
-			<td style="width:1px;  ">Height: </td>
-			<td>
-				<input id="orders_frame_h" name="orders_frame_h" type="number" step="1" value="<?php  echo $orders->get_frame("height",true);  ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_frame_h_fraction");	
-					$dd_measurement->set_selected_value($orders->get_frame("height-fraction"));					
-					$dd_measurement->display();
-				?> in.
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2">Rabbet size: </td>
-			<td colspan="2"><input id="orders_rabbet_size" name="orders_rabbet_size" type="text" value="<?php  echo $orders->get_rabbet_size();  ?>" style="width:90%" /> </td>
-		</tr>
-		<tr>
-			<td style="width:1px;">Liner: </td>
-			<td><?php  
-					$dd_component = New DropDown();
-					$dd_component->set_table("liner");
-					$dd_component->set_name_field("liner_style");							
-					$dd_component->set_name("orders_liner");
-					$dd_component->set_selected_value($orders->get_liner());
-					$dd_component->set_active_only(true);
-					$dd_component->set_required(true);	
-					$dd_component->set_order("ASC");	
-					$dd_component->display();
-				?>
-			</td>
-			<td colspan="2">
-				<input id="orders_liner_code" name="orders_liner_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" />
-			</td>
-		</tr>
-		<tr>
-			<td style="width:1px;">Liner Height: </td>
-			<td>
-				<input id="orders_liner_h" name="orders_liner_h" type="number" step="1" value="<?php  echo $orders->get_frame("height",true);  ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_liner_h_fraction");	
-					$dd_measurement->set_selected_value($orders->get_liner());
-					$dd_measurement->display();
-				?> in.
-			</td>
-			<td style="width:1px;">Liner Width: </td>
-			<td>
-				<input id="orders_liner_w" name="orders_liner_w" type="number" step="1" value="<?php  echo $orders->get_frame("height",true);  ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_liner_w_fraction");	
-					$dd_measurement->set_selected_value($orders->get_liner());
-					$dd_measurement->display();
-				?> in.
-			</td>
-		</tr>
+		<th> Add component:
+		<a href="#"><i class="fa fa-plus-circle fa-lg component-add" style="color:#fff; padding:5px; float:right"></i></a></th>
+		</tr>	
 	</table>
-	<br>
-	<table class="admin_table <?php if ($orders->get_outer_mat("done")==1){ echo " success ";}?>">
-		<tr><th colspan="3">Mat - Outer:</th>
-		<?php if ($orders->get_outer_mat("done")!=1){?>
-		<th><input type="button" value="Done" class="component-done" data-component="outer_mat" id="outerMatDone"></th><?php } else { ?>
-		<th style="text-align:center; background: #666;">DONE</th>
-		<?php }?>
-		</tr>		
-		<tr>
-			<td style="width:1px;  ">Mat: </td>
-			<td>
-			<select id="orders_outer_mat" name="orders_outer_mat" >
-					<option value="">None</option>
-					<?php  $query="SELECT * FROM mat ORDER BY `mat_id`";
-						$dm = new DataManager();
-						$result = $dm->queryRecords($query);
-						if ($result):
-						while ($row = mysqli_fetch_array($result))
-						{
-							if ($orders->get_outer_mat() == $row['mat_id']){
-								echo "<option value='" . $row['mat_id'] . "' selected style='background: url(/images/mats/" . $row['mat_url']. ")'>" . $row['mat_item_number'] . "</option>";
-							} else {
-								echo "<option value='" . $row['mat_id'] . "' style='background: url(/images/mats/" . $row['mat_url']. ")'>" . $row['mat_item_number'] . "</option>";
-							}
-						}
-						endif;
-						 ?>
-				</select>
-			</td>
-			<td colspan="2">
-				<input id="orders_outer_mat_code" name="orders_outer_mat_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" />
-			</td>
-		</tr>
-		<tr>
-			<td style="width:1px;  ">Top: </td>
-			<td>
-				<input id="orders_outer_mat_t" name="orders_outer_mat_t" type="number" step="1" value="<?php echo $orders->get_outer_mat("top",true);  ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_outer_mat_t_fraction");	
-					$dd_measurement->set_selected_value($orders->get_outer_mat("top-fraction"));					
-					$dd_measurement->display();
-				?> in.
-			</td>		
-			<td style="width:1px;  ">Bottom: </td>
-			<td>							
-				<input id="orders_outer_mat_b" name="orders_outer_mat_b" type="number" step="1" value="<?php  echo $orders->get_outer_mat("bottom",true); ?>" class="measurement"/>
-				<?php  								
-					$dd_measurement->set_name("orders_outer_mat_b_fraction");
-					$dd_measurement->set_selected_value($orders->get_outer_mat("bottom-fraction"));		
-					$dd_measurement->display();
-				?> in.
-			</td>
-		</tr>
-		<tr>
-			<td style="width:1px;  ">Left: </td>
-			<td>
-				<input id="orders_outer_mat_l" name="orders_outer_mat_l" type="number" step="1" value="<?php  echo $orders->get_outer_mat("left",true); ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_outer_mat_l_fraction");	
-					$dd_measurement->set_selected_value($orders->get_outer_mat("left-fraction"));					
-					$dd_measurement->display();
-				?> in.
-			</td>		
-			<td style="width:1px;  ">Right: </td>
-			<td>							
-				<input id="orders_outer_mat_r" name="orders_outer_mat_r" type="number" step="1" value="<?php  echo $orders->get_outer_mat("right",true); ?>" class="measurement"/>
-				<?php  								
-					$dd_measurement->set_name("orders_outer_mat_r_fraction");
-					$dd_measurement->set_selected_value($orders->get_outer_mat("right-fraction"));		
-					$dd_measurement->display();
-				?> in.
-			</td>
-		</tr>
-	</table>
-	<br>
-	<table class="admin_table <?php if ($orders->get_inner_mat("done")==1){ echo " success ";}?>">
-		<tr><th colspan="3">Mat - Inner:</th>
-		<?php if ($orders->get_inner_mat("done")!=1){?>
-		<th><input type="button" value="Done" class="component-done" data-component="inner_mat" id="innerMatDone"></th><?php } else { ?>
-		<th style="text-align:center; background: #666;">DONE</th>
-		<?php }?>
-		</tr>
-		<tr>
-			<td style="width:1px;">Mat: </td>
-			<td>
-			<select id="orders_inner_mat" name="orders_inner_mat" >
-					<option value="">None</option>
-					<?php  $query="SELECT * FROM mat ORDER BY `mat_id`";
-						$dm = new DataManager();
-						$result = $dm->queryRecords($query);
-						if ($result):
-						while ($row = mysqli_fetch_array($result))
-						{
-							if ($orders->get_inner_mat() == $row['mat_id']){
-								echo "<option value='" . $row['mat_id'] . "' selected style='background: url(/images/mats/" . $row['mat_url']. ")'>" . $row['mat_item_number'] . "</option>";
-							} else {
-								echo "<option value='" . $row['mat_id'] . "' style='background: url(/images/mats/" . $row['mat_url']. ")'>" . $row['mat_item_number'] . "</option>";
-							}
-						}
-						endif;
-						 ?>
-				</select>
-			</td>
-			<td colspan="2">
-				<input id="orders_inner_mat_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" class="barcode"/>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:1px;">Width: </td>
-			<td>							
-				<input id="orders_inner_mat_w" name="orders_inner_mat_w" type="number" step="1" value="<?php echo $orders->get_inner_mat("width",true);  ?>" class="measurement"/>
-				<?php  
-					$dd_measurement->set_name("orders_inner_mat_w_fraction");
-					$dd_measurement->set_selected_value($orders->get_inner_mat("width-fraction"));	
-					$dd_measurement->display();
-				?> in.
-			</td><td colspan="2"></td>
-		</tr>
-	</table>
-	<br>
-	<table class="admin_table<?php if ($orders->get_fillet("done")==1){ echo " success ";}?>">
-		<tr><th colspan="3">Fillet:</th><th><input type="button" value="Done" class="component-done" data-component="fillet" id="filletDone"></th></tr>
-		<tr>
-			<td style="width:1px;">Fillet: </td>
-			<td><?php  
-					$dd_component = New DropDown();
-					$dd_component->set_table("fillet");
-					$dd_component->set_name_field("fillet_style");							
-					$dd_component->set_name("orders_fillet");
-					$dd_component->set_selected_value($orders->get_fillet());
-					$dd_component->set_active_only(true);
-					$dd_component->set_order("ASC");	
-					$dd_component->display();
-				?>
-			</td>
-			<td colspan="2">
-				<input id="orders_fillet_code" name="orders_fillet_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" />
-			</td>
-		</tr>
-		<tr>
-			<td style="width:1px;  ">Width: </td>
-			<td>							
-				<input id="orders_fillet_w" name="orders_fillet_w" type="number" step="1" value="<?php echo $orders->get_fillet("width",true);  ?>" class="measurement"/>
-				<?php  
-					$dd_measurement->set_name("orders_fillet_w_fraction");
-					$dd_measurement->set_selected_value($orders->get_fillet("width-fraction"));	
-					$dd_measurement->display();
-				?> in.
-			</td>
-			<td style="width:1px;  ">Height: </td>
-			<td>
-				<input id="orders_fillet_h" name="orders_fillet_h" type="number" step="1" value="<?php  echo $orders->get_fillet("height",true);  ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_fillet_h_fraction");	
-					$dd_measurement->set_selected_value($orders->get_fillet("height-fraction"));
-					$dd_measurement->display();
-				?> in.
-			</td>
-		</tr>
-	</table>	
-	<br>
-	<table class="admin_table <?php if ($orders->get_glass("done")==1){ echo " success ";}?>">
-		<tr><th colspan="3">Glass:</th>
-		<?php if ($orders->get_glass("done")!=1){?>
-		<th><input type="button" value="Done" class="component-done" data-component="glass" id="glassDone"></th><?php } else { ?>
-		<th style="text-align:center; background: #666;">DONE</th>
-		<?php }?>
-		</tr>
-		<tr>
-			<td style="width:1px;">Glass: <?php echo $orders->get_glass("Done") ?></td>
-			<td><?php
-					$dd_component->clear();  
-					$dd_component = New DropDown();
-					$dd_component->set_table("glass");
-					$dd_component->set_name_field("glass_type");
-					$dd_component->set_name("orders_glass");
-					$dd_component->set_selected_value($orders->get_glass());
-					$dd_component->set_active_only(true);
-					$dd_component->set_order("ASC");	
-					$dd_component->display();
-				?>
-			</td>
-			<td colspan="2">
-				<input id="orders_mat_2_code" name="orders_mat_2_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" />
-			</td>
-		</tr>
-		<!--<tr>
-			<td style="width:1px;">Width: </td>
-			<td>							
-				<input id="orders_glass_w" name="orders_glass_w" type="number" step="1" value="<?php  echo $orders->get_glass("width",true);  ?>" class="measurement"/>
-				<?php  
-					$dd_measurement->set_name("orders_glass_w_fraction");
-					$dd_measurement->set_selected_value($orders->get_glass("width-fraction"));	
-					$dd_measurement->display();
-				?> in.
-			</td>
-			<td style="width:1px;">Height: </td>
-			<td>
-				<input id="orders_glass_h" name="orders_glass_h" type="number" step="1" value="<?php  echo $orders->get_glass("height",true);  ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_glass_h_fraction");	
-					$dd_measurement->set_selected_value($orders->get_glass("height-fraction"));
-					$dd_measurement->display();
-				?> in.
-			</td>
-		</tr>-->
-	</table>	
-	<br>
-	<table class="admin_table <?php if ($orders->get_mount("done")==1){ echo " success ";}?>">
-		<tr><th colspan="3">Mount:</th>
-		<?php if ($orders->get_mount("done")!=1){?>
-		<th><input type="button" value="Done" class="component-done" data-component="mount" id="mountDone"></th><?php } else { ?>
-		<th style="text-align:center; background: #666;">DONE</th>
-		<?php }?>
-		</tr>
-		<tr>
-			<td style="width:1px;">Mount Material: </td>
-			<td><?php
-					$dd->clear();  
-					$dd = New DropDown();
-					$dd->set_table("mount");
-					$dd->set_name_field("mount_type");
-					$dd->set_name("orders_mount");
-					$dd->set_selected_value($orders->get_mount());
-					$dd->set_active_only(true);
-					$dd->set_order("ASC");	
-					$dd->display();
-				?>
-			</td>
-			<td colspan="2">
-				<input id="orders_mount_code" name="orders_mount_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" />
-			</td>
-		</tr>
-		<!--<tr>
-			<td style="width:1px;">Width: </td>
-			<td>							
-				<input id="orders_mat_w" name="orders_mat_w" type="number" step="1" value="<?php //  echo $orders->get_fillet_w(true);  ?>" class="measurement"/>
-
-			</td>
-			<td style="width:1px;">Height: </td>
-			<td>
-				<input id="orders_mat_h" name="orders_mat_h" type="number" step="1" value="<?php  //echo $orders->get_fillet_h(true);  ?>" class="measurement" />
-
-			</td>
-		</tr>-->
-		<tr>
-			<td colspan="2" style="width:1px;">Mount labour: </td>
-			<td colspan="2"><input id="orders_mount_labour" name="orders_mount_labour" type="number" step="0.25" value="<?php  echo $orders->get_mount_labour();  ?>" style="width:80%" /> hrs. </td>
-		</tr>
-	</table>	
 </div>
 <div class="col-md-3">
 	<table class="admin_table" id="specialItemsTable">
@@ -895,5 +578,7 @@ endif;
 			}*/
 		});		
 		</script>
+			<?php require("includes/component_add_dialog.php"); ?>
+
 	</body>
 </html>
