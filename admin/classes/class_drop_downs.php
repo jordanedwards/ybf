@@ -276,7 +276,7 @@ public function __toString(){
 				$this->set_table("frame");
 				$this->set_name_field("frame_style");
 				$this->set_name_field_2("frame_colour");			
-				$this->set_name("frame");
+				//$this->set_name("frame");
 				$this->set_class_name("form-control");
 				$this->set_active_only(true);
 				$this->set_order("ASC");	
@@ -284,7 +284,7 @@ public function __toString(){
 			case "mat":
 				$this->set_table("mat");
 				$this->set_name_field("mat_item_number");
-				$this->set_name("mat");
+				//$this->set_name("mat");
 				$this->set_class_name("form-control");
 				$this->set_active_only(true);
 				$this->set_order("ASC");	

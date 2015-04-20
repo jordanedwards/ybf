@@ -7,6 +7,7 @@ $dd = New DropDown();
 if (isset($_GET['type'])):
 echo "
 <form action='actions/action_component.php?action=add' method='POST' id='newComponentForm'>
+<input type='hidden' name='componentType' value='" .$_GET['type'] . "'>
 <table class='admin_table'>";
 	$type = $_GET['type'];
 	$dm = new DataManager();			
@@ -18,21 +19,22 @@ echo "
 			switch ($line['fieldtype']):
 				case "list":
 					$dd->clear();
+					$dd->set_name($line['id']);					
 					$dd->set_preset($line['fieldname']);
 					echo "<tr><td>" . ucfirst($line['fieldname']) . "</td><td>";
 					$dd->display();
 					echo "</td></tr>";		
 				break;
 				case "imp":
-					echo '<tr><td>' . $line['fieldname'] .'</td><td><input id="' . $line['fieldname'] . '" name="' . $line['fieldname'] . '" type="number" step="1" class="measurement"/>&nbsp;';
+					echo '<tr><td>' . $line['fieldname'] .'</td><td><input id="' . $line['fieldname'] . '" name="fields[\'' . $line['id'] . '\'][\'whole\']" type="number" step="1" class="measurement"/>&nbsp;';
 					$dd->clear();	
 					$dd->set_preset("imp");							
-					$dd->set_name($line['fieldname']."_fraction");		
+					$dd->set_name("fields['" . $line['id']."']['fraction']");		
 					$dd->display();
 					echo ' in.</td></tr>';
 					break;
 				case "input":
-					echo "<tr><td>" . $line['fieldname'] . "</td><td><input name='" . $line['fieldname'] . "'></td></tr>";		
+					echo "<tr><td>" . $line['fieldname'] . "</td><td><input name='fields[" . $line['id'] . "]['whole']'></td></tr>";		
 				break;
 			endswitch;
 		endwhile;	

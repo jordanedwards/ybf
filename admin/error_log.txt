@@ -28,3 +28,27 @@
 [19-Apr-2015 15:26:49 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_frame() in E:\sites\ybf\admin\orders_edit.php on line 300
 [19-Apr-2015 15:26:49 America/Vancouver] PHP Stack trace:
 [19-Apr-2015 15:26:49 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[20-Apr-2015 09:40:12 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[20-Apr-2015 09:40:12 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 09:40:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_list.php:0
+[20-Apr-2015 09:40:12 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\orders_list.php:159
+[20-Apr-2015 09:40:12 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[20-Apr-2015 09:40:12 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 09:40:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_list.php:0
+[20-Apr-2015 09:40:12 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\orders_list.php:159
+[20-Apr-2015 09:40:12 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[20-Apr-2015 09:40:12 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 09:40:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_list.php:0
+[20-Apr-2015 09:40:12 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\orders_list.php:159
+[20-Apr-2015 09:40:13 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_frame() in E:\sites\ybf\admin\orders_edit.php on line 300
+[20-Apr-2015 09:40:13 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 09:40:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit.php:0
+[20-Apr-2015 09:59:02 America/Vancouver] PHP Notice:  Undefined variable: currentComponent in E:\sites\ybf\admin\orders_edit_new.php on line 319
+[20-Apr-2015 09:59:02 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 09:59:02 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[20-Apr-2015 09:59:02 America/Vancouver] PHP Notice:  Undefined variable: currentComponent in E:\sites\ybf\admin\orders_edit_new.php on line 335
+[20-Apr-2015 09:59:02 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 09:59:02 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[20-Apr-2015 10:53:44 America/Vancouver] PHP Fatal error:  Using $this when not in object context in E:\sites\ybf\admin\orders_edit_new.php on line 354
+[20-Apr-2015 10:53:44 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 10:53:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0

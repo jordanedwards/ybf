@@ -297,34 +297,183 @@ width: 90%;
 		</tr>
 	</table>
 </div>
-<div class="col-md-5">
+<div class="col-md-4">
 
-<?php	
-	$dm = new DataManager();
-	$strSQL = "SELECT * FROM ordercomponent 
-	LEFT JOIN ordercomponent_record ON ordercomponent.orderComponent_id = ordercomponent_record.orderComponent_id
-	LEFT JOIN componenttypefields ON ordercomponent_record.componentTypeField = componenttypefields.name
-WHERE ordercomponent.orderComponent_orders_id= " . $orders_id;
-	$result = $dm->queryRecords($strSQL);
-	if ($result):
-		while ($line = mysqli_fetch_assoc($result)):
-			echo '<table class="admin_table ">
-		<tr>
-		<th>' .$line['componentTypeField']. '</th>
-		<th><input type="button" value="Done" class="component-done" data-component="mount" id="mountDone"></th>
-		</tr>	
-	</table><br>';
-		endwhile;
-	endif;
-		?>
 	<table class="admin_table ">
 		<tr>
 		<th> Add component:
 		<a href="#"><i class="fa fa-plus-circle fa-lg component-add" style="color:#fff; padding:5px; float:right"></i></a></th>
 		</tr>	
 	</table>
+	<br>
+	<?php	
+	$dd = New DropDown();
+	$functions = New Functions();
+	
+	$dm = new DataManager();
+	$strSQL = "SELECT * FROM ordercomponent 
+	LEFT JOIN ordercomponent_record ON ordercomponent.orderComponent_id = ordercomponent_record.orderComponent_id
+	LEFT JOIN componenttypefields ON ordercomponent_record.componentTypeField = componenttypefields.id
+    LEFT JOIN componenttype ON orderComponent_componentType = componenttype.componentType_id
+WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY ordercomponent.orderComponent_id";
+	$result = $dm->queryRecords($strSQL);
+	$currentComponent = "";
+	if ($result):
+		while ($line = mysqli_fetch_assoc($result)):
+		if ($currentComponent != $line['orderComponent_id']){
+			if ($currentComponent != ""){
+				// close previous component
+				echo '</table><br>';			
+			}
+			//new component
+			echo '<table class="admin_table ">
+			<tr><th colspan="1">' . $line['componentType_name'] . '</th><th><input type="button" value="Done" class="component-done" data-component="outer_mat" id="outerMatDone"></th>
+			<tr>';
+			echo '<tr>
+			<td>' .$line['fieldname']. '</td>';
+						
+			// Display proper input type:
+			switch ($line['fieldtype']):
+				case "list":
+					$dd->clear();
+					$dd->set_preset($line['fieldname']);
+					$dd->set_selected_value($line['value']);					
+					echo "<td>";
+					$dd->display();
+					echo "</td>";		
+				break;
+				case "imp":
+					echo '<td><input id="' . $line['fieldname'] . '" name="' . $line['fieldname'] . '" type="number" step="1" class="measurement" value="' . $functions->get_whole_int($line['value']).'"/>&nbsp;';
+					$dd->clear();	
+					$dd->set_preset("imp");							
+					$dd->set_name($line['fieldname']."_fraction");	
+					$dd->set_selected_value($functions->get_fraction($line['value']));	
+					$dd->display();
+					echo ' in.</td>';
+				break;
+				case "input":
+					echo "<td>" . $line['fieldname'] . "</td><td><input name='" . $line['fieldname'] . "'></td>";		
+				break;
+			endswitch;
+			
+			echo '</tr>';	
+		} else {
+			// Same component, just another element
+			echo '<tr>
+			<td>' .$line['fieldname']. '</td>';
+			
+			// Display proper input type:
+			switch ($line['fieldtype']):
+				case "list":
+					$dd->clear();
+					$dd->set_preset($line['fieldname']);
+					$dd->set_selected_value($line['value']);					
+					echo "<td>";
+					$dd->display();
+					echo "</td>";		
+				break;
+				case "imp":
+					echo '<td><input id="' . $line['fieldname'] . '" name="' . $line['fieldname'] . '" type="number" step="1" class="measurement" value="' . $functions->get_whole_int($line['value']).'"/>&nbsp;';
+					$dd->clear();	
+					$dd->set_preset("imp");							
+					$dd->set_name($line['fieldname']."_fraction");	
+					$dd->set_selected_value($functions->get_fraction($line['value']));	
+					$dd->display();
+					echo ' in.</td>';
+				break;
+				case "input":
+					echo "<td>" . $line['fieldname'] . "</td><td><input name='" . $line['fieldname'] . "'></td>";		
+				break;
+			endswitch;
+			
+			echo '</tr>';			
+		}
+		
+		if ($currentComponent != $line['orderComponent_id']){	 }
+		$currentComponent = $line['orderComponent_id'];
+		endwhile;
+		echo '</table><br>';
+	endif;
+		?>
+
+	<?php 
+	
+	/*echo '<table class="admin_table <?php if ($orders->get_outer_mat("done")==1){ echo " success ";}?>">
+		<tr><th colspan="3">Mat - Outer:</th>
+		<?php if ($orders->get_outer_mat("done")!=1){?>
+		<th><input type="button" value="Done" class="component-done" data-component="outer_mat" id="outerMatDone"></th><?php } else { ?>
+		<th style="text-align:center; background: #666;">DONE</th>
+		<?php }?>
+		</tr>		
+		<tr>
+			<td style="width:1px;  ">Mat: </td>
+			<td>
+			<select id="orders_outer_mat" name="orders_outer_mat" >
+					<option value="">None</option>
+					<?php  $query="SELECT * FROM mat ORDER BY `mat_id`";
+						$dm = new DataManager();
+						$result = $dm->queryRecords($query);
+						if ($result):
+						while ($row = mysqli_fetch_array($result))
+						{
+							if ($orders->get_outer_mat() == $row['mat_id']){
+								echo "<option value='" . $row['mat_id'] . "' selected style='background: url(/images/mats/" . $row['mat_url']. ")'>" . $row['mat_item_number'] . "</option>";
+							} else {
+								echo "<option value='" . $row['mat_id'] . "' style='background: url(/images/mats/" . $row['mat_url']. ")'>" . $row['mat_item_number'] . "</option>";
+							}
+						}
+						endif;
+						 ?>
+				</select>
+			</td>
+			<td colspan="2">
+				<input id="orders_outer_mat_code" name="orders_outer_mat_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="width:1px;  ">Top: </td>
+			<td>
+				<input id="orders_outer_mat_t" name="orders_outer_mat_t" type="number" step="1" value="<?php echo $orders->get_outer_mat("top",true);  ?>" class="measurement" />
+				<?php  
+					$dd_measurement->set_name("orders_outer_mat_t_fraction");	
+					$dd_measurement->set_selected_value($orders->get_outer_mat("top-fraction"));					
+					$dd_measurement->display();
+				?> in.
+			</td>		
+			<td style="width:1px;  ">Bottom: </td>
+			<td>							
+				<input id="orders_outer_mat_b" name="orders_outer_mat_b" type="number" step="1" value="<?php  echo $orders->get_outer_mat("bottom",true); ?>" class="measurement"/>
+				<?php  								
+					$dd_measurement->set_name("orders_outer_mat_b_fraction");
+					$dd_measurement->set_selected_value($orders->get_outer_mat("bottom-fraction"));		
+					$dd_measurement->display();
+				?> in.
+			</td>
+		</tr>
+		<tr>
+			<td style="width:1px;  ">Left: </td>
+			<td>
+				<input id="orders_outer_mat_l" name="orders_outer_mat_l" type="number" step="1" value="<?php  echo $orders->get_outer_mat("left",true); ?>" class="measurement" />
+				<?php  
+					$dd_measurement->set_name("orders_outer_mat_l_fraction");	
+					$dd_measurement->set_selected_value($orders->get_outer_mat("left-fraction"));					
+					$dd_measurement->display();
+				?> in.
+			</td>		
+			<td style="width:1px;  ">Right: </td>
+			<td>							
+				<input id="orders_outer_mat_r" name="orders_outer_mat_r" type="number" step="1" value="<?php  echo $orders->get_outer_mat("right",true); ?>" class="measurement"/>
+				<?php  								
+					$dd_measurement->set_name("orders_outer_mat_r_fraction");
+					$dd_measurement->set_selected_value($orders->get_outer_mat("right-fraction"));		
+					$dd_measurement->display();
+				?> in.
+			</td>
+		</tr>
+	</table>';*/
+	?>
 </div>
-<div class="col-md-3">
+<div class="col-md-4">
 	<table class="admin_table" id="specialItemsTable">
 		<tr><th colspan="5">Special items:</th></tr>
 		<tr><th colspan="2">#</th><th colspan="2">Item</th><th style="text-align:center"><i class="fa fa-times-circle fa-lg"></i></th></tr>

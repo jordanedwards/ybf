@@ -714,3 +714,6 @@
 [19-Apr-2015 15:48:08 America/Vancouver] PHP Notice:  Undefined variable: base_href in E:\sites\ybf\admin\actions\action_component.php on line 83
 [19-Apr-2015 15:48:08 America/Vancouver] PHP Stack trace:
 [19-Apr-2015 15:48:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 10:57:58 America/Vancouver] PHP Notice:  Undefined variable: resultsArray in E:\sites\ybf\admin\actions\action_component.php on line 91
+[20-Apr-2015 10:57:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 10:57:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0

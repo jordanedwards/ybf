@@ -285,3 +285,6 @@
 [18-Apr-2015 18:45:37 America/Vancouver] PHP Fatal error:  Call to a member function set_name() on a non-object in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 29
 [18-Apr-2015 18:45:37 America/Vancouver] PHP Stack trace:
 [18-Apr-2015 18:45:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0
+[20-Apr-2015 11:11:40 America/Vancouver] PHP Fatal error:  Using $this when not in object context in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 22
+[20-Apr-2015 11:11:40 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:11:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0

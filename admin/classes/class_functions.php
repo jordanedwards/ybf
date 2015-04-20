@@ -256,5 +256,17 @@ public function convertMetric($impValue){
 		break;
 	endswitch;
 }
+
+	public function get_whole_int($var = 0) { 
+		$n = floor($var);
+		return $n;
+	}
+
+	public function get_fraction($var = 0) { 
+		$n = floor($var);
+		$remainder = $var - $n;
+		$converted_remainder = $this->convertImperial($remainder);
+		return $converted_remainder;
+	}
 }
 ?>

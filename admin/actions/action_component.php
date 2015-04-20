@@ -1,5 +1,42 @@
 <?php // include necessary libraries
-	require_once($_SERVER['DOCUMENT_ROOT'] . "/admin/includes/init.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/admin/includes/init.php");
+extract($_POST);
+
+// An example of the POST array:
+/*
+Array
+(
+    [componentType] => 1
+    [5] => 1  						***** This is the component type field id / value pair FOR THE COMPONENT TYPE
+    [fields] => Array
+        (
+            ['2'] => Array  		***** These are the component type field id / value pair FOR EACH OF THE FIELDS
+                (
+                    ['whole'] => 5
+                    ['fraction'] => 1/16
+                )
+
+            ['1'] => Array
+                (
+                    ['whole'] => 8
+                    ['fraction'] => 1/4
+                )
+
+            ['3'] => Array
+                (
+                    ['whole'] => 2
+                    ['fraction'] => 1/2
+                )
+
+        )
+
+)
+
+
+// CREATE NEW COMPONENT:
+
+
+*/
 
 /*	// Pull current user:
 	require_once($class_folder . "/class_user.php"); 
@@ -80,7 +117,14 @@ print_r($_POST);
 echo "</pre>";
 exit();
 }*/
-	header("location: " . BASE_URL . "/orders_edit_new.php?id=1");
+//	header("location: " . BASE_URL . "/orders_edit_new.php?id=1");
 
 ?>
 
+<pre>
+<?php 
+
+print_r($_POST);
+
+?>
+</pre>

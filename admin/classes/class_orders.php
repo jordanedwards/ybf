@@ -272,8 +272,8 @@ public function get_by_id($id) {
 		exit;
 	}
 }
- 
 
+	
 // loads the object data from a mysql assoc array
 private function load($row){
 	$this->set_id($row["orders_id"]);
