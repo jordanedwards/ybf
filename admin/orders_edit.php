@@ -157,7 +157,7 @@ width: 90%;
 								$dd->set_order("ASC");	
 								$dd->display();
 							?>
-							<a href="#"><i class="fa fa-plus-circle fa-lg" style="color:#006600; padding:5px"></i></a>
+							<a href="#"><i class="fa fa-plus-circle fa-lg addCustomer" style="color:#006600; padding:5px"></i></a>
 					</td>
 				</tr>
 				<tr>
@@ -773,6 +773,8 @@ endif;
 		</script>
 			<?php require("includes/component_add_dialog.php"); ?>
 			<?php require("includes/barcode_dialog.php"); ?>
-			<?php require("includes/opening_dialog.php"); ?>			
+			<?php require("includes/opening_dialog.php"); ?>	
+			<?php require("includes/customer_add_dialog.php"); ?>			
+					
 	</body>
 </html>
