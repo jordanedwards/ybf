@@ -22,5 +22,5 @@ $new_opening->set_bottom($bottom);
 
 $new_opening->save();
 
-	header("location:" . BASE_URL . "/orders_edit_new.php?id=".$orderId);
+	header("location:" . BASE_URL . "/orders_edit.php?id=".$orderId);
 ?>

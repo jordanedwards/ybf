@@ -406,7 +406,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					// If this is a dimension, add it to th UI calculation:
 					echo "<td>". $line['fieldname'] . "</td>";
 					if ($line['fieldname'] == "Width" || $line['fieldname'] == "Height"){
-						$united_inches = $united_inches + ($line['value']*2);
+						$united_inches = $united_inches + $line['value'];
 					}
 				break;
 				case "input":
@@ -442,7 +442,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					
 					// If this is a dimension, add it to th UI calculation:
 					if ($line['fieldname'] == "Width" || $line['fieldname'] == "Height"){
-						$united_inches = $united_inches + ($line['value']*2);
+						$united_inches = $united_inches + $line['value'];
 					}					
 				break;
 				case "input":

@@ -85,7 +85,7 @@ $converted_value = 0;
 <?php 
 
 //print_r($_POST);
-	header("location:" . BASE_URL . "/orders_edit_new.php?id=".$orderId);
+	header("location:" . BASE_URL . "/orders_edit.php?id=".$orderId);
 
 ?>
 </pre>-->

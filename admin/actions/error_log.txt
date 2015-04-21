@@ -1024,3 +1024,114 @@
 [21-Apr-2015 09:16:26 America/Vancouver] PHP Notice:  Undefined variable: right_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12
 [21-Apr-2015 09:16:26 America/Vancouver] PHP Stack trace:
 [21-Apr-2015 09:16:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:40:56 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:40:56 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:40:56 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:42:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:42:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:42:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:42:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:43:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:43:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:43:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:43:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:32 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:44:32 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:32 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:33 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:33 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:33 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:45:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:45:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:45:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:46:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:46:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:46:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 39
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:46:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:49:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:49:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:49:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 39
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:49:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
