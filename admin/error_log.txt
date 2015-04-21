@@ -52,3 +52,86 @@
 [20-Apr-2015 10:53:44 America/Vancouver] PHP Fatal error:  Using $this when not in object context in E:\sites\ybf\admin\orders_edit_new.php on line 354
 [20-Apr-2015 10:53:44 America/Vancouver] PHP Stack trace:
 [20-Apr-2015 10:53:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[20-Apr-2015 15:42:32 America/Vancouver] PHP Notice:  Undefined variable: bg in E:\sites\ybf\admin\orders_edit_new.php on line 416
+[20-Apr-2015 15:42:32 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 15:42:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[20-Apr-2015 15:42:32 America/Vancouver] PHP Notice:  Undefined variable: bg in E:\sites\ybf\admin\orders_edit_new.php on line 417
+[20-Apr-2015 15:42:32 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 15:42:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[20-Apr-2015 15:42:47 America/Vancouver] PHP Notice:  Undefined variable: bg in E:\sites\ybf\admin\orders_edit_new.php on line 415
+[20-Apr-2015 15:42:47 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 15:42:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[20-Apr-2015 15:43:07 America/Vancouver] PHP Notice:  Undefined variable: bg in E:\sites\ybf\admin\orders_edit_new.php on line 412
+[20-Apr-2015 15:43:07 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 15:43:07 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[20-Apr-2015 15:43:07 America/Vancouver] PHP Notice:  Undefined variable: bg in E:\sites\ybf\admin\orders_edit_new.php on line 416
+[20-Apr-2015 15:43:07 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 15:43:07 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 06:45:16 America/Vancouver] PHP Warning:  mysqli_connect(): MySQL server has gone away in E:\sites\ybf\admin\classes\class_data_manager.php on line 32
+[21-Apr-2015 06:45:16 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   2. include() E:\sites\ybf\admin\orders_edit_new.php:2
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\ybf\admin\includes\init.php:50
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   4. mysqli_connect() E:\sites\ybf\admin\classes\class_data_manager.php:32
+[21-Apr-2015 06:45:16 America/Vancouver] PHP Warning:  mysqli_connect(): MySQL server has gone away in E:\sites\ybf\admin\classes\class_data_manager.php on line 32
+[21-Apr-2015 06:45:16 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   2. escaped_var_from_post() E:\sites\ybf\admin\orders_edit_new.php:16
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\ybf\admin\classes\class_functions.php:45
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   4. mysqli_connect() E:\sites\ybf\admin\classes\class_data_manager.php:32
+[21-Apr-2015 06:45:16 America/Vancouver] PHP Warning:  mysqli_connect(): MySQL server has gone away in E:\sites\ybf\admin\classes\class_data_manager.php on line 32
+[21-Apr-2015 06:45:16 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\orders_edit_new.php:144
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   3. DropDown->find_index() E:\sites\ybf\admin\classes\class_drop_downs.php:218
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   4. DataManager->__construct() E:\sites\ybf\admin\classes\class_drop_downs.php:168
+[21-Apr-2015 06:45:16 America/Vancouver] PHP   5. mysqli_connect() E:\sites\ybf\admin\classes\class_data_manager.php:32
+[21-Apr-2015 06:45:23 America/Vancouver] PHP Warning:  mysqli_connect(): MySQL server has gone away in E:\sites\ybf\admin\classes\class_data_manager.php on line 32
+[21-Apr-2015 06:45:23 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 06:45:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 06:45:23 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\orders_edit_new.php:144
+[21-Apr-2015 06:45:24 America/Vancouver] PHP   3. DropDown->find_index() E:\sites\ybf\admin\classes\class_drop_downs.php:218
+[21-Apr-2015 06:45:24 America/Vancouver] PHP   4. DataManager->__construct() E:\sites\ybf\admin\classes\class_drop_downs.php:168
+[21-Apr-2015 06:45:24 America/Vancouver] PHP   5. mysqli_connect() E:\sites\ybf\admin\classes\class_data_manager.php:32
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: left_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: left_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: right_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: right_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: left_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: left_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: right_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: right_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: left_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: left_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: right_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Notice:  Undefined index: right_side in E:\sites\ybf\admin\orders_edit_new.php on line 353
+[21-Apr-2015 09:21:58 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:21:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 09:47:24 America/Vancouver] PHP Notice:  Undefined variable: base_href in E:\sites\ybf\admin\orders_edit_new.php on line 9
+[21-Apr-2015 09:47:24 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:47:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0
+[21-Apr-2015 11:02:35 America/Vancouver] PHP Notice:  Undefined variable: united_inches in E:\sites\ybf\admin\orders_edit_new.php on line 368
+[21-Apr-2015 11:02:35 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:02:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_edit_new.php:0

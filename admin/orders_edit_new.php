@@ -59,6 +59,20 @@ background: #D3D3D3;
 .form-control {
 width: 90%;
 }
+.barcodeScan {
+	display: inline-block;   
+	padding: 0px 5px;
+	cursor:pointer;
+}
+.opening {
+	color:#fff; 
+	padding:5px; 
+	float:right;
+	cursor:pointer;
+}
+.opening-delete {
+	cursor:pointer;
+}
 </style>
 	</head>
 	<body class="no-skin">
@@ -310,7 +324,10 @@ width: 90%;
 	<?php	
 	$dd = New DropDown();
 	$functions = New Functions();
-	
+	$show_openings=false;
+	$price = 0;
+	$united_inches = 0;	
+									
 	$dm = new DataManager();
 	$strSQL = "SELECT * FROM ordercomponent 
 	LEFT JOIN ordercomponent_record ON ordercomponent.orderComponent_id = ordercomponent_record.orderComponentId
@@ -322,13 +339,45 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 	if ($result):
 		while ($line = mysqli_fetch_assoc($result)):
 		if ($currentComponent != $line['orderComponent_id']){
+		// End of component
 			if ($currentComponent != ""){
+			// Don't do this BEFORE first component
+				if ($show_openings){
+				// Ending component is a mat, so show openings associated with it
+					echo "<tr><td colspan='2'><table style='width:100%'>";
+					echo "<tr><td colspan='5' style='background: #BD0104; color: #fff;'><b>Openings</b><i class='fa fa-plus-circle fa-lg opening' data-component-id='" .$currentComponent."'></i></td></tr>";
+					$strSQL = "SELECT * FROM matopening 
+					WHERE matOpening_component_id= " . $currentComponent;
+		
+					$bg = "#fff";
+					$result_openings = $dm->queryRecords($strSQL);
+					if ($result_openings):
+						while ($row = mysqli_fetch_assoc($result_openings)):
+							if ($bg == "#fff"){ $bg = "#D3D3D3";} else {$bg = "#fff";}
+							echo "<tr style='background:" . $bg . "'>
+							<td rowspan='2' style='width: 28px;'><i class='fa fa-trash fa-2x opening-delete' data-opening-id='" .$row['matOpening_id']."'></i></td>
+							<td><b>Top:</b> </td><td>" . $functions->get_whole_int($row['matOpening_top']) . " " . $functions->convertImperial($row['matOpening_top']). "\"</td><td><b>Bottom:</b> </td><td>" . $functions->get_whole_int($row['matOpening_bottom']) . " " . $functions->convertImperial($row['matOpening_bottom']) . "\"</td></tr>";
+							echo "<tr style='background:" . $bg . "'><td><b>Left:</b> </td><td>" . $functions->get_whole_int($row['matOpening_left_side']) . " " . $functions->convertImperial($row['matOpening_left_side']). "\"</td><td><b>Right:</b> </td><td>" . $functions->get_whole_int($row['matOpening_right_side']) . " " . $functions->convertImperial($row['matOpening_right_side']) . "\"</td></tr>";
+				
+						endwhile;
+				echo '</table><br>';						
+					endif;
+					$show_openings=false;
+				}	
 				// close previous component
-				echo '</table><br>';			
+				// Show price
+				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($united_inches) . " " . $functions->convertImperial($united_inches) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$price. "<span></td></tr>";
+				$price = 0;	
+				$united_inches = 0;			
+				echo '</table><br>';
+	
 			}
-			//new component
+			if ($line['componentType_name'] == "Mat"){
+				$show_openings = true;
+			}	
+			//next component
 			echo '<table class="admin_table ">
-			<tr><th colspan="1">' . $line['componentType_name'] . '</th><th><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Delete" class="component-delete btn btn-default" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Save" class="component-save btn btn-success" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 50%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Completed" class="component-done btn btn-primary" data-component="outer_mat" id="outerMatDone"></div></th>
+			<tr><th colspan="1">' . $line['componentType_name'] . '</th><th><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Delete" class="component-delete btn btn-default" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Save" class="component-save btn btn-success" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 50%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Completed" class="component-done btn btn-primary" data-component="outer_mat" id="component' .$line['orderComponent_id'].'"></div></th>
 			<tr>';
 			echo '<tr>
 			<td>' .ucfirst($line['fieldname']). '</td>';
@@ -338,10 +387,11 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 				case "list":
 					$dd->clear();
 					$dd->set_preset($line['fieldname']);
+					$dd->set_id("component-list-".$line['orderComponent_id']);										
 					$dd->set_selected_value($line['value']);					
 					echo "<td>";
 					$dd->display();
-					echo "<img src='../images/barcode.gif' style='display: inline-block;   padding: 0px 5px;' class='barcodeScan' data-component-id='" .$line['orderComponent_id']."'>";
+					echo "<img src='../images/barcode.gif' class='barcodeScan' data-component-id='" .$line['orderComponent_id']."'>";
 					echo "</td>";		
 				break;
 				case "imp":
@@ -352,6 +402,12 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					$dd->set_selected_value($functions->get_fraction($line['value']));	
 					$dd->display();
 					echo ' in.</td>';
+					
+					// If this is a dimension, add it to th UI calculation:
+					echo "<td>". $line['fieldname'] . "</td>";
+					if ($line['fieldname'] == "Width" || $line['fieldname'] == "Height"){
+						$united_inches = $united_inches + ($line['value']*2);
+					}
 				break;
 				case "input":
 					echo "<td>" . $line['fieldname'] . "</td><td><input name='" . $line['fieldname'] . "'></td>";		
@@ -369,6 +425,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 				case "list":
 					$dd->clear();
 					$dd->set_preset($line['fieldname']);
+					$dd->set_id("component-list-".$line['orderComponent_id']);					
 					$dd->set_selected_value($line['value']);					
 					echo "<td>";
 					$dd->display();
@@ -382,6 +439,11 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					$dd->set_selected_value($functions->get_fraction($line['value']));	
 					$dd->display();
 					echo ' in.</td>';
+					
+					// If this is a dimension, add it to th UI calculation:
+					if ($line['fieldname'] == "Width" || $line['fieldname'] == "Height"){
+						$united_inches = $united_inches + ($line['value']*2);
+					}					
 				break;
 				case "input":
 					echo "<td>" . $line['fieldname'] . "</td><td><input name='" . $line['fieldname'] . "'></td>";		
@@ -390,90 +452,40 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 			
 			echo '</tr>';			
 		}
-		
-		if ($currentComponent != $line['orderComponent_id']){	 }
+	
 		$currentComponent = $line['orderComponent_id'];
 		endwhile;
-		echo '</table><br>';
+		if ($show_openings){
+			echo "<tr><td colspan='2'><table style='width:100%'>";
+			echo "<tr><td colspan='5' style='background: #BD0104; color: #fff;'><b>Openings</b><i class='fa fa-plus-circle fa-lg opening'></i></td></tr>";
+			$strSQL = "SELECT * FROM matopening 
+			WHERE matOpening_component_id= " . $currentComponent;
+
+			$bg = "#fff";
+			$result = $dm->queryRecords($strSQL);
+			if ($result):
+				while ($row = mysqli_fetch_assoc($result)):
+					if ($bg == "#fff"){ $bg = "#D3D3D3";} else {$bg = "#fff";}
+					echo "<tr style='background:" . $bg . "'>
+					<td rowspan='2' style='width: 28px;'><i class='fa fa-trash  fa-2x'></i></td>
+					<td><b>Top:</b> </td><td>" . $row['matOpening_top']. "\"</td><td><b>Bottom:</b> </td><td>" . $row['matOpening_bottom'] . "\"</td></tr>";
+					echo "<tr style='background:" . $bg . "'><td><b>Left:</b> </td><td>" . $row['matOpening_left_side']. "\"</td><td><b>Right:</b> </td><td>" . $row['matOpening_right_side'] . "\"</td></tr>";
+		
+				endwhile;
+			endif;
+			$show_openings=false;
+		}	
+	//	echo '</table><br>';				
+				// close previous component
+				// Show price
+				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($united_inches) . " " . $functions->convertImperial($united_inches) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$price. "<span></td></tr>";
+				$price = 0;	
+				$united_inches = 0;				
+				echo '</table><br>';
+		
+		
 	endif;
 		?>
-
-	<?php 
-	
-	/*echo '<table class="admin_table <?php if ($orders->get_outer_mat("done")==1){ echo " success ";}?>">
-		<tr><th colspan="3">Mat - Outer:</th>
-		<?php if ($orders->get_outer_mat("done")!=1){?>
-		<th><input type="button" value="Done" class="component-done" data-component="outer_mat" id="outerMatDone"></th><?php } else { ?>
-		<th style="text-align:center; background: #666;">DONE</th>
-		<?php }?>
-		</tr>		
-		<tr>
-			<td style="width:1px;  ">Mat: </td>
-			<td>
-			<select id="orders_outer_mat" name="orders_outer_mat" >
-					<option value="">None</option>
-					<?php  $query="SELECT * FROM mat ORDER BY `mat_id`";
-						$dm = new DataManager();
-						$result = $dm->queryRecords($query);
-						if ($result):
-						while ($row = mysqli_fetch_array($result))
-						{
-							if ($orders->get_outer_mat() == $row['mat_id']){
-								echo "<option value='" . $row['mat_id'] . "' selected style='background: url(/images/mats/" . $row['mat_url']. ")'>" . $row['mat_item_number'] . "</option>";
-							} else {
-								echo "<option value='" . $row['mat_id'] . "' style='background: url(/images/mats/" . $row['mat_url']. ")'>" . $row['mat_item_number'] . "</option>";
-							}
-						}
-						endif;
-						 ?>
-				</select>
-			</td>
-			<td colspan="2">
-				<input id="orders_outer_mat_code" name="orders_outer_mat_code" type="text"  value="" placeholder="Scan barcode" style="width:auto;" />
-			</td>
-		</tr>
-		<tr>
-			<td style="width:1px;  ">Top: </td>
-			<td>
-				<input id="orders_outer_mat_t" name="orders_outer_mat_t" type="number" step="1" value="<?php echo $orders->get_outer_mat("top",true);  ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_outer_mat_t_fraction");	
-					$dd_measurement->set_selected_value($orders->get_outer_mat("top-fraction"));					
-					$dd_measurement->display();
-				?> in.
-			</td>		
-			<td style="width:1px;  ">Bottom: </td>
-			<td>							
-				<input id="orders_outer_mat_b" name="orders_outer_mat_b" type="number" step="1" value="<?php  echo $orders->get_outer_mat("bottom",true); ?>" class="measurement"/>
-				<?php  								
-					$dd_measurement->set_name("orders_outer_mat_b_fraction");
-					$dd_measurement->set_selected_value($orders->get_outer_mat("bottom-fraction"));		
-					$dd_measurement->display();
-				?> in.
-			</td>
-		</tr>
-		<tr>
-			<td style="width:1px;  ">Left: </td>
-			<td>
-				<input id="orders_outer_mat_l" name="orders_outer_mat_l" type="number" step="1" value="<?php  echo $orders->get_outer_mat("left",true); ?>" class="measurement" />
-				<?php  
-					$dd_measurement->set_name("orders_outer_mat_l_fraction");	
-					$dd_measurement->set_selected_value($orders->get_outer_mat("left-fraction"));					
-					$dd_measurement->display();
-				?> in.
-			</td>		
-			<td style="width:1px;  ">Right: </td>
-			<td>							
-				<input id="orders_outer_mat_r" name="orders_outer_mat_r" type="number" step="1" value="<?php  echo $orders->get_outer_mat("right",true); ?>" class="measurement"/>
-				<?php  								
-					$dd_measurement->set_name("orders_outer_mat_r_fraction");
-					$dd_measurement->set_selected_value($orders->get_outer_mat("right-fraction"));		
-					$dd_measurement->display();
-				?> in.
-			</td>
-		</tr>
-	</table>';*/
-	?>
 	</div>
 </div>
 <div class="col-md-4">
@@ -530,7 +542,7 @@ WHERE ordersspecialitem.is_active = 'Y' AND ordersspecialitem.ordersSpecialItem_
 	</table>
 	<br />
 	<table class="admin_table">
-		<tr><th colspan="4">Activity Log:</th></tr>
+		<tr><th colspan="4">Log:</th></tr>
 		<tr><th>Date</th><th>Activity</th><th>Operator</th></tr>
 	<?php	
 $strSQL = "SELECT * FROM orderactivity 
@@ -556,6 +568,7 @@ endif;
 					<option>Shipped</option>
 					<option>Picked up by customer</option>
 					<option>Waiting on materials</option>
+					<option>Note</option>					
 					<option></option>
 				</select>
 			</td>
@@ -729,7 +742,20 @@ endif;
 			}
 		});
 
-
+		$("#components_list").on("click", '.opening-delete', function (e) {
+			e.preventDefault();
+			var result = confirm('You are about to delete an item from the system. Do you want to continue?');
+			if (result == true){
+				var itemId = $(this).data("opening-id");
+				$.ajax({
+					url: "ajax/ajax_opening_delete.php?id="+itemId,	
+					success: function (html) {	
+				  		window.location.assign("orders_edit_new.php?id=<?php echo $orders_id;?>");
+					}	
+				});
+			}
+		});
+		
 		$(".barcode").on("blur", function (e) {
 			/*e.preventDefault();
 			var result = confirm('You are about to delete an item from the system. Do you want to continue?');
@@ -746,6 +772,7 @@ endif;
 		});		
 		</script>
 			<?php require("includes/component_add_dialog.php"); ?>
-
+			<?php require("includes/barcode_dialog.php"); ?>
+			<?php require("includes/opening_dialog.php"); ?>			
 	</body>
 </html>

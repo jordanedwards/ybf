@@ -954,3 +954,73 @@
 [20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 78
 [20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
 [20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Warning:  Missing argument 1 for Matopening::set_top(), called in E:\sites\ybf\admin\actions\action_mat_opening.php on line 11 and defined in E:\sites\ybf\admin\classes\class_matopening.php on line 25
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_top() E:\sites\ybf\admin\actions\action_mat_opening.php:11
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Notice:  Undefined variable: value in E:\sites\ybf\admin\classes\class_matopening.php on line 25
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_top() E:\sites\ybf\admin\actions\action_mat_opening.php:11
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Warning:  Missing argument 1 for Matopening::set_left_side(), called in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12 and defined in E:\sites\ybf\admin\classes\class_matopening.php on line 28
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_left_side() E:\sites\ybf\admin\actions\action_mat_opening.php:12
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Notice:  Undefined variable: value in E:\sites\ybf\admin\classes\class_matopening.php on line 28
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_left_side() E:\sites\ybf\admin\actions\action_mat_opening.php:12
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Warning:  Missing argument 1 for Matopening::set_right_side(), called in E:\sites\ybf\admin\actions\action_mat_opening.php on line 13 and defined in E:\sites\ybf\admin\classes\class_matopening.php on line 31
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_right_side() E:\sites\ybf\admin\actions\action_mat_opening.php:13
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Notice:  Undefined variable: value in E:\sites\ybf\admin\classes\class_matopening.php on line 31
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_right_side() E:\sites\ybf\admin\actions\action_mat_opening.php:13
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Warning:  Missing argument 1 for Matopening::set_bottom(), called in E:\sites\ybf\admin\actions\action_mat_opening.php on line 14 and defined in E:\sites\ybf\admin\classes\class_matopening.php on line 34
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_bottom() E:\sites\ybf\admin\actions\action_mat_opening.php:14
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Notice:  Undefined variable: value in E:\sites\ybf\admin\classes\class_matopening.php on line 34
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_bottom() E:\sites\ybf\admin\actions\action_mat_opening.php:14
+[21-Apr-2015 09:11:30 America/Vancouver] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\sites\ybf\admin\classes\class_matopening.php:28) in E:\sites\ybf\admin\actions\action_mat_opening.php on line 18
+[21-Apr-2015 09:11:30 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:30 America/Vancouver] PHP   2. header() E:\sites\ybf\admin\actions\action_mat_opening.php:18
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: top_fraction in E:\sites\ybf\admin\actions\action_mat_opening.php on line 9
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: bottom_fraction in E:\sites\ybf\admin\actions\action_mat_opening.php on line 10
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: bottom_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 10
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: left_fraction in E:\sites\ybf\admin\actions\action_mat_opening.php on line 11
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: left_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 11
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: right_fraction in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: right_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\sites\ybf\admin\actions\action_mat_opening.php:11) in E:\sites\ybf\admin\actions\action_mat_opening.php on line 25
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   2. header() E:\sites\ybf\admin\actions\action_mat_opening.php:25
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Notice:  Undefined variable: bottom_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 10
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:16:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Notice:  Undefined variable: left_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 11
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:16:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Notice:  Undefined variable: right_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:16:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0

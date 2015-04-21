@@ -49,14 +49,15 @@ class ErrorHandler {
 			$mail = null;
 */
 		//	addToLog($e->getMessage());
-		mail("jordan@orchardcity.ca","test",$e->getMessage());
+	//	mail("jordan@orchardcity.ca","test",$e->getMessage());
 			$_SESSION['alert_msg'] = "An unexpected system error has occurred. The site administrators have been notified. We applogize for any inconvenience.";	
 			$_SESSION['alert_color'] = "red";
-			header("location:/error.php");
+			echo $_SESSION['alert_msg'];
+		//	header("location:/error.php");
 			exit;	
 		}
 		catch(Exception $e) {
-		mail("jordan@orchardcity.ca","test",$e->getMessage());		
+	//	mail("jordan@orchardcity.ca","test",$e->getMessage());		
 			$_SESSION['alert_msg'] = "An unexpected system error has occurred. The site administrators have been notified. We applogize for any inconvenience.";	
 			$_SESSION['alert_color'] = "red";
 			header("location:/error.php");		

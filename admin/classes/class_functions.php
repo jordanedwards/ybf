@@ -58,6 +58,9 @@ class Functions {
 	}
 
 public function convertImperial($decValue){
+	$whole_number = floor($decValue);
+	$decValue = $decValue - $whole_number;
+	
 	$decValue = round($decValue,5);
 	switch($decValue):
 	case 0.03125:

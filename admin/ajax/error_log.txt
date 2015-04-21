@@ -288,3 +288,48 @@
 [20-Apr-2015 11:11:40 America/Vancouver] PHP Fatal error:  Using $this when not in object context in E:\sites\ybf\admin\ajax\ajax_component_form.php on line 22
 [20-Apr-2015 11:11:40 America/Vancouver] PHP Stack trace:
 [20-Apr-2015 11:11:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_component_form.php:0
+[20-Apr-2015 16:04:54 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[20-Apr-2015 16:04:54 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 16:04:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[20-Apr-2015 16:05:22 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[20-Apr-2015 16:05:22 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 16:05:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[20-Apr-2015 16:08:41 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[20-Apr-2015 16:08:41 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 16:08:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[20-Apr-2015 16:09:47 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[20-Apr-2015 16:09:47 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 16:09:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[20-Apr-2015 16:09:49 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[20-Apr-2015 16:09:49 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 16:09:49 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[20-Apr-2015 16:09:50 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[20-Apr-2015 16:09:50 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 16:09:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[20-Apr-2015 16:10:02 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[20-Apr-2015 16:10:02 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 16:10:02 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[21-Apr-2015 06:45:29 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[21-Apr-2015 06:45:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 06:45:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[21-Apr-2015 09:38:34 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_component_done() in E:\sites\ybf\admin\ajax\ajax_order_component.php on line 15
+[21-Apr-2015 09:38:34 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:38:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component.php:0
+[21-Apr-2015 10:24:46 America/Vancouver] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\sites\ybf\admin\classes\class_error_handler.php on line 52
+[21-Apr-2015 10:24:46 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 10:24:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_activity.php:0
+[21-Apr-2015 10:24:47 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\ybf\admin\ajax\ajax_order_activity.php:35
+[21-Apr-2015 10:24:47 America/Vancouver] PHP   3. ErrorHandler->notifyAdminException() E:\sites\ybf\admin\classes\class_orderactivity.php:128
+[21-Apr-2015 10:24:47 America/Vancouver] PHP   4. mail() E:\sites\ybf\admin\classes\class_error_handler.php:52
+[21-Apr-2015 10:26:19 America/Vancouver] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\sites\ybf\admin\classes\class_error_handler.php on line 52
+[21-Apr-2015 10:26:19 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 10:26:19 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_activity.php:0
+[21-Apr-2015 10:26:19 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\ybf\admin\ajax\ajax_order_activity.php:35
+[21-Apr-2015 10:26:19 America/Vancouver] PHP   3. ErrorHandler->notifyAdminException() E:\sites\ybf\admin\classes\class_orderactivity.php:128
+[21-Apr-2015 10:26:19 America/Vancouver] PHP   4. mail() E:\sites\ybf\admin\classes\class_error_handler.php:52
+[21-Apr-2015 10:26:24 America/Vancouver] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in E:\sites\ybf\admin\classes\class_error_handler.php on line 52
+[21-Apr-2015 10:26:24 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 10:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_activity.php:0
+[21-Apr-2015 10:26:24 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\ybf\admin\ajax\ajax_order_activity.php:35
+[21-Apr-2015 10:26:24 America/Vancouver] PHP   3. ErrorHandler->notifyAdminException() E:\sites\ybf\admin\classes\class_orderactivity.php:128
+[21-Apr-2015 10:26:24 America/Vancouver] PHP   4. mail() E:\sites\ybf\admin\classes\class_error_handler.php:52

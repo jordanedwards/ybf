@@ -284,11 +284,39 @@ public function __toString(){
 			case "mat":
 				$this->set_table("mat");
 				$this->set_name_field("mat_item_number");
-				//$this->set_name("mat");
 				$this->set_class_name("form-control short");
 				$this->set_active_only(true);
 				$this->set_order("ASC");	
 			break;
+			case "backing":
+				$this->set_table("backing");
+				$this->set_name_field("backing_type");
+				$this->set_class_name("form-control short");
+				$this->set_active_only(true);
+				$this->set_order("ASC");	
+			break;
+			case "glass":
+				$this->set_table("glass");
+				$this->set_name_field("glass_type");
+				$this->set_class_name("form-control short");
+				$this->set_active_only(true);
+				$this->set_order("ASC");	
+			break;
+			case "mount":
+				$this->set_table("mount");
+				$this->set_name_field("mount_type");
+				$this->set_class_name("form-control short");
+				$this->set_active_only(true);
+				$this->set_order("ASC");	
+			break;
+			case "fillet":
+				$this->set_table("fillet");
+				$this->set_name_field("fillet_style");
+				$this->set_name_field_2("fillet_colour");	
+				$this->set_class_name("form-control short");
+				$this->set_active_only(true);
+				$this->set_order("ASC");	
+			break;												
 			case "imp":
 				$this->set_static(true);								
 				$this->set_option_list("0,1/32,1/16,3/32,1/8,5/32,3/16,7/32,1/4,9/32,5/16,11/32,3/8,13/32,7/16,15/32,1/2,17/32,9/16,19/32,5/8,21/32,11/16,23/32,6/8,25/32,13/16,27/32,7/8,29/32,15/16,31/32");

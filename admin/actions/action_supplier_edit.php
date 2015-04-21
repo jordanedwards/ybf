@@ -1,5 +1,5 @@
 <?php // include necessary libraries
-	include($_SERVER['DOCUMENT_ROOT'] . "/site/includes/init.php");
+	include($_SERVER['DOCUMENT_ROOT'] . "/admin/includes/init.php");
 
 	$supplier_id=$_POST["supplier_id"];
 	$supplier_name=$_POST["supplier_name"];
