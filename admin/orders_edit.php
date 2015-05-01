@@ -136,10 +136,10 @@ width: 90%;
 		            </ol>
 		  <br>
         </div>
-	<form id="form_orders" action="<?php  echo ACTIONS_URL . "action_"; ?>orders_edit.php" method="post">
-	<input type="hidden" name="orders_id" id="orders_id" value="<?php  echo $orders->get_id();  ?>" />
 	
 <div class="col-md-4">
+	<form id="form-orders" action="<?php  echo ACTIONS_URL . "action_"; ?>orders_edit.php" method="post">
+	<input type="hidden" name="orders_id" id="orders_id" value="<?php  echo $orders->get_id();  ?>" />
 
          <table class="admin_table">
 		 <tr><th colspan="2">Order Details:</th></tr>
@@ -267,6 +267,7 @@ width: 90%;
 					$dd->set_selected_value($shipping_company);
 					$dd->set_required(true);
 					$dd->set_option_list("Canada Post,Purolator,FedEx");
+					$dd->set_onchange("");
 					$dd->display();
 				?>
 				</td>
@@ -292,7 +293,7 @@ width: 90%;
 		</th></tr>
 		<tr>
 			<td style="text-align:right">Materials: </td>
-			<td><span style="float:right">$495.60</span></td>
+			<td><span style="float:right" id="invoice_materials"></span></td>
 		</tr>
 		<tr>
 			<td style="text-align:right">Labour: </td>
@@ -310,10 +311,11 @@ width: 90%;
 			<td style="text-align:right">Total:</td><td><span style="float:right">$654.20</span></td>
 		</tr>
 	</table>
+	</form>
 </div>
 <div class="col-md-4">
 
-	<table class="admin_table ">
+	<table class="admin_table">
 		<tr>
 		<th style="background: #428bca !important; cursor:pointer; border-color: #428bca;" class="component-add"> Add component:
 		<i class="fa fa-plus-circle fa-lg " style="color:#fff; padding:5px; float:right"></i></th>
@@ -327,6 +329,7 @@ width: 90%;
 	$show_openings=false;
 	$price = 0;
 	$united_inches = 0;	
+	$total_price = 0;
 									
 	$dm = new DataManager();
 	$strSQL = "SELECT * FROM ordercomponent 
@@ -341,16 +344,17 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 		if ($currentComponent != $line['orderComponent_id']){
 		// End of component
 			if ($currentComponent != ""){
+
 			// Don't do this BEFORE first component
-				if ($show_openings){
+				if ($show_openings):
 				// Ending component is a mat, so show openings associated with it
 					echo "<tr><td colspan='2'><table style='width:100%'>";
 					echo "<tr><td colspan='5' style='background: #BD0104; color: #fff;'><b>Openings</b><i class='fa fa-plus-circle fa-lg opening' data-component-id='" .$currentComponent."'></i></td></tr>";
 					$strSQL = "SELECT * FROM matopening 
 					WHERE matOpening_component_id= " . $currentComponent;
-		
 					$bg = "#fff";
 					$result_openings = $dm->queryRecords($strSQL);
+					
 					if ($result_openings):
 						while ($row = mysqli_fetch_assoc($result_openings)):
 							if ($bg == "#fff"){ $bg = "#D3D3D3";} else {$bg = "#fff";}
@@ -358,27 +362,34 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 							<td rowspan='2' style='width: 28px;'><i class='fa fa-trash fa-2x opening-delete' data-opening-id='" .$row['matOpening_id']."'></i></td>
 							<td><b>Top:</b> </td><td>" . $functions->get_whole_int($row['matOpening_top']) . " " . $functions->convertImperial($row['matOpening_top']). "\"</td><td><b>Bottom:</b> </td><td>" . $functions->get_whole_int($row['matOpening_bottom']) . " " . $functions->convertImperial($row['matOpening_bottom']) . "\"</td></tr>";
 							echo "<tr style='background:" . $bg . "'><td><b>Left:</b> </td><td>" . $functions->get_whole_int($row['matOpening_left_side']) . " " . $functions->convertImperial($row['matOpening_left_side']). "\"</td><td><b>Right:</b> </td><td>" . $functions->get_whole_int($row['matOpening_right_side']) . " " . $functions->convertImperial($row['matOpening_right_side']) . "\"</td></tr>";
-				
-						endwhile;
-				echo '</table><br>';						
+						endwhile;						
+						echo '</table><br>';						
 					endif;
+					
 					$show_openings=false;
-				}	
+				endif;
 				// close previous component
 				// Show price
-				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($united_inches) . " " . $functions->convertImperial($united_inches) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$price. "<span></td></tr>";
+				$price = $functions->get_price($currentComponent,$united_inches);
+				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($united_inches) . " " . $functions->convertImperial($united_inches) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$price . "</span></td></tr>";
+				$total_price = $total_price + $price;
 				$price = 0;	
-				$united_inches = 0;			
-				echo '</table><br>';
+				$united_inches = 0;
+						
+				echo '</table>';
+				echo '</form><br>';					
 	
 			}
 			if ($line['componentType_name'] == "Mat"){
 				$show_openings = true;
 			}	
 			//next component
-			echo '<table class="admin_table ">
+			echo '
+			<form id="component-form-' .$line['orderComponent_id'] . '">
+			<table class="admin_table component">
+			
 			<tr><th colspan="1">' . $line['componentType_name'] . '</th><th><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Delete" class="component-delete btn btn-default" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Save" class="component-save btn btn-success" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 50%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Completed" class="component-done btn btn-primary" data-component="outer_mat" id="component' .$line['orderComponent_id'].'"></div></th>
-			<tr>';
+			</tr>';
 			echo '<tr>
 			<td>' .ucfirst($line['fieldname']). '</td>';
 						
@@ -387,7 +398,8 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 				case "list":
 					$dd->clear();
 					$dd->set_preset($line['fieldname']);
-					$dd->set_id("component-list-".$line['orderComponent_id']);										
+					$dd->set_id("component-list-".$line['orderComponent_id']);
+					$dd->set_name($line['fieldname']);														
 					$dd->set_selected_value($line['value']);					
 					echo "<td>";
 					$dd->display();
@@ -425,7 +437,8 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 				case "list":
 					$dd->clear();
 					$dd->set_preset($line['fieldname']);
-					$dd->set_id("component-list-".$line['orderComponent_id']);					
+					$dd->set_id("component-list-".$line['orderComponent_id']);	
+					$dd->set_name($line['componentType_name']);									
 					$dd->set_selected_value($line['value']);					
 					echo "<td>";
 					$dd->display();
@@ -478,14 +491,18 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 	//	echo '</table><br>';				
 				// close previous component
 				// Show price
-				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($united_inches) . " " . $functions->convertImperial($united_inches) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$price. "<span></td></tr>";
+				$price = $functions->get_price($currentComponent,$united_inches);
+				$total_price = $total_price + $price;
+				
+				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($united_inches) . " " . $functions->convertImperial($united_inches) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$price. "</span></td></tr>";
 				$price = 0;	
 				$united_inches = 0;				
-				echo '</table><br>';
+				echo '</table></form><br>';
 		
 		
 	endif;
 		?>
+		<input type="hidden" id="total_price" value="<?php echo $total_price ?>">
 	</div>
 </div>
 <div class="col-md-4">
@@ -588,8 +605,8 @@ endif;
         <?php  if($orders->get_id() > 0){  ?>
           <p><em>Last updated: <?php echo $orders->get_last_updated();  ?> by <?php  echo $orders->get_last_updated_user();  ?></em></p>
         <?php  }  ?>	
-          <input type="submit" value="Save" class="btn btn-primary"/>
-		  <input type="submit" value="POS" class="btn btn-primary"/>
+          <input type="button" value="Save" class="btn btn-primary" id="save-button"/>
+		  <input type="button" value="POS" class="btn btn-primary"/>
 		  <input type="button" value="Print" class="btn btn-primary" onClick="window.print();"/>
           <input type="button" value="Cancel" onClick="window.location ='<?php $str = (isset($_SERVER["HTTP_REFERER"]) ?  $_SERVER["HTTP_REFERER"] :  "dashboard.php"); echo $str;?>'" class="btn btn-default"/>		
       </div>
@@ -606,7 +623,7 @@ endif;
 
 			</a>
 		</div><!-- /.main-container -->
-
+		</div>
 		<!-- basic scripts -->
 
 		<!--[if !IE]> -->
@@ -679,6 +696,9 @@ endif;
 			changeYear: true
    		});	
 	
+	$('#submit-button').click(function(){
+		$('#form_orders').submit();
+	});
 		</script>
 		<script>
 
@@ -755,6 +775,27 @@ endif;
 				});
 			}
 		});
+
+// Save button on Components:
+		$("#components_list").on("click", '.component-save', function (e) {
+			e.preventDefault();
+				var itemId = $(this).data("component-id");
+				var $inputs = $('#component-form-'+itemId+' :input');
+				var values = "";
+				
+				$inputs.each(function() {
+			//	console.log(this.name+" / "+$(this).val());
+					values = values+"&"+this.name+"="+$(this).val();
+				});
+	
+				$.ajax({
+					url: "ajax/ajax_order_component_save.php?action=save&id="+itemId+"&"+values,	
+					success: function (html) {	
+						alert("saved");
+					}	
+				});
+		});		
+		
 		
 		$(".barcode").on("blur", function (e) {
 			/*e.preventDefault();
@@ -769,7 +810,9 @@ endif;
 					}	
 				});
 			}*/
-		});		
+		});
+		var materials-price = 	$('#total_price').val();	
+		$('#invoice_materials').html("$"+materials-price);
 		</script>
 			<?php require("includes/component_add_dialog.php"); ?>
 			<?php require("includes/barcode_dialog.php"); ?>

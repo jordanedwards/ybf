@@ -271,5 +271,47 @@ public function convertMetric($impValue){
 		$converted_remainder = $this->convertImperial($remainder);
 		return $converted_remainder;
 	}
+	
+	public function get_price($component_id, $ui){
+		$cost = 0;
+		$price = 0;
+		$markup = 0;
+		
+		require_once($_SERVER['DOCUMENT_ROOT'] . '/admin/classes/class_data_manager.php');
+		$dm = new DataManager();
+		
+		$strSQL = "SELECT component_cost, component_price_per, componentTypeMarkup FROM component
+			LEFT JOIN componenttype ON component.component_type = componenttype.componentType_id
+		WHERE component_id = (
+			SELECT value FROM ordercomponent_record 
+			LEFT JOIN componenttypefields ON ordercomponent_record.componentTypeField = componenttypefields.id
+			WHERE fieldtype='list' AND orderComponentId = " .	$component_id . " 
+			)";
+		
+		$result = $dm->queryRecords($strSQL);		
+		if ($result):
+			while ($line = mysqli_fetch_assoc($result)):
+				$cost = $line['component_cost'];
+				$per = $line['component_price_per'];
+				$markup = $line['componentTypeMarkup'];
+			endwhile;	
+		endif;
+		
+		switch ($per):
+			case "EA":
+				//not applicable
+				$price = $cost;
+			break;
+			case "FT":
+				// Cost is in feet, so we have to convert to inches	
+				$cost = $cost/12;				
+				$price = ($cost * $ui);
+			break;
+		endswitch;
+					
+		$price = $price * $markup;
+
+		return number_format($price,2);
+	}
 }
 ?>

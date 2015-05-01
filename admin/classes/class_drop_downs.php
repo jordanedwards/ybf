@@ -190,10 +190,13 @@ public function __toString(){
 	}	
 			
 	public function display(){
+	if ($this->id == ""){
+		$this->id = $this->name;
+	}
 	if ($this->get_static()):
 		// Static drop down	
 		$cssClass = ($this->required ? ' class="{validate:{required:true}} ' . $this->class_name .' "' : " class='". $this->class_name . "'");
-		$ddl = '<select id="'.$this->id.'" name="'.$this->name.'" ' . $cssClass. ' onchange="'.$this->onchange.'" ">';
+		$ddl = '<select id="'.$this->id.'" name="'.$this->name.'" ' . $cssClass. ' onchange="'.$this->onchange.'">';
 		$ddl .= "<option value=''></option>";
 		
 		$options = explode(",", $this->get_option_list());
@@ -237,7 +240,7 @@ public function __toString(){
 			$result = $dm->queryRecords($strSQL);	
 			if ($result){
 			
-				$ddl = '<select id="'.$this->id.'" name="'.$this->name.'" ' . $cssClass. ' onchange="'.$this->onchange.'" ">';
+				$ddl = '<select id="'.$this->id.'" name="'.$this->name.'" ' . $cssClass. ' onchange="'.$this->onchange.'">';
 				$ddl .= "<option value=''></option>";
 				
 				while($row = mysqli_fetch_assoc($result)) {
@@ -273,49 +276,58 @@ public function __toString(){
 		$this->preset = $preset;
 		switch ($preset):
 			case "frame":
-				$this->set_table("frame");
-				$this->set_name_field("frame_style");
-				$this->set_name_field_2("frame_colour");			
-				//$this->set_name("frame");
+				$this->set_table("component");
+				$this->set_name_field("component_description");
+				$this->set_name_field_2("component_width");				
 				$this->set_class_name("form-control short");
 				$this->set_active_only(true);
-				$this->set_order("ASC");	
+				$this->set_order("ASC");
+				$this->set_where("component_type = 1");	
 			break;
 			case "mat":
-				$this->set_table("mat");
-				$this->set_name_field("mat_item_number");
+				$this->set_table("component");
+				$this->set_name_field("component_description");
+				$this->set_name_field_2("component_item_number");				
 				$this->set_class_name("form-control short");
 				$this->set_active_only(true);
-				$this->set_order("ASC");	
+				$this->set_order("ASC");
+				$this->set_where("component_type = 2");	
 			break;
 			case "backing":
-				$this->set_table("backing");
-				$this->set_name_field("backing_type");
+				$this->set_table("component");
+				$this->set_name_field("component_description");
+				$this->set_name_field_2("component_width");				
 				$this->set_class_name("form-control short");
 				$this->set_active_only(true);
-				$this->set_order("ASC");	
+				$this->set_order("ASC");
+				$this->set_where("component_type = 6");		
 			break;
 			case "glass":
-				$this->set_table("glass");
-				$this->set_name_field("glass_type");
+				$this->set_table("component");
+				$this->set_name_field("component_style");				
+				$this->set_name_field_2("component_description");
 				$this->set_class_name("form-control short");
 				$this->set_active_only(true);
-				$this->set_order("ASC");	
+				$this->set_order("ASC");
+				$this->set_where("component_type = 4");		
 			break;
 			case "mount":
-				$this->set_table("mount");
-				$this->set_name_field("mount_type");
+				$this->set_table("component");
+				$this->set_name_field("component_description");
+				$this->set_name_field_2("component_width");				
 				$this->set_class_name("form-control short");
 				$this->set_active_only(true);
-				$this->set_order("ASC");	
+				$this->set_order("ASC");
+				$this->set_where("component_type = 5");		
 			break;
 			case "fillet":
-				$this->set_table("fillet");
-				$this->set_name_field("fillet_style");
-				$this->set_name_field_2("fillet_colour");	
+				$this->set_table("component");
+				$this->set_name_field("component_description");
+				$this->set_name_field_2("component_width");				
 				$this->set_class_name("form-control short");
 				$this->set_active_only(true);
-				$this->set_order("ASC");	
+				$this->set_order("ASC");
+				$this->set_where("component_type = 3");	
 			break;												
 			case "imp":
 				$this->set_static(true);								
