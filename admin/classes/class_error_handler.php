@@ -50,17 +50,18 @@ class ErrorHandler {
 */
 		//	addToLog($e->getMessage());
 	//	mail("jordan@orchardcity.ca","test",$e->getMessage());
-			$_SESSION['alert_msg'] = "An unexpected system error has occurred. The site administrators have been notified. We applogize for any inconvenience.";	
+			$_SESSION['alert_msg'] = "An unexpected system error has occurred. The site administrators have been notified. We apologize for any inconvenience.";	
 			$_SESSION['alert_color'] = "red";
-			echo $_SESSION['alert_msg'];
+			echo $_SESSION['alert_msg'] . "(" . $e->getMessage() . ")"; 
 		//	header("location:/error.php");
 			exit;	
 		}
 		catch(Exception $e) {
 	//	mail("jordan@orchardcity.ca","test",$e->getMessage());		
-			$_SESSION['alert_msg'] = "An unexpected system error has occurred. The site administrators have been notified. We applogize for any inconvenience.";	
+			$_SESSION['alert_msg'] = "An unexpected system error has occurred. The site administrators have been notified. We apologize for any inconvenience.";	
 			$_SESSION['alert_color'] = "red";
-			header("location:/error.php");		
+			echo $_SESSION['alert_msg'] . "(" . $e->getMessage() . ")"; 			
+			//header("location:/error.php");		
 			exit;
 		}
 	}

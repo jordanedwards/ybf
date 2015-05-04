@@ -147,6 +147,7 @@
 					while ($datafield=mysqli_fetch_field($result)):
 						$datafieldNames[$datafield->name] = $datafield->name;
 					endwhile;
+					$full_output = "";
 							
 					// replace placeholders with actual data:																						
 					while($row=mysqli_fetch_array($result)):	
@@ -178,7 +179,7 @@
               foreach($var as $varOne)
               {
                   $name_value = explode('=', $varOne);
-                 
+                 $qsAdd = false;
                   //remove duplicated vars
                   if($qsAdd)
                   {

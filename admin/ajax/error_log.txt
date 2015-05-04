@@ -333,6 +333,18 @@
 [21-Apr-2015 10:26:24 America/Vancouver] PHP   2. Orderactivity->save() E:\sites\ybf\admin\ajax\ajax_order_activity.php:35
 [21-Apr-2015 10:26:24 America/Vancouver] PHP   3. ErrorHandler->notifyAdminException() E:\sites\ybf\admin\classes\class_orderactivity.php:128
 [21-Apr-2015 10:26:24 America/Vancouver] PHP   4. mail() E:\sites\ybf\admin\classes\class_error_handler.php:52
+<<<<<<< HEAD
 [21-Apr-2015 12:45:00 America/Vancouver] PHP Notice:  Undefined variable: item_id in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\ajax\ajax_barcode_lookup.php on line 17
 [21-Apr-2015 12:45:00 America/Vancouver] PHP Stack trace:
 [21-Apr-2015 12:45:00 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\ajax\ajax_barcode_lookup.php:0
+=======
+[30-Apr-2015 16:41:18 America/Vancouver] PHP Fatal error:  Call to undefined function escaped_var_from_GET() in E:\sites\ybf\admin\ajax\ajax_order_component_save.php on line 5
+[30-Apr-2015 16:41:18 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 16:41:18 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component_save.php:0
+[30-Apr-2015 16:43:35 America/Vancouver] PHP Notice:  Undefined index: ordercomponent_record.id in E:\sites\ybf\admin\ajax\ajax_order_component_save.php on line 20
+[30-Apr-2015 16:43:35 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 16:43:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component_save.php:0
+[30-Apr-2015 16:45:33 America/Vancouver] PHP Fatal error:  Function name must be a string in E:\sites\ybf\admin\ajax\ajax_order_component_save.php on line 22
+[30-Apr-2015 16:45:33 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 16:45:33 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\ajax\ajax_order_component_save.php:0
+>>>>>>> ddc012f2ca1867829507761d9ee75f2dc06c8594

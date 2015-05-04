@@ -71,23 +71,23 @@ public function save() {
 			
 				$strSQL = "INSERT INTO ordercomponent_record (id, orderComponentId, componentTypeField, value) 
         VALUES (
-								'".mysqli_real_escape_string($dm->connection, $this->get_id())."',
+								'NULL',
 								'".mysqli_real_escape_string($dm->connection, $this->get_orderComponentId())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_componentTypeField())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_value())."')";
 							 }
 			else {
 				$strSQL = "UPDATE ordercomponent_record SET 
-								id='".mysqli_real_escape_string($dm->connection, $this->get_id())."',						 
 						 		orderComponentId='".mysqli_real_escape_string($dm->connection, $this->get_orderComponentId())."',						 
 						 		componentTypeField='".mysqli_real_escape_string($dm->connection, $this->get_componentTypeField())."',						 
 						 		value='".mysqli_real_escape_string($dm->connection, $this->get_value())."'
 							
-						 	WHERE ordercomponent_record_id=".mysqli_real_escape_string($dm->connection, $this->get_id());
+						 	WHERE id=".mysqli_real_escape_string($dm->connection, $this->get_id());
 
 				}		
 				
-				
+				//echo $strSQL;
+				//exit();
 			$result = $dm->updateRecords($strSQL);
 
 			// if this is a new record get the record id from the database
@@ -95,7 +95,7 @@ public function save() {
 				$this->set_id(mysqli_insert_id($dm->connection));
 			}
 			
-          	if (!$result):
+          	if (!$result):		
       			throw new Exception("Failed Query: ". $strSQL);
    			endif;
       
@@ -107,7 +107,7 @@ public function save() {
 		}
 		catch(Exception $e) {
 			// CATCH EXCEPTION HERE -- DISPLAY ERROR MESSAGE & EMAIL ADMINISTRATOR
-			include_once($_SERVER['DOCUMENT_ROOT'] . '/classes/class_error_handler.php');
+			include_once($_SERVER['DOCUMENT_ROOT'] . '/admin/classes/class_error_handler.php');
 			$errorVar = new ErrorHandler();
 			$errorVar->notifyAdminException($e);
 			exit;
@@ -127,7 +127,7 @@ public function save() {
 		}
 		catch(Exception $e) {
 			// CATCH EXCEPTION HERE -- DISPLAY ERROR MESSAGE & EMAIL ADMINISTRATOR
-			include_once($_SERVER['DOCUMENT_ROOT'] . '/classes/class_error_handler.php');
+			include_once($_SERVER['DOCUMENT_ROOT'] . '/admin/classes/class_error_handler.php');
 			$errorVar = new ErrorHandler();
 			$errorVar->notifyAdminException($e);
 			exit;
@@ -140,8 +140,8 @@ public function save() {
 		//	require_once($class_folder . '/class_data_manager.php');
 			$status = false;
 			$dm = new DataManager();
-			$strSQL = "SELECT * FROM ordercomponent_record WHERE ordercomponent_record_id=" . $id;
-      
+			$strSQL = "SELECT * FROM ordercomponent_record WHERE id=" . $id;
+      		
 			$result = $dm->queryRecords($strSQL);
 			if ($result){
 			$num_rows = mysqli_num_rows($result);
@@ -156,7 +156,7 @@ public function save() {
 		}
 		catch(Exception $e) {
 			// CATCH EXCEPTION HERE -- DISPLAY ERROR MESSAGE & EMAIL ADMINISTRATOR
-			include_once($_SERVER['DOCUMENT_ROOT'] . '/classes/class_error_handler.php');
+			include_once($_SERVER['DOCUMENT_ROOT'] . '/admin/classes/class_error_handler.php');
 			$errorVar = new ErrorHandler();
 			$errorVar->notifyAdminException($e);
 			exit;
@@ -166,8 +166,8 @@ public function save() {
 	// loads the object data from a mysql assoc array
   private function load($row){
 	$this->set_id($row["id"]);
-				$this->set_orderComponentId($row["orderComponentId"]);
-				$this->set_componentTypeField($row["componentTypeField"]);
-				$this->set_value($row["value"]);
-				  }
+	$this->set_orderComponentId($row["orderComponentId"]);
+	$this->set_componentTypeField($row["componentTypeField"]);
+	$this->set_value($row["value"]);
+}
 }

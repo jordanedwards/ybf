@@ -151,7 +151,7 @@ public function save() {
 
 				}		
 				
-				
+			addToLog($strSQL);
 			$result = $dm->updateRecords($strSQL);
 
 			// if this is a new record get the record id from the database

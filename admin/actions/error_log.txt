@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [14-Dec-2014 21:36:08 America/Vancouver] PHP Warning:  require(E:/sites/You've Been Framed//classes/class_user.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\actions\action_login_user.php on line 25
 
 [14-Dec-2014 21:36:08 America/Vancouver] PHP Stack trace:
@@ -1159,3 +1160,5 @@
 [21-Apr-2015 13:19:29 America/Vancouver] PHP Stack trace:
 [21-Apr-2015 13:19:29 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:0
 [21-Apr-2015 13:19:29 America/Vancouver] PHP   2. Ordercomponent_record->save() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:53
+=======
+>>>>>>> ddc012f2ca1867829507761d9ee75f2dc06c8594

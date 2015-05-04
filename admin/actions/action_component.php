@@ -34,17 +34,20 @@ Array
                 )
         )
 )
-*/
 
+echo "<pre>";
+print_r($_POST);
+
+echo "</pre>";*/
 // CREATE NEW COMPONENT:
 $new_component = New Ordercomponent();
 $new_component->set_orders_id($orderId);
 $new_component->set_componentType($componentType);
 
 $new_component->save();
+
 // ADD Component type selection component record:
 foreach ($_POST['componentSelection'] as $key => $val){
-	
 	$new_field_record = New Ordercomponent_record();
 	
 	$new_field_record->set_orderComponentId($new_component->get_id());
@@ -74,18 +77,17 @@ $converted_value = 0;
 	$new_field_record->set_orderComponentId($new_component->get_id());
 	$new_field_record->set_componentTypeField($key['id']);
 	$new_field_record->set_value($converted_value);
-	$new_field_record->save();	
+	$new_field_record->save();
 	//echo $key['id'] . "<br>";
 					
 }
+//echo "Here";
+//exit();
 
 //print_r(array_keys($_POST['fields']));
-?>
-<!--<pre>
-<?php 
+
 
 //print_r($_POST);
 	header("location:" . BASE_URL . "/orders_edit.php?id=".$orderId);
 
 ?>
-</pre>-->

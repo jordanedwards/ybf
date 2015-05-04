@@ -79,7 +79,7 @@ $s_sort_dir = escaped_var_from_post("s_sort_dir");
       <div class="row">
         <div class="col-md-12">
 		 <p><span id="search_toggle" title="Search/Filter Results"><i class="fa fa-search"></i> Search/Filter</span> <i class="fa fa-chevron-down"></i> | 
-        <i class="fa fa-plus-circle"></i> <a href="customers_edit.php?id=0">Add New Customer</a></p>
+        <i class="fa fa-plus-circle"></i> <a href="customer_edit.php?id=0">Add New Customer</a></p>
 <?php 
 	
 		if ($s_sort == ""){

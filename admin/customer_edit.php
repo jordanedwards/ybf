@@ -161,8 +161,18 @@ $(document).ready(function() {
 		<table class="admin_table">
 		<tr><th colspan="4">Orders:</th></tr>
 		<tr><th>Date</th><th>Order #</th><th>Sale</th></tr>
-		<tr><td style="white-space:nowrap">Feb 18/15</td><td><a href="orders_edit.php?id=1">#125</a></td><td>$415.65</tr>
-		<tr><td style="white-space:nowrap">Mar 16/15</td><td><a href="orders_edit.php?id=1">#468</a></td><td>$155.20</tr>
+	<?php	
+$strSQL = "SELECT * FROM orders 
+WHERE orders_customer_id = " . $customer_id;
+$result = $dm->queryRecords($strSQL);
+if ($result):
+	while ($line = mysqli_fetch_assoc($result)):
+		echo '<tr><td>' . $line['orders_received_date'] .'</td><td>' . $line['orders_id'] .'</td><td>$0.00</td></tr>';
+	endwhile;	
+endif;
+?>		
+		<!--<tr><td style="white-space:nowrap">Feb 18/15</td><td><a href="orders_edit.php?id=1">#125</a></td><td>$415.65</tr>
+		<tr><td style="white-space:nowrap">Mar 16/15</td><td><a href="orders_edit.php?id=1">#468</a></td><td>$155.20</tr>-->
 	</table>
 	</div>
 	</form>
