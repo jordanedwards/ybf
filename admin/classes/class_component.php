@@ -7,6 +7,7 @@
  		private $barcode;
  		private $url;
  		private $price;
+ 		private $price_per;
  		private $cost;
  		private $inventory;
  		private $type;
@@ -39,6 +40,9 @@
  
 		 		public function get_price() { return $this->price;}
 		 		public function set_price($value) {$this->price=$value;}
+ 
+		 		public function get_price_per() { return $this->price_per;}
+		 		public function set_price_per($value) {$this->price_per=$value;}
  
 		 		public function get_cost() { return $this->cost;}
 		 		public function set_cost($value) {$this->cost=$value;}
@@ -121,7 +125,7 @@ public function save() {
 			// if record does not already exist, create a new one
 			if($this->get_id() == 0) {
 			
-				$strSQL = "INSERT INTO component (component_id, component_supplier_id, component_item_number, component_barcode, component_url, component_price, component_cost, component_inventory, component_type, component_colour, component_style, component_width, component_description, is_active, component_date_created, component_last_updated, component_last_updated_user) 
+				$strSQL = "INSERT INTO component (component_id, component_supplier_id, component_item_number, component_barcode, component_url, component_price, component_price_per, component_cost, component_inventory, component_type, component_colour, component_style, component_width, component_description, is_active, component_date_created, component_last_updated, component_last_updated_user) 
         VALUES (
 								'".mysqli_real_escape_string($dm->connection, $this->get_id())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_supplier_id())."',
@@ -129,6 +133,7 @@ public function save() {
 								'".mysqli_real_escape_string($dm->connection, $this->get_barcode())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_url())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_price())."',
+								'".mysqli_real_escape_string($dm->connection, $this->get_price_per())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_cost())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_inventory())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_type())."',
@@ -148,6 +153,7 @@ public function save() {
 						 		component_barcode='".mysqli_real_escape_string($dm->connection, $this->get_barcode())."',						 
 						 		component_url='".mysqli_real_escape_string($dm->connection, $this->get_url())."',						 
 						 		component_price='".mysqli_real_escape_string($dm->connection, $this->get_price())."',						 
+						 		component_price_per='".mysqli_real_escape_string($dm->connection, $this->get_price_per())."',						 
 						 		component_cost='".mysqli_real_escape_string($dm->connection, $this->get_cost())."',						 
 						 		component_inventory='".mysqli_real_escape_string($dm->connection, $this->get_inventory())."',						 
 						 		component_type='".mysqli_real_escape_string($dm->connection, $this->get_type())."',						 
@@ -246,6 +252,7 @@ public function save() {
 				$this->set_barcode($row["component_barcode"]);
 				$this->set_url($row["component_url"]);
 				$this->set_price($row["component_price"]);
+				$this->set_price_per($row["component_price_per"]);
 				$this->set_cost($row["component_cost"]);
 				$this->set_inventory($row["component_inventory"]);
 				$this->set_type($row["component_type"]);

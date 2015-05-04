@@ -41,3 +41,1820 @@
 [30-Apr-2015 18:46:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
 [30-Apr-2015 18:46:09 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:164
 [30-Apr-2015 18:46:09 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\ybf\admin\classes\class_record_pager.php:130
+[30-Apr-2015 19:14:10 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_record_pager.php on line 116
+[30-Apr-2015 19:14:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:14:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:14:10 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:164
+[30-Apr-2015 19:14:10 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\ybf\admin\classes\class_record_pager.php:116
+[30-Apr-2015 19:14:10 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_record_pager.php on line 130
+[30-Apr-2015 19:14:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:14:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:14:10 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:164
+[30-Apr-2015 19:14:10 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\ybf\admin\classes\class_record_pager.php:130
+[30-Apr-2015 19:14:26 America/Vancouver] PHP Warning:  require_once(E:/sites/ybf//classes/class_session_manager.php): failed to open stream: No such file or directory in E:\sites\ybf\site\includes\init.php on line 41
+[30-Apr-2015 19:14:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:14:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:14:26 America/Vancouver] PHP   2. include() E:\sites\ybf\admin\component_list.php:2
+[30-Apr-2015 19:14:26 America/Vancouver] PHP Fatal error:  require_once(): Failed opening required 'E:/sites/ybf//classes/class_session_manager.php' (include_path='.;C:\php\pear') in E:\sites\ybf\site\includes\init.php on line 41
+[30-Apr-2015 19:14:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:14:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:14:26 America/Vancouver] PHP   2. include() E:\sites\ybf\admin\component_list.php:2
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Warning:  include(nav_bar.php): failed to open stream: No such file or directory in E:\sites\ybf\admin\component_list.php on line 33
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Warning:  include(): Failed opening 'nav_bar.php' for inclusion (include_path='.;C:\php\pear') in E:\sites\ybf\admin\component_list.php on line 33
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Warning:  include(E:/sites/ybf//includes/system_messaging.php): failed to open stream: No such file or directory in E:\sites\ybf\admin\component_list.php on line 39
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Warning:  include(): Failed opening 'E:/sites/ybf//includes/system_messaging.php' for inclusion (include_path='.;C:\php\pear') in E:\sites\ybf\admin\component_list.php on line 39
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\component_list.php on line 52
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\component_list.php on line 53
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\component_list.php on line 54
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\component_list.php on line 55
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\component_list.php on line 56
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\component_list.php on line 57
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\component_list.php on line 58
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:08 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\component_list.php on line 59
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\component_list.php on line 60
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\component_list.php on line 61
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\component_list.php on line 62
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\component_list.php on line 63
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\component_list.php on line 82
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\component_list.php on line 83
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\component_list.php on line 84
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\component_list.php on line 85
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\component_list.php on line 86
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\component_list.php on line 87
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\component_list.php on line 88
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\component_list.php on line 89
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\component_list.php on line 90
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\component_list.php on line 91
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\component_list.php on line 94
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\component_list.php on line 95
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\component_list.php on line 142
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\component_list.php:158
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\component_list.php:158
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\component_list.php on line 208
+[30-Apr-2015 19:15:09 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_list.php:0
+[30-Apr-2015 19:15:16 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_record_pager.php on line 116
+[30-Apr-2015 19:15:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:15:16 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:164
+[30-Apr-2015 19:15:16 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\ybf\admin\classes\class_record_pager.php:116
+[30-Apr-2015 19:15:16 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_record_pager.php on line 130
+[30-Apr-2015 19:15:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:15:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:15:16 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:164
+[30-Apr-2015 19:15:16 America/Vancouver] PHP   3. mysqli_num_rows() E:\sites\ybf\admin\classes\class_record_pager.php:130
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 81
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 82
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 83
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 84
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 85
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 86
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 87
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 88
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 89
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 90
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 91
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 92
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\materials_list.php on line 171
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:187
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:187
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\materials_list.php on line 280
+[30-Apr-2015 19:16:16 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:16 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:39 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:16:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_list.php:0
+[30-Apr-2015 19:16:39 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\orders_list.php:159
+[30-Apr-2015 19:16:39 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:16:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_list.php:0
+[30-Apr-2015 19:16:39 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\orders_list.php:159
+[30-Apr-2015 19:16:39 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:16:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\orders_list.php:0
+[30-Apr-2015 19:16:39 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\orders_list.php:159
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 81
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 82
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 83
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 84
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 85
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 86
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 87
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 88
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 89
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 90
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 91
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 92
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\materials_list.php on line 171
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:187
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:187
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\materials_list.php on line 280
+[30-Apr-2015 19:16:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:16:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:17:34 America/Vancouver] PHP Notice:  Use of undefined constant escaped - assumed 'escaped' in E:\sites\ybf\admin\materials_list.php on line 81
+[30-Apr-2015 19:17:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:17:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:17:34 America/Vancouver] PHP Fatal error:  Call to undefined function var_from_post() in E:\sites\ybf\admin\materials_list.php on line 81
+[30-Apr-2015 19:17:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:17:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 82
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 83
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 84
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 85
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 86
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 87
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 88
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 89
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 90
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 91
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 92
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:18:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\materials_list.php on line 171
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:187
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:187
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\materials_list.php on line 280
+[30-Apr-2015 19:18:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:18:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:22:13 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\materials_list.php on line 171
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:14 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:187
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:14 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:187
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Notice:  Undefined variable: query_where in E:\sites\ybf\admin\materials_list.php on line 280
+[30-Apr-2015 19:22:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:189
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:22:39 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:22:39 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:189
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:24:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:24:24 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:41 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:44 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:47 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:47 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:51 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:51 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:54 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:54 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:25:57 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:25:57 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:11 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:11 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:11 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:11 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:11 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:11 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:11 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:11 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:11 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:11 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:11 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:11 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:14 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:14 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:15 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:15 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:15 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:15 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:15 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:15 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:15 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:15 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:15 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:15 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:15 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:15 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:20 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:22 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:22 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:23 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:23 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:23 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:23 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:23 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:23 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:23 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:23 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:23 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:24 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:24 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:26 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:26 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:28 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:28 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:30 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:30 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:32 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:32 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:34 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:34 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:36 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:37 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:37 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:40 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:40 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:44 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:44 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:46 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:46 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:50 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:50 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:26:52 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:26:52 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:28:36 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:28:36 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_id in E:\sites\ybf\admin\materials_list.php on line 111
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_supplier_id in E:\sites\ybf\admin\materials_list.php on line 112
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_item_number in E:\sites\ybf\admin\materials_list.php on line 113
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_price in E:\sites\ybf\admin\materials_list.php on line 114
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_price_per in E:\sites\ybf\admin\materials_list.php on line 115
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_cost in E:\sites\ybf\admin\materials_list.php on line 116
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_inventory in E:\sites\ybf\admin\materials_list.php on line 117
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_type in E:\sites\ybf\admin\materials_list.php on line 118
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_style in E:\sites\ybf\admin\materials_list.php on line 119
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: s_description in E:\sites\ybf\admin\materials_list.php on line 120
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined index: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:12 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:45:12 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:13 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:13 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Notice:  Undefined variable: sort in E:\sites\ybf\admin\materials_list.php on line 123
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Notice:  Undefined variable: sort_dir in E:\sites\ybf\admin\materials_list.php on line 124
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:53 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:53 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:45:53 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:45:53 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:45:53 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:46:20 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:46:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:46:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:46:20 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:46:20 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:46:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:46:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:46:20 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:46:20 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:46:20 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:46:20 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:46:20 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:192
+[30-Apr-2015 19:49:04 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:49:04 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:49:04 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:49:04 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:202
+[30-Apr-2015 19:49:04 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:49:04 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:49:04 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:49:04 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:202
+[30-Apr-2015 19:49:04 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:49:04 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:49:04 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:49:04 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:202
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 247
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 248
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 247
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 248
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 247
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 248
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 247
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 248
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 247
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 248
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 247
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined index: supplier_id in E:\sites\ybf\admin\classes\class_drop_downs.php on line 248
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. DropDown->display() E:\sites\ybf\admin\materials_list.php:135
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:210
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:210
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:50:10 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:10 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:210
+[30-Apr-2015 19:50:41 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:50:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:41 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:211
+[30-Apr-2015 19:50:41 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:50:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:41 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:211
+[30-Apr-2015 19:50:41 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:50:41 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:41 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:41 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:211
+[30-Apr-2015 19:50:48 America/Vancouver] PHP Notice:  Undefined variable: full_output in E:\sites\ybf\admin\classes\class_record_pager.php on line 157
+[30-Apr-2015 19:50:48 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:48 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:211
+[30-Apr-2015 19:50:48 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in E:\sites\ybf\admin\classes\class_record_pager.php on line 184
+[30-Apr-2015 19:50:48 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:50:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\materials_list.php:0
+[30-Apr-2015 19:50:48 America/Vancouver] PHP   2. Pager->displayRecords() E:\sites\ybf\admin\materials_list.php:211
+[30-Apr-2015 19:55:21 America/Vancouver] PHP Warning:  include(E:/sites/ybf//admin/includes/nav_bar.php): failed to open stream: No such file or directory in E:\sites\ybf\admin\component_edit.php on line 44
+[30-Apr-2015 19:55:21 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:55:21 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_edit.php:0
+[30-Apr-2015 19:55:21 America/Vancouver] PHP Warning:  include(): Failed opening 'E:/sites/ybf//admin/includes/nav_bar.php' for inclusion (include_path='.;C:\php\pear') in E:\sites\ybf\admin\component_edit.php on line 44
+[30-Apr-2015 19:55:21 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:55:21 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_edit.php:0
+[30-Apr-2015 19:55:21 America/Vancouver] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\component_edit.php on line 72
+[30-Apr-2015 19:55:21 America/Vancouver] PHP Stack trace:
+[30-Apr-2015 19:55:21 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_edit.php:0
+[30-Apr-2015 19:55:21 America/Vancouver] PHP   2. mysqli_fetch_array() E:\sites\ybf\admin\component_edit.php:72

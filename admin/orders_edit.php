@@ -297,21 +297,22 @@ width: 90%;
 		</tr>
 		<tr>
 			<td style="text-align:right">Labour: </td>
-			<td><span style="float:right">$88.50</span></td>
+			<td><span style="float:right">$0.00</span></td>
 		</tr>
 		<tr>
 			<td style="text-align:right">Tax: </td>
-			<td><span style="float:right">$70.10</span></td>
+			<td><span style="float:right">$0.00</span></td>
 		</tr>
 		<tr>
 			<td style="text-align:right">Payment: </td>
 			<td><span style="float:right">$0.00</span></td>
 		</tr>				
 		<tr style="background: #666; color: #fff;">
-			<td style="text-align:right">Total:</td><td><span style="float:right">$654.20</span></td>
+			<td style="text-align:right">Total:</td><td><span style="float:right">$0.00</span></td>
 		</tr>
 	</table>
 	</form>
+	<br>
 </div>
 <div class="col-md-4">
 
@@ -417,7 +418,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					
 					// If this is a dimension, add it to th UI calculation:
 					echo "<td>". $line['fieldname'] . "</td>";
-					if ($line['fieldname'] == "Width" || $line['fieldname'] == "Height"){
+					if ($line['fieldname'] == "Horizontal" || $line['fieldname'] == "Vertical"){
 						$united_inches = $united_inches + $line['value'];
 					}
 				break;
@@ -454,7 +455,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					echo ' in.</td>';
 					
 					// If this is a dimension, add it to th UI calculation:
-					if ($line['fieldname'] == "Width" || $line['fieldname'] == "Height"){
+					if ($line['fieldname'] == "Horizontal" || $line['fieldname'] == "Vertical"){
 						$united_inches = $united_inches + $line['value'];
 					}					
 				break;
@@ -491,6 +492,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 	//	echo '</table><br>';				
 				// close previous component
 				// Show price
+				if ($currentComponent != ""):
 				$price = $functions->get_price($currentComponent,$united_inches);
 				$total_price = $total_price + $price;
 				
@@ -498,7 +500,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 				$price = 0;	
 				$united_inches = 0;				
 				echo '</table></form><br>';
-		
+				endif;
 		
 	endif;
 		?>

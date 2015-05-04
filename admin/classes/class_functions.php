@@ -51,6 +51,18 @@ function escaped_var_from_post($varname){
 		return $$varname;
 }
 
+function escaped_var_from_post_all(){
+	$dm = new DataManager();
+	foreach ($_REQUEST as $key){
+		$$varname = mysqli_real_escape_string($dm->connection, $_REQUEST[$varname]);
+	}
+	//if (isset($_REQUEST[$varname])){
+//		$$varname = mysqli_real_escape_string($dm->connection, $_REQUEST[$varname]);
+	//}else{
+	//	$$varname = "";
+//	}
+		return $$varname;
+}
 
 class Functions {
 	function __construct() {
