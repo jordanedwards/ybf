@@ -171,12 +171,15 @@ width: 90%;
 				<tr>
            			<td style="width:1px;  ">Production status: </td>
 					<td><?php  
+					if ($_GET["id"] ==0){ 
+						$orders->set_production_status("Quote");
+					}
 								$dd->clear();	
 								$dd->set_static(true);								
 								$dd->set_name("orders_production_status");
 								$dd->set_selected_value($orders->get_production_status());
 								$dd->set_required(true);
-								$dd->set_option_list("New,Pending,In Production,Complete,Shipped/Picked up");
+								$dd->set_option_list("Quote,Confirmed,In Production,Complete,Shipped/Picked up");
 								$dd->set_class_name("form-control");			
 								$dd->display();
 							?>
@@ -219,7 +222,7 @@ width: 90%;
            			<td style="width:1px;">Storage location: </td>
             		<td><?php  
 					$dd->clear();
-					$dd->set_table("artLocation");
+					$dd->set_table("artlocation");
 					$dd->set_name_field("artLocation_value");
 					$dd->set_name("orders_art_location");
 					$dd->set_active_only(true);
@@ -231,7 +234,7 @@ width: 90%;
 				</tr>
 				<tr>
            			<td style="width:1px;  ">Special labour: </td>
-            		<td><input id="orders_special_labour" name="orders_special_labour" type="number" step="0.25" value="<?php  echo $orders->get_special_labour();  ?>" style="width:80%" /> hrs. </td>
+            		<td><input id="orders_special_labour" name="orders_special_labour" type="number" step="0.25" min="0" value="<?php  echo $orders->get_special_labour();  ?>" style="width:80%" /> hrs. </td>
 				</tr>
   		
 		</table>
@@ -385,11 +388,17 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 				$show_openings = true;
 			}	
 			//next component
+			if ($line['orderComponent_done'] == 1){
+				$completed = " success ";
+			} else {
+				$completed = " ";
+			}
+			
 			echo '
 			<form id="component-form-' .$line['orderComponent_id'] . '">
-			<table class="admin_table component">
+			<table class="admin_table component' . $completed. '">
 			
-			<tr><th colspan="1">' . $line['componentType_name'] . '</th><th><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Delete" class="component-delete btn btn-default" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Save" class="component-save btn btn-success" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 50%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Completed" class="component-done btn btn-primary" data-component="outer_mat" id="component' .$line['orderComponent_id'].'"></div></th>
+			<tr><th colspan="1">' . $line['componentType_name'] . '</th><th><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Delete" class="component-delete btn btn-default" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 25%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Save" class="component-save btn btn-success" data-component-id="' .$line['orderComponent_id'].'"></div><div style="  width: 50%;  display: inline-block; padding: 0px 5px;"><input type="button" value="Completed" class="component-done btn btn-primary" data-component-id="' .$line['orderComponent_id'].'"></div></th>
 			</tr>';
 			echo '<tr>
 			<td>' .ucfirst($line['fieldname']). '</td>';
@@ -651,12 +660,12 @@ endif;
 
 		<!-- ace scripts -->
 		<script src="template/assets/js/ace/elements.scroller.js"></script>
-		<script src="template/assets/js/ace/elements.colorpicker.js"></script>
+		<!--<script src="template/assets/js/ace/elements.colorpicker.js"></script>-->
 		<script src="template/assets/js/ace/elements.fileinput.js"></script>
 		<script src="template/assets/js/ace/elements.typeahead.js"></script>
-		<script src="template/assets/js/ace/elements.wysiwyg.js"></script>
+		<!--<script src="template/assets/js/ace/elements.wysiwyg.js"></script>-->
 		<script src="template/assets/js/ace/elements.spinner.js"></script>
-		<script src="template/assets/js/ace/elements.treeview.js"></script>
+		<!--<script src="template/assets/js/ace/elements.treeview.js"></script>-->
 		<script src="template/assets/js/ace/elements.wizard.js"></script>
 		<script src="template/assets/js/ace/elements.aside.js"></script>
 		<script src="template/assets/js/ace/ace.js"></script>
@@ -698,8 +707,8 @@ endif;
 			changeYear: true
    		});	
 	
-	$('#submit-button').click(function(){
-		$('#form_orders').submit();
+	$('#save-button').click(function(){
+		$('#form-orders').submit();
 	});
 		</script>
 		<script>
@@ -724,12 +733,14 @@ endif;
 		
 		$(".component-done").on("click", function (e) {
 			e.preventDefault();
-			var component = $(this).data("component");
-			var element = $(this).attr("id");
+			var component_id = $(this).data("component-id");
+			var element = $(this);
+			
 			$.ajax({
-				url: "ajax/ajax_order_component.php?action=done&component="+component+"&order_id="+$('#orders_id').val(),	
+				url: "ajax/ajax_order_component.php?action=done&component_id="+component_id+"&order_id="+$('#orders_id').val(),	
 				success: function () {	
-				  $("#"+element).parents("table").addClass("success");
+				  element.parents("table").addClass("success");
+				  
 				}		
 			});
 		});
@@ -798,7 +809,8 @@ endif;
 				});
 		});		
 		
-		
+	</script>
+<script>		
 		$(".barcode").on("blur", function (e) {
 			/*e.preventDefault();
 			var result = confirm('You are about to delete an item from the system. Do you want to continue?');
@@ -813,9 +825,10 @@ endif;
 				});
 			}*/
 		});
-		var materials-price = 	$('#total_price').val();	
-		$('#invoice_materials').html("$"+materials-price);
-		</script>
+	//	var materialsPrice = $('#total_price').val();	
+	///	$('#invoice_materials').html("$"+materialsPrice);
+</script>
+		
 			<?php require("includes/component_add_dialog.php"); ?>
 			<?php require("includes/barcode_dialog.php"); ?>
 			<?php require("includes/opening_dialog.php"); ?>	

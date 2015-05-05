@@ -217,8 +217,10 @@ footer {
 	color: #fff;
 }
 .pagination>li>a, .pagination>li>span {
-	border: 1px solid #666;
-	background: #DDAB30;
+  border: 1px solid #666;
+  background: #ccc;
+  margin: 2px;
+  color: #666;
 }
 span.price {
 	font-size: 48px;

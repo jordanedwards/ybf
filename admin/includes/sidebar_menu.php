@@ -40,11 +40,18 @@
 				</a>
 				<b class="arrow"></b>
 			</li>
-					
 			<li class="">
-				<a href="orders_list.php?s_production_status=Pending&reload=true">
+				<a href="orders_list.php?s_production_status=Quote&reload=true">
 					<i class="menu-icon fa fa-caret-right"></i>
-					Pending
+					Quote
+				</a>
+				<b class="arrow"></b>
+			</li>
+								
+			<li class="">
+				<a href="orders_list.php?s_production_status=Confirmed&reload=true">
+					<i class="menu-icon fa fa-caret-right"></i>
+					Confirmed
 				</a>
 				<b class="arrow"></b>
 			</li>
@@ -62,7 +69,14 @@
 					Completed
 				</a>
 				<b class="arrow"></b>
-			</li>			
+			</li>	
+			<li class="">
+				<a href="orders_list.php?reload=true">
+					<i class="menu-icon fa fa-caret-right"></i>
+					All
+				</a>
+				<b class="arrow"></b>
+			</li>						
 		</ul>
 	</li>
 	
@@ -94,12 +108,21 @@
 			</li>
 
 			<li class="">
-				<a href="orders_list.php?s_production_status=In Production&reload=true">
+				<a href="specialitems_list.php?reload=true">
 					<i class="menu-icon fa fa-caret-right"></i>
 					Retail Products & Labour
 				</a>
 				<b class="arrow"></b>
 			</li>
+			
+			<li class="">
+				<a href="componenttype_list.php?reload=true">
+					<i class="menu-icon fa fa-caret-right"></i>
+					Components
+				</a>
+				<b class="arrow"></b>
+			</li>
+						
 			<li class="">
 				<a href="orders_list.php?s_production_status=Completed&reload=true">
 					<i class="menu-icon fa fa-caret-right"></i>

@@ -1,10 +1,13 @@
 <?php 
- class Ordercomponent {
+ class Componenttype {
  
 		private $id;
-		private $orders_id;
- 		private $componentType;
- 		private $done;
+		private $name;
+ 		private $componentTypeMarkup;
+ 		private $active;
+ 		private $date_created;
+ 		private $last_updated;
+ 		private $last_updated_user;
  		
 	function __construct() {
 	
@@ -12,14 +15,23 @@
 				public function get_id() { return $this->id;}
 		 		public function set_id($value) {$this->id=$value;}
  
-		 		public function get_orders_id() { return $this->orders_id;}
-		 		public function set_orders_id($value) {$this->orders_id=$value;}
+		 		public function get_name() { return $this->name;}
+		 		public function set_name($value) {$this->name=$value;}
  
-		 		public function get_componentType() { return $this->componentType;}
-		 		public function set_componentType($value) {$this->componentType=$value;}
+		 		public function get_componentTypeMarkup() { return $this->componentTypeMarkup;}
+		 		public function set_componentTypeMarkup($value) {$this->componentTypeMarkup=$value;}
  
-		 		public function get_done() { return $this->done;}
-		 		public function set_done($value) {$this->done=$value;}
+		 		public function get_active() { return $this->active;}
+		 		public function set_active($value) {$this->active=$value;}
+ 
+		 		public function get_date_created() { return $this->date_created;}
+		 		public function set_date_created($value) {$this->date_created=$value;}
+ 
+		 		public function get_last_updated() { return $this->last_updated;}
+		 		public function set_last_updated($value) {$this->last_updated=$value;}
+ 
+		 		public function get_last_updated_user() { return $this->last_updated_user;}
+		 		public function set_last_updated_user($value) {$this->last_updated_user=$value;}
  
 		 
 public function __toString(){
@@ -69,20 +81,25 @@ public function save() {
 			// if record does not already exist, create a new one
 			if($this->get_id() == 0) {
 			
-				$strSQL = "INSERT INTO ordercomponent (orderComponent_id, orderComponent_orders_id, orderComponent_componentType, orderComponent_done) 
+				$strSQL = "INSERT INTO componenttype (componentType_id, componentType_name, componentTypeMarkup, is_active, componentType_date_created, componentType_last_updated, componentType_last_updated_user) 
         VALUES (
 								'".mysqli_real_escape_string($dm->connection, $this->get_id())."',
-								'".mysqli_real_escape_string($dm->connection, $this->get_orders_id())."',
-								'".mysqli_real_escape_string($dm->connection, $this->get_componentType())."',
-								'".mysqli_real_escape_string($dm->connection, $this->get_done())."')";
-							 }
+								'".mysqli_real_escape_string($dm->connection, $this->get_name())."',
+								'".mysqli_real_escape_string($dm->connection, $this->get_componentTypeMarkup())."',
+								'".mysqli_real_escape_string($dm->connection, $this->get_active())."',
+								NOW(),
+							NOW(),
+							'".mysqli_real_escape_string($dm->connection, $this->get_last_updated_user())."')";	
+						}
 			else {
-				$strSQL = "UPDATE ordercomponent SET 
-								orderComponent_orders_id='".mysqli_real_escape_string($dm->connection, $this->get_orders_id())."',						 
-						 		orderComponent_componentType='".mysqli_real_escape_string($dm->connection, $this->get_componentType())."',						 
-						 		orderComponent_done='".mysqli_real_escape_string($dm->connection, $this->get_done())."'
+				$strSQL = "UPDATE componenttype SET 
+								componentType_name='".mysqli_real_escape_string($dm->connection, $this->get_name())."',						 
+						 		componentTypeMarkup='".mysqli_real_escape_string($dm->connection, $this->get_componentTypeMarkup())."',						 
+						 		is_active='".mysqli_real_escape_string($dm->connection, $this->get_active())."',						 
+						 		componentType_last_updated=NOW(),						
+						 		componentType_last_updated_user='".mysqli_real_escape_string($dm->connection, $this->get_last_updated_user())."'
 							
-						 	WHERE orderComponent_id=".mysqli_real_escape_string($dm->connection, $this->get_id());
+						 	WHERE componentType_id=".mysqli_real_escape_string($dm->connection, $this->get_id());
 
 				}		
 				
@@ -120,7 +137,7 @@ public function save() {
 		//	require_once($class_folder . '/class_data_manager.php');
 			$dm = new DataManager();
 
-			$strSQL = "DELETE FROM ordercomponent WHERE orderComponent_id=" . $id;
+			$strSQL = "DELETE FROM componenttype WHERE componentType_id=" . $id;
 			$result = $dm->updateRecords($strSQL);
 			return $result;
 		}
@@ -139,7 +156,7 @@ public function save() {
 		//	require_once($class_folder . '/class_data_manager.php');
 			$status = false;
 			$dm = new DataManager();
-			$strSQL = "SELECT * FROM ordercomponent WHERE orderComponent_id=" . $id;
+			$strSQL = "SELECT * FROM componenttype WHERE componentType_id=" . $id;
       
 			$result = $dm->queryRecords($strSQL);
 			$num_rows = mysqli_num_rows($result);
@@ -160,28 +177,15 @@ public function save() {
 			exit;
 		}
 	}
-
-	public function get_componentTypeName() { 
-		$status = false;
-		$dm = new DataManager();
-		$strSQL = "SELECT componentType_name FROM componenttype WHERE componentType_id=" . $this->componentType;
-		addToLog($strSQL);
-  
-		$result = $dm->queryRecords($strSQL);
-		if ($result):
-			while ($row = mysqli_fetch_assoc($result)):
-				$type_name = $row['componentType_name'];
-			endwhile;
-		endif;
-		
-		return $type_name;
-	}
   
 	// loads the object data from a mysql assoc array
   private function load($row){
-	$this->set_id($row["orderComponent_id"]);
-	$this->set_orders_id($row["orderComponent_orders_id"]);
-	$this->set_componentType($row["orderComponent_componentType"]);
-	$this->set_done($row["orderComponent_done"]);
-  }
+	$this->set_id($row["componentType_id"]);
+				$this->set_name($row["componentType_name"]);
+				$this->set_componentTypeMarkup($row["componentTypeMarkup"]);
+				$this->set_active($row["is_active"]);
+				$this->set_date_created($row["componentType_date_created"]);
+				$this->set_last_updated($row["componentType_last_updated"]);
+				$this->set_last_updated_user($row["componentType_last_updated_user"]);
+				  }
 }

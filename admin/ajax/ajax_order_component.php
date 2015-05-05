@@ -1,23 +1,24 @@
 <?php
 require("../includes/init.php"); 
-require(CLASS_FOLDER . "class_orders.php");
+require(CLASS_FOLDER . "class_ordercomponent.php");
 
 $action = escaped_var_from_post("action");
-$component = escaped_var_from_post("component");
+$component_id = escaped_var_from_post("component_id");
 $order_id = escaped_var_from_post("order_id");
 
-if ($order_id >0):
-	$order = new Orders();
-	$order->get_by_id($order_id);
+if ($component_id >0):
+	$component = new Ordercomponent();
+	$component->get_by_id($component_id);
 	
 	switch ($action):
 		case "done":
-			$order->set_component_done($component,"1");
-			$order->save();
+			$component->set_done("1");
+			$component->save();
+			
 			// Add activity note here
 			require(CLASS_FOLDER . "class_orderactivity.php");
 			$ordersactivity = new Orderactivity();	
-			$ordersactivity->set_content(ucfirst($component). " done");
+			$ordersactivity->set_content($component->get_componentTypeName(). " done");
 			$ordersactivity->set_orderId($order_id);
 			$ordersactivity->set_active("Y");
 			
