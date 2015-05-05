@@ -19,6 +19,11 @@ $(function() {
 			'Go': {
 				click: function() {
 					// Lookup barcode:
+		          $.getJSON("ajax/ajax_barcode_lookup.php?barcode="+$('#barcodeChange').val(), function(jd) {
+				  // JSON: get barcode response, get looked up component id, and get new price:
+				  
+				  });
+				  
 					$.ajax({
 						url: "ajax/ajax_barcode_lookup.php?barcode="+$('#barcodeChange').val(),	
 						success: function (retval) {
@@ -27,6 +32,9 @@ $(function() {
 							} else {
 								//Update selection with new value from barcode lookup					
 								$('#'+$('#component-list-id').val()).val(retval);
+								//Update price:
+								$('#component-total-'+$('scan-component-id').val()).html();
+								//Close
 			               		$( "#barcode_dialog" ).dialog('close');
 							}
 						}		
@@ -49,6 +57,7 @@ $(function() {
 	$(".barcodeScan").on("click", function (e) {
 		e.preventDefault();
 		var componentId = $(this).data("component-id");
+		$('#scan-component-id').val(componentId);
 		$('#component-list-id').val("component-list-"+componentId);
 		$('#warning').hide();
 		$('#barcodeChange').val("");
@@ -61,6 +70,7 @@ $(function() {
 <div id="barcode_dialog" title="Barcode Look up" style="display:none">
 <h3>Scan barcode:</h3>
 <input type="hidden" id="component-list-id" />
+<input type="hidden" id="scan-component-id" />
 <p style="display:none; color:red;" id="warning"><i>Barcode not found</i></p>
 <p>
 <input type="text" id="barcodeChange" placeholder="Scan barcode here to change selection" style="  width: 80%;"/>  	

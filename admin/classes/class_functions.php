@@ -284,7 +284,7 @@ public function convertMetric($impValue){
 		return $converted_remainder;
 	}
 	
-	public function get_price($component_id, $ui){
+	public function calculate_price($component_id, $ui){
 		$cost = 0;
 		$price = 0;
 		$markup = 0;

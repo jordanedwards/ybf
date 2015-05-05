@@ -16,7 +16,10 @@
  		private $date_created;
  		private $last_updated;
  		private $last_updated_user;
- 		
+		private $total_materials;
+		private $total;
+		private $tax;
+				 		
 	function __construct() {
 	
 	}
@@ -64,7 +67,10 @@
  
 		 		public function get_last_updated_user() { return $this->last_updated_user;}
 		 		public function set_last_updated_user($value) {$this->last_updated_user=$value;}
- 
+
+		 		public function get_total_materials() { return $this->total_materials;}
+ 		 		public function get_total() { return $this->total;}
+		 		public function get_tax() { return $this->tax;}				
 		 
 public function __toString(){
 		// Debugging tool
@@ -225,23 +231,56 @@ public function save() {
 			exit;
 		}
 	}
+	
+	// function to calculate totals
+	public function calculate_totals() {
+		try{
+			$status = false;
+			$dm = new DataManager();
+			$strSQL = "SELECT * FROM ordercomponent WHERE orderComponent_orders_id=" . $this->id;
+      
+			$result = $dm->queryRecords($strSQL);
+			$num_rows = mysqli_num_rows($result);
+
+			if ($num_rows != 0){
+				while ($line = mysqli_fetch_assoc($result)):
+					 $materials = $materials + $line['orderComponent_price'];
+				endwhile;
+				$this->total_materials = $materials;
+				$status = true;
+			}
+			$total = $total + $this->total_materials;
+			$this->tax = $total * 0.12;			
+			$this->total = $total + $this->tax;
+
+			return $status;
+		}
+		catch(Exception $e) {
+			include_once($_SERVER['DOCUMENT_ROOT'] . '/classes/class_error_handler.php');
+			$errorVar = new ErrorHandler();
+			$errorVar->notifyAdminException($e);
+			exit;
+		}
+	}
+		
   
 	// loads the object data from a mysql assoc array
   private function load($row){
 	$this->set_id($row["orders_id"]);
-				$this->set_customer_id($row["orders_customer_id"]);
-				$this->set_production_status($row["orders_production_status"]);
-				$this->set_condition($row["orders_condition"]);
-				$this->set_special_instructions($row["orders_special_instructions"]);
-				$this->set_received_date($row["orders_received_date"]);
-				$this->set_promised_date($row["orders_promised_date"]);
-				$this->set_art_location($row["orders_art_location"]);
-				$this->set_fitting_labour($row["orders_fitting_labour"]);
-				$this->set_mat_labour($row["orders_mat_labour"]);
-				$this->set_mount_labour($row["orders_mount_labour"]);
-				$this->set_special_labour($row["orders_special_labour"]);
-				$this->set_date_created($row["orders_date_created"]);
-				$this->set_last_updated($row["orders_last_updated"]);
-				$this->set_last_updated_user($row["orders_last_updated_user"]);
-				  }
+	$this->set_customer_id($row["orders_customer_id"]);
+	$this->set_production_status($row["orders_production_status"]);
+	$this->set_condition($row["orders_condition"]);
+	$this->set_special_instructions($row["orders_special_instructions"]);
+	$this->set_received_date($row["orders_received_date"]);
+	$this->set_promised_date($row["orders_promised_date"]);
+	$this->set_art_location($row["orders_art_location"]);
+	$this->set_fitting_labour($row["orders_fitting_labour"]);
+	$this->set_mat_labour($row["orders_mat_labour"]);
+	$this->set_mount_labour($row["orders_mount_labour"]);
+	$this->set_special_labour($row["orders_special_labour"]);
+	$this->set_date_created($row["orders_date_created"]);
+	$this->set_last_updated($row["orders_last_updated"]);
+	$this->set_last_updated_user($row["orders_last_updated_user"]);
+	$this->calculate_totals();
+	}
 }

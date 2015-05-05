@@ -6,11 +6,15 @@ if (isset($_GET['first_name'])):
 
 	$first_name = escaped_var_from_post("first_name");
 	$last_name = escaped_var_from_post("last_name");
-
+	$tel = escaped_var_from_post("tel");
+	$email = escaped_var_from_post("email");
+		
 	$newCustomer = new Customer();
 	
 	$newCustomer->set_first_name($first_name);
 	$newCustomer->set_last_name($last_name);
+	$newCustomer->set_tel($tel);
+	$newCustomer->set_email($email);		
 	
 	include(CLASS_FOLDER . "class_user.php");
   	$last_updated_user = new User;

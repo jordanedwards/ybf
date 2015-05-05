@@ -1,7 +1,9 @@
 <?php 
- include("includes/init.php"); 
- include(CLASS_FOLDER . "/class_orders.php");
- $activeMenuItem = "Orders"; 
+include("includes/init.php"); 
+include(CLASS_FOLDER . "/class_orders.php");
+include(CLASS_FOLDER . "/class_ordercomponent.php");
+
+$activeMenuItem = "Orders"; 
 
 if(!isset($_GET["id"])) {
 	$session->setAlertMessage("Can not edit - the ID is invalid. Please try again.");
@@ -296,7 +298,7 @@ width: 90%;
 		</th></tr>
 		<tr>
 			<td style="text-align:right">Materials: </td>
-			<td><span style="float:right" id="invoice_materials"></span></td>
+			<td><span style="float:right" id="invoice_materials">$<?php echo $orders->get_total_materials() ?></span></td>
 		</tr>
 		<tr>
 			<td style="text-align:right">Labour: </td>
@@ -304,14 +306,14 @@ width: 90%;
 		</tr>
 		<tr>
 			<td style="text-align:right">Tax: </td>
-			<td><span style="float:right">$0.00</span></td>
+			<td><span style="float:right">$<?php echo number_format($orders->get_tax(),2) ?></span></td>
 		</tr>
 		<tr>
 			<td style="text-align:right">Payment: </td>
 			<td><span style="float:right">$0.00</span></td>
 		</tr>				
 		<tr style="background: #666; color: #fff;">
-			<td style="text-align:right">Total:</td><td><span style="float:right">$0.00</span></td>
+			<td style="text-align:right">Total:</td><td><span style="float:right">$<?php echo number_format($orders->get_total(),2) ?></span></td>
 		</tr>
 	</table>
 	</form>
@@ -329,11 +331,9 @@ width: 90%;
 	<div id="components_list">
 	<?php	
 	$dd = New DropDown();
+	$thisComponent = new Ordercomponent();
 	$functions = New Functions();
 	$show_openings=false;
-	$price = 0;
-	$united_inches = 0;	
-	$total_price = 0;
 									
 	$dm = new DataManager();
 	$strSQL = "SELECT * FROM ordercomponent 
@@ -346,7 +346,8 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 	if ($result):
 		while ($line = mysqli_fetch_assoc($result)):
 		if ($currentComponent != $line['orderComponent_id']){
-		// End of component
+			$thisComponent->get_by_id($line['orderComponent_id']);
+			// End of component
 			if ($currentComponent != ""){
 
 			// Don't do this BEFORE first component
@@ -374,11 +375,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 				endif;
 				// close previous component
 				// Show price
-				$price = $functions->get_price($currentComponent,$united_inches);
-				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($united_inches) . " " . $functions->convertImperial($united_inches) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$price . "</span></td></tr>";
-				$total_price = $total_price + $price;
-				$price = 0;	
-				$united_inches = 0;
+				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($thisComponent->get_united_inches()) . " " . $functions->convertImperial($thisComponent->get_united_inches()) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$thisComponent->get_price() . "</span></td></tr>";
 						
 				echo '</table>';
 				echo '</form><br>';					
@@ -427,9 +424,6 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					
 					// If this is a dimension, add it to th UI calculation:
 					echo "<td>". $line['fieldname'] . "</td>";
-					if ($line['fieldname'] == "Horizontal" || $line['fieldname'] == "Vertical"){
-						$united_inches = $united_inches + $line['value'];
-					}
 				break;
 				case "input":
 					echo "<td>" . $line['fieldname'] . "</td><td><input name='" . $line['fieldname'] . "'></td>";		
@@ -461,12 +455,7 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					$dd->set_name($line['fieldname']."_fraction");	
 					$dd->set_selected_value($functions->get_fraction($line['value']));	
 					$dd->display();
-					echo ' in.</td>';
-					
-					// If this is a dimension, add it to th UI calculation:
-					if ($line['fieldname'] == "Horizontal" || $line['fieldname'] == "Vertical"){
-						$united_inches = $united_inches + $line['value'];
-					}					
+					echo ' in.</td>';					
 				break;
 				case "input":
 					echo "<td>" . $line['fieldname'] . "</td><td><input name='" . $line['fieldname'] . "'></td>";		
@@ -501,13 +490,9 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 	//	echo '</table><br>';				
 				// close previous component
 				// Show price
-				if ($currentComponent != ""):
-				$price = $functions->get_price($currentComponent,$united_inches);
-				$total_price = $total_price + $price;
-				
-				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($united_inches) . " " . $functions->convertImperial($united_inches) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$price. "</span></td></tr>";
-				$price = 0;	
-				$united_inches = 0;				
+				if ($currentComponent != ""):			
+				echo "<tr style='background: #C0BDBD;'><td colspan='2' style='text-align:right;'><span style='float:left;'>United Inches: " . $functions->get_whole_int($thisComponent->get_united_inches()) . " " . $functions->convertImperial($thisComponent->get_united_inches()) . "\"</span><span id='component-total-" .$currentComponent . "'>$" .$thisComponent->get_price(). "</span></td></tr>";
+			
 				echo '</table></form><br>';
 				endif;
 		

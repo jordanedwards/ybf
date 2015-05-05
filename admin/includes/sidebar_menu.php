@@ -186,7 +186,7 @@
 	</li>
 	
 	<li class="<?php if($activeMenuItem == "Users"){ echo " active open";}?>">
-		<a href="users.php">
+		<a href="user_list.php">
 			<i class="menu-icon fa fa-user"></i>
 			<span class="menu-text"> Users </span>
 		</a>

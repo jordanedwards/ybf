@@ -3,8 +3,11 @@
  
 		private $id;
 		private $orders_id;
+ 		private $price;
  		private $componentType;
  		private $done;
+		private $selection;
+		private $united_inches;
  		
 	function __construct() {
 	
@@ -15,12 +18,18 @@
 		 		public function get_orders_id() { return $this->orders_id;}
 		 		public function set_orders_id($value) {$this->orders_id=$value;}
  
+		 		public function get_price() { return $this->price;}
+		 		public function set_price($value) {$this->price=$value;}
+ 
 		 		public function get_componentType() { return $this->componentType;}
 		 		public function set_componentType($value) {$this->componentType=$value;}
  
 		 		public function get_done() { return $this->done;}
 		 		public function set_done($value) {$this->done=$value;}
  
+		 		public function get_selection() { return $this->selection;}  
+		 		public function get_united_inches() { return $this->united_inches;}
+  
 		 
 public function __toString(){
 		// Debugging tool
@@ -69,16 +78,17 @@ public function save() {
 			// if record does not already exist, create a new one
 			if($this->get_id() == 0) {
 			
-				$strSQL = "INSERT INTO ordercomponent (orderComponent_id, orderComponent_orders_id, orderComponent_componentType, orderComponent_done) 
+				$strSQL = "INSERT INTO ordercomponent (orderComponent_orders_id, orderComponent_price, orderComponent_componentType, orderComponent_done) 
         VALUES (
-								'".mysqli_real_escape_string($dm->connection, $this->get_id())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_orders_id())."',
+								'".mysqli_real_escape_string($dm->connection, $this->get_price())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_componentType())."',
 								'".mysqli_real_escape_string($dm->connection, $this->get_done())."')";
 							 }
 			else {
 				$strSQL = "UPDATE ordercomponent SET 
 								orderComponent_orders_id='".mysqli_real_escape_string($dm->connection, $this->get_orders_id())."',						 
+						 		orderComponent_price='".mysqli_real_escape_string($dm->connection, $this->get_price())."',						 
 						 		orderComponent_componentType='".mysqli_real_escape_string($dm->connection, $this->get_componentType())."',						 
 						 		orderComponent_done='".mysqli_real_escape_string($dm->connection, $this->get_done())."'
 							
@@ -161,27 +171,53 @@ public function save() {
 		}
 	}
 
-	public function get_componentTypeName() { 
-		$status = false;
-		$dm = new DataManager();
-		$strSQL = "SELECT componentType_name FROM componenttype WHERE componentType_id=" . $this->componentType;
-		addToLog($strSQL);
-  
-		$result = $dm->queryRecords($strSQL);
-		if ($result):
-			while ($row = mysqli_fetch_assoc($result)):
-				$type_name = $row['componentType_name'];
-			endwhile;
-		endif;
-		
-		return $type_name;
+	// function to fetch the record and populate the object
+	public function populate() {
+		try{
+		//	require_once($class_folder . '/class_data_manager.php');
+			$status = false;
+
+			$dm = new DataManager();			
+			$strSQL = "SELECT ordercomponent_record.id AS OCR_id, fieldname, fieldtype, value
+			 FROM ordercomponent_record
+						LEFT JOIN componenttypefields ON ordercomponent_record.componentTypeField = componenttypefields.id
+						WHERE orderComponentId = " .$this->id;
+			$result = $dm->queryRecords($strSQL);
+						
+			if ($result):
+				while ($line = mysqli_fetch_assoc($result)):
+					// If this is a dimension, add it to th UI calculation:
+					if ($line['fieldname'] == "Horizontal" || $line['fieldname'] == "Vertical"){
+						$united_inches = $united_inches + $line['value'];
+					}
+					
+					// If this is the component type selection, set it:
+					if ($line['fieldtype'] == "list"){
+						$this->selection = $line['value'];
+					}									
+				endwhile;	
+				
+				$this->united_inches = $united_inches;
+			endif;
+
+			return $status;
+		}
+		catch(Exception $e) {
+			// CATCH EXCEPTION HERE -- DISPLAY ERROR MESSAGE & EMAIL ADMINISTRATOR
+			include_once($_SERVER['DOCUMENT_ROOT'] . '/classes/class_error_handler.php');
+			$errorVar = new ErrorHandler();
+			$errorVar->notifyAdminException($e);
+			exit;
+		}
 	}
-  
+	  
 	// loads the object data from a mysql assoc array
   private function load($row){
 	$this->set_id($row["orderComponent_id"]);
 	$this->set_orders_id($row["orderComponent_orders_id"]);
+	$this->set_price($row["orderComponent_price"]);
 	$this->set_componentType($row["orderComponent_componentType"]);
 	$this->set_done($row["orderComponent_done"]);
-  }
+	$this->populate();
+	  }
 }

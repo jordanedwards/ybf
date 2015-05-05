@@ -78,16 +78,19 @@ $converted_value = 0;
 	$new_field_record->set_componentTypeField($key['id']);
 	$new_field_record->set_value($converted_value);
 	$new_field_record->save();
-	//echo $key['id'] . "<br>";
 					
 }
-//echo "Here";
-//exit();
 
-//print_r(array_keys($_POST['fields']));
+// calculate & save price:
+$new_component->populate();
+//echo $new_component;
+$price = $functions->calculate_price($new_component->get_id(),$new_component->get_united_inches());
 
+$new_component->set_price($price);
+$new_component->save();
 
-//print_r($_POST);
+//echo $new_component;
+//echo "Price " . $price;
 	header("location:" . BASE_URL . "/orders_edit.php?id=".$orderId);
 
 ?>
