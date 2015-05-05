@@ -1,0 +1,1164 @@
+<<<<<<< HEAD
+[14-Dec-2014 21:36:08 America/Vancouver] PHP Warning:  require(E:/sites/You've Been Framed//classes/class_user.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\actions\action_login_user.php on line 25
+
+[14-Dec-2014 21:36:08 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:36:08 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:36:08 America/Vancouver] PHP Fatal error:  require(): Failed opening required 'E:/sites/You've Been Framed//classes/class_user.php' (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\actions\action_login_user.php on line 25
+
+[14-Dec-2014 21:36:08 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:36:08 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:37:00 America/Vancouver] PHP Warning:  require(E:/sites/You've Been Framed//includes/config_secure.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_user.php on line 55
+
+[14-Dec-2014 21:37:00 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:37:00 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:37:00 America/Vancouver] PHP   2. User->set_password() E:\sites\You've Been Framed\admin\actions\action_login_user.php:27
+
+[14-Dec-2014 21:37:00 America/Vancouver] PHP Fatal error:  require(): Failed opening required 'E:/sites/You've Been Framed//includes/config_secure.php' (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_user.php on line 55
+
+[14-Dec-2014 21:37:00 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:37:00 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:37:00 America/Vancouver] PHP   2. User->set_password() E:\sites\You've Been Framed\admin\actions\action_login_user.php:27
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP Warning:  require(E:/sites/You've Been Framed//includes/config_db.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 26
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP Fatal error:  require(): Failed opening required 'E:/sites/You've Been Framed//includes/config_db.php' (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 26
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:37:22 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP Warning:  require(E:/sites/You've Been Framed//includes/config_app.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\includes\config_db.php on line 4
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP   4. require() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:26
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP Fatal error:  require(): Failed opening required 'E:/sites/You've Been Framed//includes/config_app.php' (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\includes\config_db.php on line 4
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:37:44 America/Vancouver] PHP   4. require() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:26
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP Warning:  include_once(E:/sites/You've Been Framed//classes/class_phpmailer.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 28
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP Warning:  include_once(): Failed opening 'E:/sites/You've Been Framed//classes/class_phpmailer.php' for inclusion (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 28
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP Warning:  require_once(E:/sites/You've Been Framed//includes/init.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 29
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP Fatal error:  require_once(): Failed opening required 'E:/sites/You've Been Framed//includes/init.php' (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 29
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:38:04 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP Warning:  require_once(E:/sites/You've Been Framed//includes/init.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 29
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP Fatal error:  require_once(): Failed opening required 'E:/sites/You've Been Framed//includes/init.php' (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_error_handler.php on line 29
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:38:56 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP Warning:  require_once(E:/sites/You've Been Framed//classes/class_data_manager.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_functions.php on line 22
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   5. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP Fatal error:  require_once(): Failed opening required 'E:/sites/You've Been Framed//classes/class_data_manager.php' (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_functions.php on line 22
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:07 America/Vancouver] PHP   5. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP Fatal error:  Maximum function nesting level of '100' reached, aborting! in E:\sites\You've Been Framed\admin\includes\config_db.php on line 4
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   2. User->login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:29
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   3. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_user.php:80
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   4. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   5. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   6. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   7. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   8. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP   9. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  10. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  11. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  12. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  13. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  14. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  15. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  16. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  17. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  18. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  19. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  20. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  21. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  22. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  23. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  24. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  25. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  26. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  27. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  28. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  29. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  30. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  31. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  32. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  33. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  34. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  35. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  36. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  37. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  38. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  39. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  40. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  41. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  42. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  43. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  44. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  45. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  46. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  47. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  48. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  49. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  50. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  51. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  52. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  53. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  54. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  55. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  56. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  57. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  58. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  59. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  60. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  61. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  62. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  63. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  64. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  65. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  66. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  67. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  68. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  69. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  70. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  71. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  72. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  73. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  74. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  75. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  76. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:21 America/Vancouver] PHP  77. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  78. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  79. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  80. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  81. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  82. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  83. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  84. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  85. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  86. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  87. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  88. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  89. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  90. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  91. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  92. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  93. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  94. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  95. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  96. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  97. ErrorHandler->notifyAdminException() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:45
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  98. addToLog() E:\sites\You've Been Framed\admin\classes\class_error_handler.php:51
+
+[14-Dec-2014 21:39:22 America/Vancouver] PHP  99. DataManager->__construct() E:\sites\You've Been Framed\admin\classes\class_functions.php:23
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP Warning:  require_once(class_smtp.php): failed to open stream: No such file or directory in E:\sites\You've Been Framed\admin\classes\class_phpmailer.php on line 702
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP   2. PHPMailer->Send() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:45
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP   3. PHPMailer->SmtpSend() E:\sites\You've Been Framed\admin\classes\class_phpmailer.php:576
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP Fatal error:  require_once(): Failed opening required 'class_smtp.php' (include_path='.;C:\php\pear') in E:\sites\You've Been Framed\admin\classes\class_phpmailer.php on line 702
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP   2. PHPMailer->Send() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:45
+
+[14-Dec-2014 21:48:14 America/Vancouver] PHP   3. PHPMailer->SmtpSend() E:\sites\You've Been Framed\admin\classes\class_phpmailer.php:576
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 141
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:67
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\You've Been Framed\admin\classes\class_user.php:141
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:67
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:144
+
+[14-Dec-2014 21:51:52 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 141
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:67
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\You've Been Framed\admin\classes\class_user.php:141
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:67
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:144
+
+[14-Dec-2014 21:53:23 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 141
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\You've Been Framed\admin\classes\class_user.php:141
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:144
+
+[14-Dec-2014 21:56:41 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 141
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\You've Been Framed\admin\classes\class_user.php:141
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   3. addToLog() E:\sites\You've Been Framed\admin\classes\class_user.php:143
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   4. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_functions.php:41
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   5. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:144
+
+[14-Dec-2014 21:58:03 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 141
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\You've Been Framed\admin\classes\class_user.php:141
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:144
+
+[14-Dec-2014 21:59:49 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 22:00:44 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 22:00:44 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 22:00:44 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_login_user.php:0
+
+[14-Dec-2014 22:00:44 America/Vancouver] PHP   2. User->update_last_login() E:\sites\You've Been Framed\admin\actions\action_login_user.php:32
+
+[14-Dec-2014 22:00:44 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:111
+
+[14-Dec-2014 22:00:44 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 141
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\You've Been Framed\admin\classes\class_user.php:141
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:144
+
+[14-Dec-2014 22:16:04 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 141
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\You've Been Framed\admin\classes\class_user.php:141
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:145
+
+[14-Dec-2014 22:18:40 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 3 given in E:\sites\You've Been Framed\admin\classes\class_user.php on line 141
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\You've Been Framed\admin\classes\class_user.php:141
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 69
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:145
+
+[14-Dec-2014 22:22:04 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:69
+
+[14-Dec-2014 22:24:54 America/Vancouver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, string given in E:\sites\You've Been Framed\admin\classes\class_data_manager.php on line 71
+
+[14-Dec-2014 22:24:54 America/Vancouver] PHP Stack trace:
+
+[14-Dec-2014 22:24:54 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:0
+
+[14-Dec-2014 22:24:54 America/Vancouver] PHP   2. User->save() E:\sites\You've Been Framed\admin\actions\action_forgot_password_admin.php:68
+
+[14-Dec-2014 22:24:54 America/Vancouver] PHP   3. DataManager->updateRecords() E:\sites\You've Been Framed\admin\classes\class_user.php:143
+
+[14-Dec-2014 22:24:54 America/Vancouver] PHP   4. mysqli_query() E:\sites\You've Been Framed\admin\classes\class_data_manager.php:71
+
+[12-Feb-2015 15:53:55 America/Vancouver] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/orchardc/public_html/youvebeenframed.ca/admin/actions/action_forgot_password_admin.php:26) in /home/orchardc/public_html/youvebeenframed.ca/admin/actions/action_forgot_password_admin.php on line 53
+[08-Mar-2015 14:27:48 America/Vancouver] PHP Notice:  Undefined variable: orders_tracking in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 11
+[08-Mar-2015 14:27:48 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:27:48 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:28:14 America/Vancouver] PHP Notice:  Undefined variable: orders_tracking in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 11
+[08-Mar-2015 14:28:14 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:28:14 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:29:24 America/Vancouver] PHP Notice:  Undefined variable: orders_tracking in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 15
+[08-Mar-2015 14:29:24 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:29:24 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:29:41 America/Vancouver] PHP Notice:  Undefined variable: orders_tracking in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 16
+[08-Mar-2015 14:29:41 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:29:41 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:42:47 America/Vancouver] PHP Notice:  Undefined variable: orders_frame in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 28
+[08-Mar-2015 14:42:47 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:42:47 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:42:47 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_mount_material() in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 35
+[08-Mar-2015 14:42:47 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:42:47 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:43:53 America/Vancouver] PHP Notice:  Undefined variable: orders_frame in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 28
+[08-Mar-2015 14:43:53 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:43:53 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:43:53 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_b in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 43
+[08-Mar-2015 14:43:53 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:43:53 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:43:53 America/Vancouver] PHP Notice:  Undefined variable: orders_inner_mat_w in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 46
+[08-Mar-2015 14:43:53 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:43:53 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:43:53 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_inner_mat_h() in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 47
+[08-Mar-2015 14:43:53 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:43:53 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:45:19 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_b in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 43
+[08-Mar-2015 14:45:19 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:45:19 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:45:19 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::set_frame_done() in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 50
+[08-Mar-2015 14:45:19 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:45:19 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_b in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 43
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:47:42 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Notice:  Undefined variable: orders_frame_done in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 50
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:47:42 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_done in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 51
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:47:42 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Notice:  Undefined variable: orders_inner_mat_done in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 52
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:47:42 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Notice:  Undefined variable: orders_fillet_done in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 53
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:47:42 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Notice:  Undefined variable: orders_glass_done in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 54
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:47:42 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Notice:  Undefined variable: orders_mount_done in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 55
+[08-Mar-2015 14:47:42 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:47:42 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:48:16 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_b in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 43
+[08-Mar-2015 14:48:16 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:48:16 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_t_fraction in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 42
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:57:39 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_b_fraction in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 43
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:57:39 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_l_fraction in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 44
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:57:39 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_r_fraction in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 45
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:57:39 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Notice:  Undefined variable: orders_inner_mat_w_fraction in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 46
+[08-Mar-2015 14:57:39 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:57:39 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:58:51 America/Vancouver] PHP Notice:  Undefined variable: orders_outer_mat_b_fraction in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 43
+[08-Mar-2015 14:58:51 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:58:51 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 14:58:51 America/Vancouver] PHP Notice:  Undefined variable: orders_inner_mat_w_fraction in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 46
+[08-Mar-2015 14:58:51 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 14:58:51 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 15:00:23 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\You've Been Framed\admin\actions\action_orders_edit.php on line 57
+[08-Mar-2015 15:00:23 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:00:23 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 15:00:23 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 415
+[08-Mar-2015 15:00:23 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:00:23 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 15:00:23 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:76
+[08-Mar-2015 15:01:11 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_frame_w() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 420
+[08-Mar-2015 15:01:11 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:01:11 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 15:01:11 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:76
+[08-Mar-2015 15:04:32 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_mount_material() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 422
+[08-Mar-2015 15:04:32 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:04:32 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 15:04:32 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:76
+[08-Mar-2015 15:04:51 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_frame_w() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 428
+[08-Mar-2015 15:04:51 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:04:51 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 15:04:51 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:76
+[08-Mar-2015 15:06:55 America/Vancouver] PHP Fatal error:  Call to undefined method Orders::get_frame_done() in E:\sites\You've Been Framed\admin\classes\class_orders.php on line 438
+[08-Mar-2015 15:06:55 America/Vancouver] PHP Stack trace:
+[08-Mar-2015 15:06:55 America/Vancouver] PHP   1. {main}() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:0
+[08-Mar-2015 15:06:55 America/Vancouver] PHP   2. Orders->save() E:\sites\You've Been Framed\admin\actions\action_orders_edit.php:76
+[19-Apr-2015 15:48:08 America/Vancouver] PHP Notice:  Undefined variable: base_href in E:\sites\ybf\admin\actions\action_component.php on line 83
+[19-Apr-2015 15:48:08 America/Vancouver] PHP Stack trace:
+[19-Apr-2015 15:48:08 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 10:57:58 America/Vancouver] PHP Notice:  Undefined variable: resultsArray in E:\sites\ybf\admin\actions\action_component.php on line 91
+[20-Apr-2015 10:57:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 10:57:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:23:30 America/Vancouver] PHP Fatal error:  Class 'Ordercomponent' not found in E:\sites\ybf\admin\actions\action_component.php on line 38
+[20-Apr-2015 11:23:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:23:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:25:36 America/Vancouver] PHP Fatal error:  Cannot redeclare Ordercomponent_record::$id in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 5
+[20-Apr-2015 11:25:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:25:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:26:49 America/Vancouver] PHP Fatal error:  Cannot redeclare Ordercomponent_record::$id in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 5
+[20-Apr-2015 11:26:49 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:26:49 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:29:43 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 48
+[20-Apr-2015 11:29:43 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:29:43 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:39:28 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:39:28 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:64
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:39:28 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:39:28 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:64
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:39:28 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Warning:  Invalid argument supplied for foreach() in E:\sites\ybf\admin\actions\action_component.php on line 48
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Notice:  Undefined variable: val in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:64
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:42:36 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:64
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:42:36 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:45:18 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:45:18 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:45:18 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:45:18 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:65
+[20-Apr-2015 11:45:18 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:45:19 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:45:19 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:45:19 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:45:19 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:65
+[20-Apr-2015 11:45:19 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:45:19 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 50
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 50
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:46:30 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:46:30 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 50
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 50
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:46:58 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:46:58 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:47:12 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:47:12 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:47:12 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:47:12 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:47:12 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:48:04 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:48:04 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:48:04 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:48:04 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:48:04 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:48:25 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:48:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:25 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:25 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:48:25 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:48:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:26 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:26 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:48:26 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:48:39 America/Vancouver] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, array given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 76
+[20-Apr-2015 11:48:39 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   3. mysqli_real_escape_string() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:76
+[20-Apr-2015 11:48:39 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:48:39 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:48:39 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:48:54 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in E:\sites\ybf\admin\classes\class_ordercomponent_record.php on line 146
+[20-Apr-2015 11:48:54 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:48:54 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 11:48:54 America/Vancouver] PHP   2. Ordercomponent_record->save() E:\sites\ybf\admin\actions\action_component.php:66
+[20-Apr-2015 11:48:54 America/Vancouver] PHP   3. Ordercomponent_record->get_by_id() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:103
+[20-Apr-2015 11:48:54 America/Vancouver] PHP   4. mysqli_num_rows() E:\sites\ybf\admin\classes\class_ordercomponent_record.php:146
+[20-Apr-2015 11:58:26 America/Vancouver] PHP Notice:  Undefined variable: converted_value in E:\sites\ybf\admin\actions\action_component.php on line 66
+[20-Apr-2015 11:58:26 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 11:58:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:16:35 America/Vancouver] PHP Notice:  Undefined variable: base_href in E:\sites\ybf\admin\actions\action_component.php on line 92
+[20-Apr-2015 12:16:35 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:16:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Notice:  Undefined variable: vals in E:\sites\ybf\admin\actions\action_component.php on line 82
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:25:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Notice:  Undefined variable: vals in E:\sites\ybf\admin\actions\action_component.php on line 82
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:25:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Notice:  Undefined variable: vals in E:\sites\ybf\admin\actions\action_component.php on line 82
+[20-Apr-2015 12:25:25 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:25:25 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:26:57 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:26:57 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 74
+[20-Apr-2015 12:27:24 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:27:24 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:29:51 America/Vancouver] PHP Notice:  Undefined variable: fieldset in E:\sites\ybf\admin\actions\action_component.php on line 61
+[20-Apr-2015 12:29:51 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:29:51 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:30:18 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 61
+[20-Apr-2015 12:30:18 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:30:18 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:30:19 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 61
+[20-Apr-2015 12:30:19 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:30:19 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:30:19 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 61
+[20-Apr-2015 12:30:19 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:30:19 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:32:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:32:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:32:09 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:32:09 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:33:42 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:33:42 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:33:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:33:42 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:33:42 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:33:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:33:43 America/Vancouver] PHP Notice:  Array to string conversion in E:\sites\ybf\admin\actions\action_component.php on line 63
+[20-Apr-2015 12:33:43 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:33:43 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:34:23 America/Vancouver] PHP Notice:  Undefined variable: converted_value in E:\sites\ybf\admin\actions\action_component.php on line 66
+[20-Apr-2015 12:34:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:34:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 75
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 78
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 75
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 78
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 75
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Notice:  Undefined index: id in E:\sites\ybf\admin\actions\action_component.php on line 78
+[20-Apr-2015 12:40:23 America/Vancouver] PHP Stack trace:
+[20-Apr-2015 12:40:23 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_component.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Warning:  Missing argument 1 for Matopening::set_top(), called in E:\sites\ybf\admin\actions\action_mat_opening.php on line 11 and defined in E:\sites\ybf\admin\classes\class_matopening.php on line 25
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_top() E:\sites\ybf\admin\actions\action_mat_opening.php:11
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Notice:  Undefined variable: value in E:\sites\ybf\admin\classes\class_matopening.php on line 25
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_top() E:\sites\ybf\admin\actions\action_mat_opening.php:11
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Warning:  Missing argument 1 for Matopening::set_left_side(), called in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12 and defined in E:\sites\ybf\admin\classes\class_matopening.php on line 28
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_left_side() E:\sites\ybf\admin\actions\action_mat_opening.php:12
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Notice:  Undefined variable: value in E:\sites\ybf\admin\classes\class_matopening.php on line 28
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_left_side() E:\sites\ybf\admin\actions\action_mat_opening.php:12
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Warning:  Missing argument 1 for Matopening::set_right_side(), called in E:\sites\ybf\admin\actions\action_mat_opening.php on line 13 and defined in E:\sites\ybf\admin\classes\class_matopening.php on line 31
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_right_side() E:\sites\ybf\admin\actions\action_mat_opening.php:13
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Notice:  Undefined variable: value in E:\sites\ybf\admin\classes\class_matopening.php on line 31
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_right_side() E:\sites\ybf\admin\actions\action_mat_opening.php:13
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Warning:  Missing argument 1 for Matopening::set_bottom(), called in E:\sites\ybf\admin\actions\action_mat_opening.php on line 14 and defined in E:\sites\ybf\admin\classes\class_matopening.php on line 34
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_bottom() E:\sites\ybf\admin\actions\action_mat_opening.php:14
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Notice:  Undefined variable: value in E:\sites\ybf\admin\classes\class_matopening.php on line 34
+[21-Apr-2015 09:11:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:29 America/Vancouver] PHP   2. Matopening->set_bottom() E:\sites\ybf\admin\actions\action_mat_opening.php:14
+[21-Apr-2015 09:11:30 America/Vancouver] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\sites\ybf\admin\classes\class_matopening.php:28) in E:\sites\ybf\admin\actions\action_mat_opening.php on line 18
+[21-Apr-2015 09:11:30 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:11:30 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:11:30 America/Vancouver] PHP   2. header() E:\sites\ybf\admin\actions\action_mat_opening.php:18
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: top_fraction in E:\sites\ybf\admin\actions\action_mat_opening.php on line 9
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: bottom_fraction in E:\sites\ybf\admin\actions\action_mat_opening.php on line 10
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: bottom_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 10
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: left_fraction in E:\sites\ybf\admin\actions\action_mat_opening.php on line 11
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: left_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 11
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: right_fraction in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Notice:  Undefined variable: right_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\sites\ybf\admin\actions\action_mat_opening.php:11) in E:\sites\ybf\admin\actions\action_mat_opening.php on line 25
+[21-Apr-2015 09:15:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:15:37 America/Vancouver] PHP   2. header() E:\sites\ybf\admin\actions\action_mat_opening.php:25
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Notice:  Undefined variable: bottom_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 10
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:16:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Notice:  Undefined variable: left_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 11
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:16:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Notice:  Undefined variable: right_whole in E:\sites\ybf\admin\actions\action_mat_opening.php on line 12
+[21-Apr-2015 09:16:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 09:16:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_mat_opening.php:0
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:40:56 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:40:56 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:40:56 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:40:56 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:41:35 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:35 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:41:44 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:41:44 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:42:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:42:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:42:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:42:26 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:42:26 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:43:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:43:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:43:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:43:48 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:43:48 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:32 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:44:32 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:32 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:32 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:33 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:33 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:44:33 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:33 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 38
+[21-Apr-2015 11:44:42 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:44:42 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:45:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:45:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:45:39 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:45:39 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:46:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:46:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:46:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 39
+[21-Apr-2015 11:46:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:46:28 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Notice:  Undefined index: orders_fitting_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 12
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:49:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Notice:  Undefined index: orders_mat_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 13
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:49:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Notice:  Undefined index: orders_mount_labour in E:\sites\ybf\admin\actions\action_orders_edit.php on line 14
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:49:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Notice:  Undefined index: action in E:\sites\ybf\admin\actions\action_orders_edit.php on line 39
+[21-Apr-2015 11:49:37 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 11:49:37 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\actions\action_orders_edit.php:0
+[21-Apr-2015 13:19:12 America/Vancouver] PHP Warning:  include_once(C:/Users/Ben Haigh/Desktop/sites/ybf/ybf/classes/class_error_handler.php): failed to open stream: No such file or directory in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_ordercomponent_record.php on line 110
+[21-Apr-2015 13:19:12 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:12 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:0
+[21-Apr-2015 13:19:12 America/Vancouver] PHP   2. Ordercomponent_record->save() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:77
+[21-Apr-2015 13:19:12 America/Vancouver] PHP Warning:  include_once(): Failed opening 'C:/Users/Ben Haigh/Desktop/sites/ybf/ybf/classes/class_error_handler.php' for inclusion (include_path='.;C:\php\pear') in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_ordercomponent_record.php on line 110
+[21-Apr-2015 13:19:12 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:12 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:0
+[21-Apr-2015 13:19:12 America/Vancouver] PHP   2. Ordercomponent_record->save() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:77
+[21-Apr-2015 13:19:12 America/Vancouver] PHP Fatal error:  Class 'ErrorHandler' not found in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_ordercomponent_record.php on line 111
+[21-Apr-2015 13:19:12 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:12 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:0
+[21-Apr-2015 13:19:12 America/Vancouver] PHP   2. Ordercomponent_record->save() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:77
+[21-Apr-2015 13:19:29 America/Vancouver] PHP Warning:  include_once(C:/Users/Ben Haigh/Desktop/sites/ybf/ybf/classes/class_error_handler.php): failed to open stream: No such file or directory in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_ordercomponent_record.php on line 110
+[21-Apr-2015 13:19:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:29 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:0
+[21-Apr-2015 13:19:29 America/Vancouver] PHP   2. Ordercomponent_record->save() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:53
+[21-Apr-2015 13:19:29 America/Vancouver] PHP Warning:  include_once(): Failed opening 'C:/Users/Ben Haigh/Desktop/sites/ybf/ybf/classes/class_error_handler.php' for inclusion (include_path='.;C:\php\pear') in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_ordercomponent_record.php on line 110
+[21-Apr-2015 13:19:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:29 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:0
+[21-Apr-2015 13:19:29 America/Vancouver] PHP   2. Ordercomponent_record->save() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:53
+[21-Apr-2015 13:19:29 America/Vancouver] PHP Fatal error:  Class 'ErrorHandler' not found in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_ordercomponent_record.php on line 111
+[21-Apr-2015 13:19:29 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:29 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:0
+[21-Apr-2015 13:19:29 America/Vancouver] PHP   2. Ordercomponent_record->save() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\actions\action_component.php:53
+=======
+>>>>>>> ddc012f2ca1867829507761d9ee75f2dc06c8594

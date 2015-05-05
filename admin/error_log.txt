@@ -1,3 +1,70 @@
+<<<<<<< HEAD
+
+[21-Apr-2015 12:26:28 America/Vancouver] PHP Notice:  Undefined variable: full_output in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 157
+[21-Apr-2015 12:26:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 12:26:28 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 12:26:28 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 12:26:28 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 12:26:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 12:26:28 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 12:26:28 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 12:26:28 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 12:26:28 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 12:26:28 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 12:26:28 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 12:27:22 America/Vancouver] PHP Notice:  Undefined variable: full_output in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 157
+[21-Apr-2015 12:27:22 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 12:27:22 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 12:27:22 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 12:27:22 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 12:27:22 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 12:27:22 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 12:27:22 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 12:27:22 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 12:27:22 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 12:27:22 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 12:27:22 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:15:03 America/Vancouver] PHP Notice:  Undefined variable: full_output in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 157
+[21-Apr-2015 13:15:03 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:15:03 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:15:03 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:15:03 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 13:15:03 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:15:03 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:15:03 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:15:03 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 13:15:03 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:15:03 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:15:03 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:15:06 America/Vancouver] PHP Notice:  Undefined variable: full_output in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 157
+[21-Apr-2015 13:15:06 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:15:06 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\customers_list.php:0
+[21-Apr-2015 13:15:06 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\customers_list.php:165
+[21-Apr-2015 13:15:54 America/Vancouver] PHP Notice:  Undefined variable: full_output in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 157
+[21-Apr-2015 13:15:54 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:15:54 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:15:54 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:15:54 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 13:15:54 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:15:54 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:15:54 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:15:54 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 13:15:54 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:15:54 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:15:54 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:19:14 America/Vancouver] PHP Notice:  Undefined variable: full_output in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 157
+[21-Apr-2015 13:19:14 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:14 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:19:14 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:19:14 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 13:19:14 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:14 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:19:14 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+[21-Apr-2015 13:19:14 America/Vancouver] PHP Notice:  Undefined variable: qsAdd in C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\classes\class_record_pager.php on line 184
+[21-Apr-2015 13:19:14 America/Vancouver] PHP Stack trace:
+[21-Apr-2015 13:19:14 America/Vancouver] PHP   1. {main}() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:0
+[21-Apr-2015 13:19:14 America/Vancouver] PHP   2. Pager->displayRecords() C:\Users\Ben Haigh\Desktop\sites\ybf\ybf\admin\orders_list.php:159
+=======
 [21-Apr-2015 13:40:27 America/Vancouver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/orchardc/public_html/youvebeenframed.ca/admin/classes/class_drop_downs.php on line 171
 
 [30-Apr-2015 14:12:36 America/Vancouver] PHP Notice:  Undefined variable: cost in E:\sites\ybf\admin\classes\class_functions.php on line 291
@@ -1858,3 +1925,4 @@
 [30-Apr-2015 19:55:21 America/Vancouver] PHP Stack trace:
 [30-Apr-2015 19:55:21 America/Vancouver] PHP   1. {main}() E:\sites\ybf\admin\component_edit.php:0
 [30-Apr-2015 19:55:21 America/Vancouver] PHP   2. mysqli_fetch_array() E:\sites\ybf\admin\component_edit.php:72
+>>>>>>> ddc012f2ca1867829507761d9ee75f2dc06c8594
