@@ -39,10 +39,7 @@ $(function() {
 		e.preventDefault();
 		$('#component_add_dialog').dialog('open');
 	});
-	
-	
-
-});		
+		
 
 	function update_type(type){
 		$.ajax({
@@ -52,6 +49,28 @@ $(function() {
 			}	
 		});
 	};
+	
+		$("#barcodeAddComponent").on("blur", function (e) {
+			e.preventDefault();
+			var typeDD = $('#addComponentType');
+			var barcode = $(this).val();
+			console.log(barcode);
+
+			$.getJSON("ajax/ajax_barcode_lookup.php?type=json&barcode="+barcode, function(jd) {
+			// JSON: get barcode response, get looked up component id, and get new price:
+				if (jd.response == "0"){
+					$('#warning').show();
+				} else {
+					$('#warning').hide();						
+					//Update selection with new value from barcode lookup	
+					typeDD.val(jd.componentType);
+					update_type(jd.componentType);					
+					$('#componentSelection').val(jd.selection_id);
+				}
+			});			
+
+		});
+});			  
 </script>
 
 
@@ -62,7 +81,7 @@ $(function() {
 	$dd = New DropDown();
 	$dd->set_table("componenttype");
 	$dd->set_name_field("componentType_name");
-	$dd->set_name("orders_customer_id");
+	$dd->set_name("addComponentType");
 	$dd->set_active_only(true);
 	$dd->set_class_name("form-control inline");
 	$dd->set_required(true);	
@@ -72,7 +91,7 @@ $(function() {
 	?>	  	  
   </p>
  <p>
-<input type="text" placeholder="Scan barcode here to find item" style="  width: 80%;"/>  	  
+<input type="text" placeholder="Scan barcode here to find item" style="width: 80%;" id="barcodeAddComponent"/>  	  
   </p>  
 <div id="componentForm">
 

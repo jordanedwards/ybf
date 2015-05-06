@@ -1,5 +1,6 @@
 <?php
 require("../includes/init.php"); 
+require_once(CLASS_FOLDER . "class_ordercomponent.php");
 require_once(CLASS_FOLDER . "class_ordercomponent_record.php");
 $functions = New Functions();
 
@@ -37,4 +38,12 @@ if ($result):
 	endwhile;	
 endif;
 
+//Update price
+$new_component = New Ordercomponent();
+$new_component->get_by_id($component);
+$new_component->populate();
+
+$price = $functions->calculate_price($new_component->get_id(),$new_component->get_united_inches());
+$new_component->set_price($price);
+$new_component->save();
 ?>

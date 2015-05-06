@@ -284,7 +284,8 @@ public function convertMetric($impValue){
 		return $converted_remainder;
 	}
 	
-	public function calculate_price($component_id, $ui){
+	public function calculate_price($component_id, $ui, $component){
+		// Use the $component_id to pull data from a specific orderComponent in the database, use $component to calculate a theoretical price from the object
 		$cost = 0;
 		$price = 0;
 		$markup = 0;
@@ -292,21 +293,39 @@ public function convertMetric($impValue){
 		require_once($_SERVER['DOCUMENT_ROOT'] . '/admin/classes/class_data_manager.php');
 		$dm = new DataManager();
 		
-		$strSQL = "SELECT component_cost, component_price_per, componentTypeMarkup FROM component
-			LEFT JOIN componenttype ON component.component_type = componenttype.componentType_id
-		WHERE component_id = (
-			SELECT value FROM ordercomponent_record 
-			LEFT JOIN componenttypefields ON ordercomponent_record.componentTypeField = componenttypefields.id
-			WHERE fieldtype='list' AND orderComponentId = " .	$component_id . " 
-			)";
+		if ($component_id > 0):
+		// this section is for calculating price from an existing component
+			$strSQL = "SELECT component_cost, component_price_per, componentTypeMarkup FROM component
+				LEFT JOIN componenttype ON component.component_type = componenttype.componentType_id
+			WHERE component_id = (
+				SELECT value FROM ordercomponent_record 
+				LEFT JOIN componenttypefields ON ordercomponent_record.componentTypeField = componenttypefields.id
+				WHERE fieldtype='list' AND orderComponentId = " .	$component_id . " 
+				)";
+			
+			$result = $dm->queryRecords($strSQL);		
+			if ($result):
+				while ($line = mysqli_fetch_assoc($result)):
+					$cost = $line['component_cost'];
+					$per = $line['component_price_per'];
+					$markup = $line['componentTypeMarkup'];
+				endwhile;	
+			endif;
+		else:
+		// this section is for calculating a theoretical price (component doesn't exist in the database)
+				$strSQL = "SELECT component_cost, component_price_per, componentTypeMarkup FROM component
+				LEFT JOIN componenttype ON component.component_type = componenttype.componentType_id
+				WHERE component_id = " .	$component;
+			
+			$result = $dm->queryRecords($strSQL);		
+			if ($result):
+				while ($line = mysqli_fetch_assoc($result)):
+					$cost = $line['component_cost'];
+					$per = $line['component_price_per'];
+					$markup = $line['componentTypeMarkup'];
+				endwhile;	
+			endif;
 		
-		$result = $dm->queryRecords($strSQL);		
-		if ($result):
-			while ($line = mysqli_fetch_assoc($result)):
-				$cost = $line['component_cost'];
-				$per = $line['component_price_per'];
-				$markup = $line['componentTypeMarkup'];
-			endwhile;	
 		endif;
 		
 		switch ($per):

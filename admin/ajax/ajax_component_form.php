@@ -21,7 +21,8 @@ echo "
 			switch ($line['fieldtype']):
 				case "list":
 					$dd->clear();
-					$dd->set_name("componentSelection[" . $line['id']. "]");					
+					$dd->set_name("componentSelection[" . $line['id']. "]");
+					$dd->set_id("componentSelection");														
 					$dd->set_preset($line['fieldname']);
 					echo "<tr><td>" . ucfirst($line['fieldname']) . "</td><td>";
 					$dd->display();

@@ -407,11 +407,13 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					$dd->set_preset($line['fieldname']);
 					$dd->set_id("component-list-".$line['orderComponent_id']);
 					$dd->set_name($line['fieldname']);														
-					$dd->set_selected_value($line['value']);					
+					$dd->set_selected_value($line['value']);
+					$dd->set_onchange("updateComponent(" .$line['orderComponent_id'] . ")");		
+					$dd->add_data("component-id",$line['orderComponent_id']);													
 					echo "<td>";
 					$dd->display();
 					echo "<img src='../images/barcode.gif' class='barcodeScan' data-component-id='" .$line['orderComponent_id']."'>";
-					echo "</td>";		
+					echo "</td>";
 				break;
 				case "imp":
 					echo '<td><input id="' . $line['fieldname'] . '" name="' . $line['fieldname'] . '" type="number" step="1" class="measurement" value="' . $functions->get_whole_int($line['value']).'"/>&nbsp;';
@@ -443,7 +445,9 @@ WHERE ordercomponent.orderComponent_orders_id= " . $orders_id . " ORDER BY order
 					$dd->set_preset($line['fieldname']);
 					$dd->set_id("component-list-".$line['orderComponent_id']);	
 					$dd->set_name($line['componentType_name']);									
-					$dd->set_selected_value($line['value']);					
+					$dd->set_selected_value($line['value']);	
+					$dd->set_onchange("updateComponent(" .$line['orderComponent_id'] . ")");		
+					$dd->add_data("component-id",$line['orderComponent_id']);								
 					echo "<td>";
 					$dd->display();
 					echo "</td>";		
@@ -792,32 +796,27 @@ endif;
 						alert("saved");
 					}	
 				});
-		});		
+		});	
 		
-	</script>
-<script>		
-		$(".barcode").on("blur", function (e) {
-			/*e.preventDefault();
-			var result = confirm('You are about to delete an item from the system. Do you want to continue?');
-			if (result == true){
-				var itemId = $(this).data("itemid");
-				var element = $(this);
-				$.ajax({
-					url: "ajax/ajax_invoice_item.php?action=delete&ordersSpecialItem_id="+itemId+"&order_id="+$('#orders_id').val(),	
-					success: function (html) {	
-				  		element.parents("tr").remove();
-					}	
-				});
-			}*/
-		});
-	//	var materialsPrice = $('#total_price').val();	
-	///	$('#invoice_materials').html("$"+materialsPrice);
-</script>
+		function updateComponent(componentId)	{
+			selection = $('#component-list-'+componentId).val();
+			console.log(selection);
+			$.getJSON("ajax/ajax_barcode_lookup.php?type=json&ordercomponent_id="+componentId+"&component_id="+selection, function(jd) {
+			  // JSON: get barcode response, get looked up component id, and get new price:
+					if (jd.response == "0"){
+					} else {
+						//Update price:
+						$('#component-total-'+componentId).html(jd.new_price);
+					}
+			  });
+			console.log(jd.new_price);
+		}
 		
-			<?php require("includes/component_add_dialog.php"); ?>
-			<?php require("includes/barcode_dialog.php"); ?>
-			<?php require("includes/opening_dialog.php"); ?>	
-			<?php require("includes/customer_add_dialog.php"); ?>			
+	</script>	
+<?php require("includes/component_add_dialog.php"); ?>
+<?php require("includes/barcode_dialog.php"); ?>
+<?php require("includes/opening_dialog.php"); ?>	
+<?php require("includes/customer_add_dialog.php"); ?>			
 					
 	</body>
 </html>

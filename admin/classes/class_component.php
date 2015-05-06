@@ -243,7 +243,34 @@ public function save() {
 			exit;
 		}
 	}
-  
+
+	// function to fetch the record and populate the object
+	public function get_by_barcode($barcode) {
+		try{
+			$status = false;
+			$dm = new DataManager();
+			$strSQL = "SELECT * FROM component WHERE component_barcode=" . $barcode;
+      
+			$result = $dm->queryRecords($strSQL);
+			$num_rows = mysqli_num_rows($result);
+
+			if ($num_rows != 0){
+				$row = mysqli_fetch_assoc($result);
+        		$this->load($row);
+				$status = true;
+			}
+
+			return $status;
+		}
+		catch(Exception $e) {
+			// CATCH EXCEPTION HERE -- DISPLAY ERROR MESSAGE & EMAIL ADMINISTRATOR
+			include_once($_SERVER['DOCUMENT_ROOT'] . '/classes/class_error_handler.php');
+			$errorVar = new ErrorHandler();
+			$errorVar->notifyAdminException($e);
+			exit;
+		}
+	}
+		 
 	// loads the object data from a mysql assoc array
   private function load($row){
 	$this->set_id($row["component_id"]);

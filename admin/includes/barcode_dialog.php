@@ -19,29 +19,24 @@ $(function() {
 			'Go': {
 				click: function() {
 					// Lookup barcode:
-		          $.getJSON("ajax/ajax_barcode_lookup.php?barcode="+$('#barcodeChange').val(), function(jd) {
+					componentId = $('#scan-component-id').val();
+		        	$.getJSON("ajax/ajax_barcode_lookup.php?type=json&ordercomponent_id="+componentId+"&barcode="+$('#barcodeChange').val(), function(jd) {
 				  // JSON: get barcode response, get looked up component id, and get new price:
-				  
+				  		if (jd.response == "0"){
+							$('#warning').show();
+						} else {
+							$('#warning').hide();						
+							//Update selection with new value from barcode lookup					
+							$('#'+$('#component-list-id').val()).val(jd.selection_id);
+							//Update price:
+							$('#component-total-'+componentId).html(jd.new_price);
+							//Close
+							$( "#barcode_dialog" ).dialog('close');
+						}
 				  });
-				  
-					$.ajax({
-						url: "ajax/ajax_barcode_lookup.php?barcode="+$('#barcodeChange').val(),	
-						success: function (retval) {
-							if (retval == "Barcode not found"){
-								$('#warning').show();
-							} else {
-								//Update selection with new value from barcode lookup					
-								$('#'+$('#component-list-id').val()).val(retval);
-								//Update price:
-								$('#component-total-'+$('scan-component-id').val()).html();
-								//Close
-			               		$( "#barcode_dialog" ).dialog('close');
-							}
-						}		
-					});	
-			   	},
-			text: "Go",
-			class: 'btn btn-primary'			
+				},
+				text: "Go",
+				class: 'btn btn-primary'			
             },				
 			"Cancel": {
 				click: function() {

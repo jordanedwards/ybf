@@ -41,6 +41,7 @@
 	$dd->set_onchange("updateStudent();");
 	$dd->set_order("ASC");
 	$dd->set_where("student_session_id = '3'");	
+	$dd->add_data("data-name",$data-value);
 	$dd->display();
 
 // If NOT using this dynamically, but just with a static list, use like this:
@@ -77,6 +78,7 @@ class DropDown {
 	private $index_name;
 	private $option_list;
 	private $preset;
+	private $data;
 					
 	function __construct() {
 	}
@@ -193,10 +195,15 @@ public function __toString(){
 	if ($this->id == ""){
 		$this->id = $this->name;
 	}
+	$dataArray = $this->data;
+	foreach ($dataArray as $dataItem => $dataValue) {
+    	$dataStr.= " data-" . $dataItem . "='" . $dataValue . "'";
+  	}
+	
 	if ($this->get_static()):
 		// Static drop down	
 		$cssClass = ($this->required ? ' class="{validate:{required:true}} ' . $this->class_name .' "' : " class='". $this->class_name . "'");
-		$ddl = '<select id="'.$this->id.'" name="'.$this->name.'" ' . $cssClass. ' onchange="'.$this->onchange.'">';
+		$ddl = '<select id="'.$this->id.'" name="'.$this->name.'" ' . $cssClass. ' onchange="'.$this->onchange.'" ' . $dataStr . '>';
 		$ddl .= "<option value=''></option>";
 		
 		$options = explode(",", $this->get_option_list());
@@ -240,7 +247,7 @@ public function __toString(){
 			$result = $dm->queryRecords($strSQL);	
 			if ($result){
 			
-				$ddl = '<select id="'.$this->id.'" name="'.$this->name.'" ' . $cssClass. ' onchange="'.$this->onchange.'">';
+				$ddl = '<select id="'.$this->id.'" name="'.$this->name.'" ' . $cssClass. ' onchange="'.$this->onchange .'" ' . $dataStr . '>';
 				$ddl .= "<option value=''></option>";
 				
 				while($row = mysqli_fetch_assoc($result)) {
@@ -269,6 +276,10 @@ public function __toString(){
 		echo "drop down class failed: table and name field not set ";
 	endif;	
 	endif; 	
+	}
+	
+	public function add_data($field_name,$value){
+		$this->data[$field_name] = $value;
 	}
 	
 	public function set_preset($preset)
